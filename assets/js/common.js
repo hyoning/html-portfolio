@@ -34,3 +34,22 @@ window.onscroll = function() {
       document.querySelector(".main_header").classList.remove("change");
     }
   };
+
+//메뉴 클릭
+// 메뉴 버튼 클릭 이벤트 리스너 등록
+document.querySelector('.menu_btn').addEventListener('click', () => {
+  document.querySelector('.nav_wrap').classList.add('active');
+  document.querySelector('body').classList.add('overflowH');
+});  
+// 네비게이션 메뉴 링크 클릭 이벤트 리스너 등록
+document.querySelectorAll('.nav_list a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav_wrap').classList.remove('active');
+    document.querySelector('body').classList.remove('overflowH');
+  });
+});
+// 닫기 버튼 클릭 이벤트 리스너 등록
+document.querySelector('.close_btn').addEventListener('click', () => {
+  document.querySelector('.nav_wrap').classList.remove('active');
+  document.querySelector('body').classList.remove('overflowH');
+});
