@@ -1,4 +1,16 @@
  
+ window.onscroll = function() {
+    var scroll = window.scrollY;
+    //console.log(scroll);
+    if (scroll >= 52.5) {
+      //console.log('a');
+      document.querySelector(".main_header").classList.add("change");
+    } else {
+      //console.log('a');
+      document.querySelector(".main_header").classList.remove("change");
+    }
+  };
+  
  //상단 타이틀 영역, 마우스 반대로 움직이기
  const conTitle = document.querySelector(".con01_title");
  const containerFirst = document.querySelector(".container_01")

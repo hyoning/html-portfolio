@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: calc(var(--vh, 1vh)* 100 - 50px);
-    background: #EDEDED;
+    background: var(--background-color);
 }
 
 .con01_title {
@@ -25,7 +25,7 @@
 }
 
 .hyon_line {
-    stroke: #F7FFC3;
+    stroke: var(--point-color);
     fill: none;
     stroke-width: 15px;
     stroke-dasharray: 1000;
@@ -128,7 +128,7 @@ svg {
 }
 
 .container_02 {
-    background-color: #EDEDED;
+    background-color: var(--background-color);
 }
 
 .con02_box {
@@ -199,7 +199,7 @@ svg {
     display: inline-block;
     margin-top: 20px;
     font-size: 14px;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .con02_experience {
@@ -339,22 +339,22 @@ svg {
 }
 
 .con02_ex_li01 .front {
-    background: #F7FFC3;
+    background: var(--point-color);
 }
 
 .con02_ex_li02 .front {
-    background: #D2FF98;
+    background: var(--secondary-color);
 }
 
 .con02_ex_li03 .front {
-    background: #DDECF7;
+    background: var(--dark-point-color);
 }
 
 .con02_ex_li01 .back,
 .con02_ex_li02 .back,
 .con02_ex_li03 .back {
-    background: #222;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--white-color);
 }
 
 .con02_education_content ul {
@@ -367,7 +367,7 @@ svg {
     position: relative;
     text-align: left;
     padding: 20px;
-    background: #fff;
+    background: var(--white-color);
     border-radius: 20px;
 }
 
@@ -396,14 +396,14 @@ svg {
 .con3_skill_wrap .progress {
     width: 100%;
     height: 20px;
-    background-color: #eee;
+    background-color: var(--background-color);
     border-radius: 10px;
 }
 
 .con3_skill_wrap .progress-bar {
     width: 0;
     height: 20px;
-    background-color: #D2FF98;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     transition: width 2s ease-in-out;
 }
@@ -431,7 +431,7 @@ svg {
 
 /*container04*/
 .container_04 {
-    background: #F7F7F7;
+    background: var(--gray-secondary-color);
 }
 
 .con04_swiper {
@@ -499,7 +499,7 @@ svg {
     transform: translate(-50%, -50%);
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: var(--white-color);
     z-index: 99;
 }
 
@@ -516,7 +516,7 @@ svg {
 }
 
 .con04_swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #D2FF98;
+    background: var(--secondary-color);
 }
 
 @media (max-width : 1024px) {

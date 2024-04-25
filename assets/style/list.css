@@ -8,6 +8,11 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.lookbook_contain ul {
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+}
+
 .sns_contain ul {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -23,7 +28,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .movie_contain li:before {
@@ -45,6 +50,23 @@
     bottom: 0;
     object-fit: cover;
     display: block;
+}
+
+.more_btn {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.more_btn a {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 8px 12px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    font-weight: 600;
 }
 
 @media (min-width : 501px) and (max-width : 1024px) {

@@ -1,106 +1,216 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
     font-family: "Montserrat", "Pretendard", sans-serif;
-	line-height: 1;
+    line-height: 1;
     position: relative;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     outline: none;
-    color:#222;
+    color: #222;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 * {
     box-sizing: border-box;
 }
-img{
-    width:100%;
-}
-.about_title{
-  font-family: "Single Day", cursive;
-  font-weight: 400;
-  font-style: normal;
+
+:root {
+    --primary-color: #222;
+    --secondary-color: #D2FF98;
+    --point-color: #F7FFC3;
+    --dark-point-color: #DDECF7;
+    --dark-point-opacity-color: rgba(255, 184, 0, 0.20);
+    --warning-color: #F85D5D;
+    --white-color: #fff;
+    --gray-color: #aaa;
+    --gray-secondary-color: #f7f7f7;
+    --gradient-color: linear-gradient(180deg, #070618 0%, #383E50 100%);
+    --box-shadow: 4px 10px 30px 0px rgba(7, 6, 24, 0.25);
+    --background-color: #EEEEEE;
 }
 
-.cursor_wrap{
+img {
+    width: 100%;
+}
+
+.about_title {
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cursor_wrap {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 9999;
     pointer-events: none;
 }
-.cursor_inner{
-    position:absolute;
+
+.cursor_inner {
+    position: absolute;
     display: inline-block;
-    width:20px;
+    width: 20px;
     height: 20px;
     transform: translate(-50%, -50%);
-    background-color:rgba(10,27,16,.5);
+    background-color: rgba(10, 27, 16, .5);
     border-radius: 100%;
     transition: all .04s ease;
 }
-.ripple{
-    position:absolute;
+
+.ripple {
+    position: absolute;
     display: inline-block;
-    width:20px;
+    width: 20px;
     height: 20px;
     border-radius: 100%;
-    border:1px solid #222;
+    border: 1px solid #222;
     transform: translate(-50%, -50%);
     animation: ripple .5s ease-in-out;
     animation-fill-mode: forwards;
-    z-index:-1;
+    z-index: -1;
 }
+
 @keyframes ripple {
-    0%{
+    0% {
         transform: scale(0);
         opacity: 1;
     }
-    20%{
+
+    20% {
         transform: scale(5);
         opacity: 1;
     }
-    100%{
+
+    100% {
         transform: scale(20);
         opacity: 0;
     }
