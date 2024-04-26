@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .goods_event_sale_cont .contents .full_event {
+            margin-top: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .oct_catch_wrap {
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .oct_catch_wrap img {
+            width: 100%;
+            display: block;
+        }
+
+        .oct_catch_wrap .img_ab {
+            position: absolute;
+        }
+
+        .oct_catch_wrap .title {
+            position: relative;
+            background: url("../../assets/images/promotion/2022/oct_catch/pc_bg.png") no-repeat center/cover;
+            padding-bottom: 45%;
+        }
+
+        .oct_catch_wrap .title .top {
+            width: 72.3%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .oct_catch_wrap .title .animation1 {
+            width: 17.75%;
+            top: 11.3%;
+            left: 7.9%;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .oct_catch_wrap .title .animation2 {
+            width: 17.75%;
+            right: 8.9%;
+            bottom: 11.4%;
+            animation: bounce 2s 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .oct_catch_wrap .menu_wrap {
+            background: url("../../assets/images/promotion/2022/oct_catch/pc__02.jpg") no-repeat center/cover;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            height: 80px;
+            align-items: center;
+            font-size: clamp(1.4rem, 1vw, 1.5rem);
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .oct_catch_wrap .menu_pc.fixed {
+            position: fixed;
+            top: 118px;
+            left: 0;
+            width: 100%;
+            z-index: 8;
+        }
+
+        .oct_catch_wrap .menu_m.fixed {
+            position: fixed;
+            top: 57px;
+            left: auto;
+            width: 100%;
+            max-width: 500px;
+            z-index: 8;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu .menu_hover:hover .white_text {
+            display: none;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu .menu_hover .yellow_text {
+            display: none;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu .menu_hover:hover .yellow_text {
+            display: block;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu .star {
+            width: 1.25%;
+        }
+
+        .oct_catch_wrap .coupon_wrap {
+            position: relative;
+        }
+
+        .oct_catch_wrap .coupon_wrap .scroll1 {
+            width: 11%;
+            top: 17%;
+            left: 17.85%;
+            opacity: 0;
+        }
+
+        .oct_catch_wrap .coupon_wrap .coupon_btn {
+            width: 25%;
+            top: 43.6%;
+            left: 37.45%;
+        }
+
+        .oct_catch_wrap .coupon_wrap .coupon_3 {
+            width: 30%;
+            top: 61.1%;
+            left: 18.8%;
+        }
+
+        .oct_catch_wrap .coupon_wrap .coupon_5 {
+            width: 30%;
+            top: 61.1%;
+            right: 18.8%;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg {
+            background: #f6daf1;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_btn {
+            position: relative;
+            display: block;
+            width: 80%;
+            border-style: none;
+            background: #f5f5f5;
+            padding: 2% 0;
+            margin: 0 auto;
+            border-radius: 50px;
+            font-size: clamp(1rem, 1vw, 1.25rem);
+            cursor: pointer;
+            display: none;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_btn.on {
+            position: relative;
+            display: block;
+            width: 80%;
+            border-style: none;
+            background: #f5f5f5;
+            padding: 2% 0;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_btn .arrow_down {
+            width: 16px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 4%;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_wrap {
+            display: none;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_wrap img {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 2%;
+        }
+
+        .oct_catch_wrap .photo_wrap {
+            position: relative;
+        }
+
+        .oct_catch_wrap .photo_wrap .scroll2 {
+            width: 12.18%;
+            top: 3.25%;
+            right: 18.1%;
+            opacity: 0;
+        }
+
+        .oct_catch_wrap .photo_wrap .scroll3 {
+            width: 10.81%;
+            bottom: -2.5%;
+            left: 19.1%;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .oct_catch_wrap .instar_wrap {
+            position: relative;
+        }
+
+        .oct_catch_wrap .instar_wrap .scroll4 {
+            width: 10.81%;
+            top: 5.9%;
+            right: 17.5%;
+            opacity: 0;
+        }
+
+        .oct_catch_wrap .active {
+            opacity: 0;
+            transition: all .5s ease;
+            transform: translateY(100px);
+        }
+
+        .oct_catch_wrap .active.show {
+            opacity: 1;
+            transition: all .5s ease;
+            transform: translateY(0px);
+        }
+
+        .mo_ver {
+            display: block;
+        }
+
+        .oct_catch_wrap .title {
+            background: url("../../assets/images/promotion/2022/oct_catch/m_bg.jpg") no-repeat center/cover;
+            padding-bottom: 166.9%;
+        }
+
+        .oct_catch_wrap .title .top {
+            width: 92%;
+            top: 10.45%;
+            transform: translate(-50%, 0);
+        }
+
+        .oct_catch_wrap .title .animation1 {
+            width: 37.59%;
+            top: 3.12%;
+            left: 15%;
+        }
+
+        .oct_catch_wrap .title .animation2 {
+            width: 39.62%;
+            top: unset;
+            bottom: 1.5%;
+            left: unset;
+            right: 12.45%;
+        }
+
+        .oct_catch_wrap .menu_wrap {
+            position: relative;
+            background: url("../../assets/images/promotion/2022/oct_catch/m_02.png");
+            padding: 0 5%;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu {
+            padding: 4% 0;
+            gap: unset;
+            justify-content: center;
+            height: unset;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu_hover {
+            margin-right: 5%;
+        }
+
+        .oct_catch_wrap .menu_wrap .menu_hover:last-of-type {
+            margin-right: unset;
+        }
+
+        /*.oct_catch_wrap .menu_wrap .menu .m_best {*/
+        /*    min-width: 70px;*/
+        /*}*/
+        /*.oct_catch_wrap .menu_wrap .menu .m_fashion {*/
+        /*    min-width: 120px;*/
+        /*}*/
+        /*.oct_catch_wrap .menu_wrap .menu .m_life {*/
+        /*    min-width: 43px;*/
+        /*}*/
+        /*.oct_catch_wrap .menu_wrap .menu .m_toy {*/
+        /*    min-width: 70px;*/
+        /*}*/
+        .oct_catch_wrap .coupon_wrap .scroll1 {
+            width: 21.29%;
+            top: 26.5%;
+            left: unset;
+            right: 2%;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .oct_catch_wrap .photo_wrap .scroll2 {
+            width: 22.96%;
+            top: 13.87%;
+            left: 1%;
+            right: unset;
+            opacity: 0;
+        }
+
+        .oct_catch_wrap .photo_wrap .scroll3 {
+            width: 21.29%;
+            top: unset;
+            bottom: -1.5%;
+            left: unset;
+            right: 11.2%;
+            opacity: 0;
+        }
+
+        .oct_catch_wrap .instar_wrap .scroll4 {
+            width: 20%;
+            top: 12.65%;
+            left: 1.5%;
+            right: unset;
+            opacity: 0;
+        }
+
+        .oct_catch_wrap .coupon_wrap .coupon_btn {
+            width: 74%;
+            left: 50%;
+            top: 32.8%;
+            transform: translate(-50%);
+        }
+
+        .oct_catch_wrap .coupon_wrap .coupon_3 {
+            width: 74.07%;
+            top: 45.9%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .oct_catch_wrap .coupon_wrap .coupon_5 {
+            width: 74.07%;
+            top: 68.1%;
+            right: 50%;
+            transform: translate(50%);
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg {
+            background: #f7dff6;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg {
+            width: 92.5%;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_btn {
+            width: 90%;
+            font-size: clamp(1rem, 1vw, 1.25rem);
+            padding: 4% 0;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_btn.on {
+            width: 90%;
+            padding: 4% 0;
+        }
+
+        .oct_catch_wrap .coupon_wrap2 .note_pink_bg .note_white_bg .note_wrap img {
+            width: 85%;
+            padding-top: 4%;
+        }
+
+        .oct_catch_wrap .active {
+            opacity: 0;
+            transition: all .5s ease;
+            transform: translateY(100px);
+        }
+
+        .oct_catch_wrap .active.show {
+            opacity: 1;
+            transition: all .5s ease;
+            transform: translateY(0px);
+        }
+
+        .oct_catch_wrap .space_m {
+            display: none;
+        }
+
+        .oct_catch_wrap .space_m.on2 {
+            display: block;
+            padding: 5%;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <div class="oct_catch_wrap mo_ver full_event">
+                    <div class="title">
+                        <div class="top img_ab"><img src="../../assets/images/promotion/2022/oct_catch/m_top.png"
+                                alt=""></div>
+                        <div class="animation1 img_ab"><img
+                                src="../../assets/images/promotion/2022/oct_catch/m_animation1.png" alt=""></div>
+                        <div class="animation2 img_ab"><img
+                                src="../../assets/images/promotion/2022/oct_catch/m_animation2.png" alt=""></div>
+                    </div> <span class="space_m"></span>
+                    <nav class="menu_wrap menu_m">
+                        <ul class="menu"> <a class="menu_hover" href="#group-7705">
+                                <li class="white_text m_best"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/best.png" alt=""></li>
+                                <li class="yellow_text m_best"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/best_yellow.png" alt="">
+                                </li>
+                            </a> <a class="menu_hover" href="#group-7706">
+                                <li class="white_text m_fashion"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/fashion.png" alt="">
+                                </li>
+                                <li class="yellow_text m_fashion"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/fashion_yellow.png" alt="">
+                                </li>
+                            </a> <a class="menu_hover" href="#group-7160">
+                                <li class="white_text m_life"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/life.png" alt=""></li>
+                                <li class="yellow_text m_life"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/life_yellow.png" alt="">
+                                </li>
+                            </a> <a class="menu_hover" href="#group-7720">
+                                <li class="white_text m_toy"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/toy.png" alt=""></li>
+                                <li class="yellow_text m_toy"><img
+                                        src="../../assets/images/promotion/2022/oct_catch/toy_yellow.png" alt="">
+                                </li>
+                            </a> </ul>
+                    </nav>
+                    <div class="coupon_wrap">
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__03.jpg" alt=""></div>
+                        <div class="scroll1 img_ab active active_up"> <img
+                                src="../../assets/images/promotion/2022/oct_catch/m_scroll1.png" alt=""> </div> <a
+                            href="" onclick="couponAllLinkDown('6073304115000000707,6073304115000000708')">
+                            <div class="coupon_btn img_ab"><img
+                                    src="../../assets/images/promotion/2022/oct_catch/m_coupon_btn.png" alt="">
+                            </div>
+                        </a> <a href="javascript:couponLinkDownPromotion('6073304115000000707');">
+                            <div class="coupon_3 img_ab"><img
+                                    src="../../assets/images/promotion/2022/oct_catch/m_coupon_3000.png" alt="">
+                            </div>
+                        </a> <a href="javascript:couponLinkDownPromotion('6073304115000000708');">
+                            <div class="coupon_5 img_ab"><img
+                                    src="../../assets/images/promotion/2022/oct_catch/m_coupon_7000.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="coupon_wrap2">
+                        <div class="note_pink_bg">
+                            <div class="note_white_bg"> <button class="note_btn on">유의사항 자세히 보기 <img class="arrow_down"
+                                        src="../../assets/images/promotion/2022/oct_catch/arrow_down.png" alt="">
+                                </button> <button class="note_btn">유의사항 자세히 보기 <img class="arrow_down"
+                                        src="../../assets/images/promotion/2022/oct_catch/arrow_up.png" alt=""></button>
+                                <ul class="note_wrap">
+                                    <li> <img src="../../assets/images/promotion/2022/oct_catch/m_note.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__05.jpg" alt=""></div>
+                    </div>
+                    <div class="photo_wrap">
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__06.jpg" alt=""></div>
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__07.jpg" alt=""></div>
+                        <div class="scroll2 img_ab active active_up"><img
+                                src="../../assets/images/promotion/2022/oct_catch/m_scroll2.png" alt=""></div>
+                        <div class="scroll3 img_ab active active_up"><img
+                                src="../../assets/images/promotion/2022/oct_catch/m_scroll3.png" alt=""></div>
+                    </div>
+                    <div class="instar_wrap">
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__08.jpg" alt=""></div>
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__09.jpg" alt=""></div>
+                        <div><img src="../../assets/images/promotion/2022/oct_catch/m__10.jpg" alt=""></div>
+                        <div class="scroll4 img_ab active active_up"><img
+                                src="../../assets/images/promotion/2022/oct_catch/m_scroll4.png" alt=""></div>
+                    </div>
+                    <div></div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script>
+        $(function () {
+            $('.note_btn').click(function () {
+                $('.note_btn').toggleClass('on');
+                $('.note_wrap').slideToggle();
+            })
+        })
+        const saTriggerMargin = 300;
+        const saElementList = document.querySelectorAll('.active');
+        const saFunc = function () {
+            for (const element of saElementList) {
+                if (!element.classList.contains('show')) {
+                    if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+                        element.classList.add('show');
+                    }
+                }
+            }
+        }
+        window.addEventListener('load', saFunc);
+        window.addEventListener('scroll', saFunc);
+    </script>
+
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

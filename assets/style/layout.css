@@ -133,8 +133,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    gap: 10px;
+    padding-top: 1rem;
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
 }
 
 .close_btn {

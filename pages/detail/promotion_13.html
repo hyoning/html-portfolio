@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .sec.sec1 {
+            position: relative;
+            width: 100%;
+            background-color: #E8F1FF;
+            text-align: left;
+        }
+
+        .sec1_textWrap {
+            width: 100%;
+            left: 6%;
+            bottom: 6.2%;
+            box-sizing: border-box;
+            z-index: 4;
+        }
+
+        .sec1_txt1 {
+            line-height: 1.18;
+            color: #fff;
+            margin-bottom: 3.5%;
+            font-weight: 400;
+        }
+
+        .sec1_tit {
+            line-height: 1.18;
+            color: #fff;
+            margin-bottom: 5.4%;
+            font-weight: 400;
+        }
+
+        .sec1_date {
+            width: 100%;
+            font-weight: 600;
+            line-height: 1.19;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .sec1_img {
+            width: 100%;
+            height: auto;
+        }
+
+        .sec1_txt {
+            width: 100%;
+            line-height: 1.36;
+        }
+
+        .sec1_rolling {
+            width: 100%;
+            left: 0;
+            top: 34.48%;
+            z-index: 3;
+        }
+
+        .sec1_rolling .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .sec1_rolling .swiper-slide {
+            width: auto !important;
+            padding: 0;
+            height: 100%;
+        }
+
+        .sec1_rolling .swiper-slide img {
+            width: auto;
+            overflow: hidden;
+            height: 152.5px;
+        }
+
+        .sec1_img {
+            width: 100%;
+            padding-bottom: 156%;
+            height: 0;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        .sec1_img1 {
+            width: 34.4%;
+            top: 0;
+            right: 10.6%;
+            animation: imgOp 6s linear infinite;
+            opacity: 0;
+        }
+
+        .sec1_img2 {
+            width: 41.4%;
+            top: 11.8%;
+            left: 0%;
+            animation: imgOp2 6s linear infinite;
+            opacity: 0;
+        }
+
+        .sec1_img3 {
+            width: 34.4%;
+            bottom: 5.3%;
+            right: 0%;
+            animation: imgOp3 6s linear infinite;
+            opacity: 0;
+        }
+
+        .sec1_img {}
+
+        @keyframes imgOp {
+            0% {
+                opacity: 0;
+            }
+
+            3% {
+                opacity: 1;
+            }
+
+            23% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes imgOp2 {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            36% {
+                opacity: 1;
+            }
+
+            56% {
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes imgOp3 {
+            0% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            69% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @media (min-width: 500px) {
+            .sec1_txt1 {
+                font-size: 18px;
+            }
+
+            .sec1_tit {
+                font-size: 30px;
+            }
+
+            .sec1_date {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .sec1_txt1 {
+                font-size: 3.6vw;
+            }
+
+            .sec1_tit {
+                font-size: 6vw;
+            }
+
+            .sec1_date {
+                font-size: 3.6vw;
+            }
+
+            .sec1_rolling .swiper-slide img {
+                width: auto;
+                overflow: hidden;
+                height: 30.5vw;
+            }
+        }
+
+        .sec2 {
+            display: block;
+            background-color: #F5EBE1;
+            padding: 8% 0 12.5%;
+        }
+
+        .sec2_coupon_wrap {
+            width: 84%;
+            margin: 5% auto 0;
+        }
+
+        .sec2_coupon_txt {
+            line-height: 1.34;
+            color: #909090;
+            margin-bottom: 1%;
+        }
+
+        .sec2_coupon_item {
+            position: relative;
+        }
+
+        .sec2_coupon_item:before {
+            position: relative;
+            display: block;
+            content: '';
+            width: 100%;
+            padding-top: 52%;
+            background-color: #fff;
+            box-shadow:
+                0 0 0 1px #eee inset;
+        }
+
+        .sec2_coupon_item a {
+            padding-left: 7.5%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: start;
+            align-items:
+                flex-start;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+
+        .coupon_dis {
+            font-weight: 800;
+            line-height: 1.19;
+        }
+
+        .coupon_date {
+            font-weight: normal;
+            color: #909090;
+            line-height: 1.19;
+            margin-top: 1%;
+        }
+
+        .sec2_btn {
+            width: 83% !important;
+            text-align: center;
+            background-color: #E1AC76;
+            padding: 5% 0;
+            margin: 4% auto 0;
+            font-weight:
+                800;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .sec3_txt1 {
+            line-height: 1.318;
+            padding-bottom: 19%;
+        }
+
+        .sec3_txt2 {
+            line-height: 1.363;
+            padding-top: 3%
+        }
+
+
+        @media (min-width: 500px) {
+            .sec2_tit {
+                font-size: 37px;
+            }
+
+            .sec2_coupon_txt {
+                font-size: 18px;
+            }
+
+            .coupon_dis {
+                font-size: 55px;
+            }
+
+            .coupon_date {
+                font-size: 15px;
+            }
+
+            .sec2_btn {
+                border-radius: 5px;
+                font-size: 20px;
+            }
+
+            .sec3_txt1,
+            .sec3_txt2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .sec2_tit {
+                font-size: 7.4vw;
+            }
+
+            .sec2_coupon_txt {
+                font-size: 3.6vw;
+            }
+
+            .coupon_dis {
+                font-size: 11vw;
+            }
+
+            .coupon_date {
+                font-size: 3vw;
+            }
+
+            .sec2_btn {
+                border-radius: 1vw;
+                font-size: 4vw;
+            }
+
+            .sec3_txt1,
+            .sec3_txt2 {
+                font-size: 4.2vw;
+            }
+        }
+
+        .notice {
+            padding: 0 5%;
+            box-sizing: border-box;
+        }
+
+        .notice button {
+            width: 100%;
+            height: 66px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:
+                #f0f0f0;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .notice button p {
+            color: #555;
+            font-size: 21px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .notice button img {
+            width: 24px;
+            margin: 0 0 0 6px;
+            transition: 0.3s;
+        }
+
+        .notice button img.active {
+            transform: rotate(180deg);
+        }
+
+        .notice .hidden_menu {
+            width: 100%;
+            margin-top: 16px;
+        }
+
+        .notice .hidden_menu p {
+            text-align: left;
+            color: #303030;
+            line-height: 1.8;
+        }
+
+        .notice ul li {
+            text-align: left;
+            position: relative;
+            padding-left: 10px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .notice ul li:before {
+            display: block;
+            content: '-';
+            width: 10px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        @media (min-width: 500px) {
+            .notice button p {
+                font-size: 21px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .notice button p {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="sec sec1">
+                    <div claass="sec1_bg"><img src="../../assets/images/promotion/2023/0706_chubby/01-1_top.jpg"></div>
+                    <div class="sec1_textWrap ab">
+                        <div class="sec1_txt1">~10% · 5% 쿠폰 · 신규입점</div>
+                        <div class="sec1_tit">매일을 여행처럼<br>
+                            사랑스러운<br>
+                            처비칙스클럽</div>
+                        <div class="sec1_date">07/06(목) 오전 10:00 ~ 07/13(목) 오전 10:00</div>
+                    </div>
+                    <div class="sec1_rolling ab">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0706_chubby/text.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ab sec1_img">
+                        <div class="sec1_img1 ab"><img src="../../assets/images/promotion/2023/0706_chubby/img01.jpg">
+                        </div>
+                        <div class="sec1_img2 ab"><img src="../../assets/images/promotion/2023/0706_chubby/img02.jpg">
+                        </div>
+                        <div class="sec1_img3 ab"><img src="../../assets/images/promotion/2023/0706_chubby/img03.jpg">
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec2">
+                    <div class="sec2_coupon_wrap">
+                        <div class="sec2_coupon_item sec">
+                            <a href="javascript:void(0);">
+                                <div class="coupon_dis">5%</div>
+                                <div class="coupon_date">07/06(목) 오전 10:00 ~ 07/13(목) 오전 10:00</div>
+                            </a>
+                        </div>
+                    </div>
+                    <a class="sec2_btn btn" href="javascript:void(0);">쿠폰
+                        다운로드</a>
+                </section>
+                <section class="sec sec3">
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/0706_chubby/03_img1.jpg"></div>
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/0706_chubby/03_img2.jpg"></div>
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/0706_chubby/03_img3.jpg"></div>
+                    <div class="sec3_txt1">‘처비칙스클럽’ 은 가족의 모든 세대가<br>
+                        함께 입어도 자연스러운 룩을<br>
+                        선보이기 위해 시작했어요</div>
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/0706_chubby/03_img4.jpg"></div>
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/0706_chubby/03_img5.jpg"></div>
+                    <div class="sec3_txt2">이번 시즌은 좋아하는 영화<br>
+                        Little miss sunshine 를 보다 시작했어요.<br>
+                        막내딸 올리브의 꿈을 지켜주기 위해 고군분투하는<br>
+                        가족 이야기로, 보는 내내 올리브 덕분에<br>
+                        웃음이 지어져 계속 생각이 나더라구요.<br><br>
+                        영화의 행복한 기운이 처비 칙스 클럽의 옷을 입은<br>
+                        아이들과 가족 모두에게도 닿길 바라는 마음으로<br>
+                        이번 썸머 시즌을 준비했어요</div>
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/0706_chubby/03_img6.jpg"></div>
+                </section>
+                <section class="sec notice">
+                    <button>
+                        <p>꼭 읽어주세요!</p>
+                    </button>
+                    <div class="hidden_menu">
+                        <ul>
+                            <li>쿠폰은 무무즈 회원만 이용할 수 있습니다.</li>
+                            <li>쿠폰은 ID 1개당 여러 장씩 다운로드할 수 있으며, [마이페이지]
+                                > [쿠폰] 또는 결제 시 [사용 가능한 쿠폰] 에서 확인하실 수
+                                있습니다.</li>
+                            <li>이벤트 기간동안 쿠폰 적용 가능 상품은 수시로 변경되며,
+                                일부 상품의 경우 쿠폰 사용이 불가할 수 있습니다.</li>
+                            <li>입점 브랜드 재고 사정에 따라 상품 품절이나 환불 안내를 드릴 수
+                                있습니다.</li>
+                            <li>본 이벤트는 당사 사정에 의하여 사전 고지 없이 중단될 수
+                                있습니다.</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper = new Swiper(".sec1_rolling", {
+            slidesPerView: '0.333',
+            freeMode: true,
+            loop: true,
+            speed: 30000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+        $(function () {
+            $(".notice > button").click(function () {
+                $(this).children('img').toggleClass('active');
+                $(".hidden_menu").slideToggle();
+            });
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

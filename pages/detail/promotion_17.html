@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1_rollingWrap {
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+
+        .sec1_rolling .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .sec1_rolling .swiper-slide {
+            width: auto !important;
+            padding: 0;
+            height: 100%;
+        }
+
+        .sec1_rolling .swiper-slide img {
+            width: auto !important;
+            height: 712px;
+        }
+
+        @media (max-width: 500px) {
+            .sec1_rolling .swiper-slide img {
+                height: 142.4vw;
+            }
+        }
+
+        .sec2 {
+            display: block;
+            background-color: #222;
+            padding: 12% 8% 6%;
+            box-sizing: border-box;
+        }
+
+        .sec2_main_tit {
+            width: 100%;
+            font-weight: 600;
+            line-height: 1.194;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5%;
+            color: #fff;
+        }
+
+        .sec2_txt {
+            line-height: 1.2;
+            font-weight: 400;
+            text-align: left;
+            color: #fff;
+            opacity: 0.5;
+            margin-bottom: 3%;
+        }
+
+        .sec2_txt2 {
+            line-height: 1.2;
+            font-weight: 400;
+            text-align: left;
+            color: #fff;
+            font-weight: 500;
+            margin: 9% 0 2%;
+        }
+
+        .sec2_txt3 {
+            line-height: 1.2;
+            font-weight: 400;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 9%;
+        }
+
+        .sec2_tit {
+            width: 100%;
+            line-height: 1.19;
+            font-weight: 600;
+            color: #fff;
+            text-align: left;
+        }
+
+        .sec2 .sec2_tit_wrap {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 9.6% 0;
+        }
+
+        .sec2 .sec2_tit_wrap.sec2_tit_wrap2 {
+            border-bottom: 0 !important;
+            padding: 9.6% 0;
+        }
+
+        .sec2_gift_wrap {
+            width: 98%;
+            margin: 0 auto;
+        }
+
+        .sec2 .sec2_tit_wrap .sec2_titGroup {
+            display: flex;
+        }
+
+        .sec2 .sec2_tit_wrap .sec2_tit_sub {
+            width: 100px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .sec2 .sec2_tit_wrap .sec2_tit_g {
+            width: calc(100% - 100px);
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+        }
+
+        .sec3 {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        @media (min-width: 500px) {
+            .sec2_main_tit {
+                font-size: 36px;
+            }
+
+            .sec2_tit {
+                font-size: 24px;
+                padding-left: 1px;
+            }
+
+            .sec2_tit_sub {
+                font-size: 24px;
+            }
+
+            .sec2_txt,
+            .sec2_txt2,
+            .sec2_txt3 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .sec2_main_tit {
+                font-size: 7.2vw;
+            }
+
+            .sec2_tit {
+                font-size: 4.8vw;
+                padding-left: 0.2vw;
+            }
+
+            .sec2_tit_sub {
+                font-size: 4.8vw;
+            }
+
+            .sec2_txt,
+            .sec2_txt2,
+            .sec2_txt3 {
+                font-size: 3.6vw
+            }
+
+            .sec3 {
+                padding: 6vw;
+            }
+        }
+
+        .textPromo_wrap2 .notice_area ul li {
+            color: #eee;
+            font-weight: 300;
+        }
+
+        .textPromo_wrap2 {
+            padding: 0% 4.22% 8%;
+            box-sizing: border-box;
+            background-color: #222;
+        }
+
+        .textPromo_wrap2 .notice_area {
+            margin: 0px !important;
+        }
+
+        .textPromo_wrap2 .notice_area button {
+            background-color: transparent !important;
+            border: none;
+        }
+
+        .textPromo_wrap2 .notice_area {
+            position: relative;
+            margin: 0% auto 0;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding-top: 6%;
+        }
+
+        .textPromo_wrap2 .notice_area button {
+            width: 100%;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background: #f5f5f5;
+        }
+
+        .textPromo_wrap2 .notice_area button p {
+            width: auto;
+            text-align: center;
+            font-weight: 500;
+            font-size: 3.2vw !important;
+            line-height: 1.3;
+            color: #eee;
+        }
+
+        .textPromo_wrap2 .notice_area button img {
+            width: 12px !important;
+            height: auto;
+            margin: 0 0 0 6px;
+            transition: 0.3s;
+        }
+
+        .textPromo_wrap2 .notice_area button img.active {
+            transform: rotate(180deg);
+        }
+
+        .textPromo_wrap2 .notice_area .hidden_menu {
+            width: 100%;
+            margin-top: 5%;
+            display: none;
+        }
+
+        .textPromo_wrap2 .notice_area .hidden_menu p {
+            text-align: left;
+            color: #909090;
+            font-size: 3.7vw;
+            line-height: 1.8;
+        }
+
+        .textPromo_wrap2 .notice_area ul li {
+            text-align: left;
+            position: relative;
+            padding-left: 2.6%;
+            font-size: 3.2vw;
+            line-height: 1.33;
+            color: #666;
+            letter-spacing: -0.3px;
+        }
+
+        .textPromo_wrap2 .notice_area ul li+li {
+            margin-top: 6px;
+        }
+
+        .textPromo_wrap2 .notice_area ul li:before {
+            display: block;
+            content: '·';
+            width: 10px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="sec sec1">
+                    <div class="sec1_img"><img src="../../assets/images/promotion/2023/1012_icebiscuit/1_top_bg.jpg">
+                    </div>
+                    <div class="sec1_rollingWrap ab">
+                        <div class="sec1_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1012_icebiscuit/1_top_slide_1.png"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1012_icebiscuit/1_top_slide_2.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec2">
+                    <div class="sec2_main_tit">아이스비스킷<br>입점기념 특별한 혜택</div>
+                    <div class="sec2_tit_wrap">
+                        <div class="sec2_titGroup">
+                            <div class="sec2_tit_sub">혜택 01</div>
+                            <div class="sec2_tit_g">
+                                <div class="sec2_01_txt sec2_txt">일부 상품 무무즈 단독</div>
+                                <div class="sec2_01_tit sec2_tit">아울렛 특가 ~60%할인</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec2_tit_wrap sec2_tit_wrap2">
+                        <div class="sec2_titGroup">
+                            <div class="sec2_tit_sub">혜택 02</div>
+                            <div class="sec2_tit_g">
+                                <div class="sec2_04_tit sec2_tit">15만원 이상 구매시 사은품 증정</div>
+                                <div class="sec2_04_txt1 sec2_txt2">아이스비스킷 백팩 15만원 이상 구매시</div>
+                                <div class="sec2_04_txt1 sec2_txt3">미니 매트(네이비) 증정</div>
+                            </div>
+                        </div>
+                        <div class="sec2_gift_wrap">
+                            <img src="../../assets/images/promotion/2023/1012_icebiscuit/gift.png">
+                        </div>
+                    </div>
+                    <div class="sec2_tit_wrap">
+                        <div class="sec2_titGroup">
+                            <div class="sec2_tit_sub">혜택 03</div>
+                            <div class="sec2_tit_g">
+                                <div class="sec2_04_tit sec2_tit">신규 회원 가입시 10%쿠폰</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sec sec3 hidden">
+                    <div class="sec3_img"><a href="/goods/event_sale.php?sno=2015"><img
+                                src="../../assets/images/promotion/2023/1012_icebiscuit/3_bn.jpg"></a></div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper1 = new Swiper(".sec1_rolling", {
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 6000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+        $(function () {
+            $(".notice_area > button").click(function () {
+                $(this).children('img').toggleClass('active');
+                $(".hidden_menu").slideToggle();
+            });
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>
