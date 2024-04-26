@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1 {
+            overflow: hidden;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .sec1_rolling_wrap {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .sec1_rolling_wrap::before {
+            display: block;
+            position: relative;
+            left: 0;
+            top: 0;
+            padding-bottom: 160%;
+            width: 100%;
+            content: '';
+        }
+
+        .sec1_rolling {
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .sec1_rolling {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .sec1_rolling .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            transition-timing-function: linear;
+        }
+
+        .sec1_rolling .swiper-slide {
+            height: auto;
+        }
+
+        .sec1_img {
+            width: 100%;
+        }
+
+        .sec1_img2,
+        .sec1_img3 {
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        .sec1_img2 {
+            animation: showIn01-2 6s infinite;
+            animation-fill-mode: none;
+        }
+
+        .sec1_img3 {
+            animation: showIn01-3 6s infinite;
+            animation-fill-mode: none;
+        }
+
+        @keyframes showIn01-2 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1
+            }
+
+            90% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes showIn01-3 {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            90% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .sec1_tit {
+            left: 0;
+            top: 0;
+            z-index: 4;
+            width: 100%;
+        }
+
+        .sec3-1 {
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: #5EB6D2;
+        }
+
+        .sec4-1 {
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: #5E93D2;
+        }
+
+        .sec5-1 {
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: #6967BA;
+        }
+
+        .sec3-1_rolling_wrap,
+        .sec4-1_rolling_wrap,
+        .sec5-1_rolling_wrap {
+            width: 88%;
+            height: auto;
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .sec_page {
+            width: 100%;
+            ;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .sec_page .swiper-pagination {
+            bottom: 3% !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sec_page .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec_page .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            margin: 0 4px !important;
+            background-color: #fff;
+            opacity: 0.6 !important;
+        }
+
+        .sec_page .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #fff !important;
+            opacity: 1 !important;
+        }
+
+        .sec2_roll {
+            width: 100%;
+            padding: 0 6%;
+            box-sizing: border-box;
+            height: auto;
+            position: absolute;
+            bottom: 17.2%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        .sec2_roll .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .sec2_roll .swiper-slide {
+            width: auto !important;
+            padding-right: 10px;
+            height: 100%;
+        }
+
+        .sec2_roll .swiper-slide:last-child {
+            padding: 0;
+        }
+
+        .sec2_roll .swiper-slide img {
+            width: auto;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .sec2_roll_txt {
+            width: 100%;
+            left: 20px;
+            top: 20px;
+            z-index: 9;
+        }
+
+        .sec3_tag {
+            width: 113px;
+        }
+
+        .sec4_tag {
+            width: 75px;
+        }
+
+        .sec5_tag {
+            width: 75px;
+        }
+
+        @media (max-width: 500px) {
+
+            .sec_page .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .sec_page .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 1.6vw;
+                height: 1.6vw;
+                margin: 0 0.8vw !important;
+            }
+
+            .sec2_roll_txt {
+                left: 4vw;
+                top: 4vw;
+            }
+
+            .sec3_tag {
+                width: 22.6vw
+            }
+
+            .sec4_tag {
+                width: 15vw;
+            }
+
+            .sec5_tag {
+                width: 15vw;
+            }
+
+            .sec2_roll .swiper-slide {
+                padding-right: 2vw;
+            }
+
+            .sec2_roll .swiper-slide img {
+                height: 80vw;
+            }
+        }
+
+        .sec8 {
+            width: 100%;
+            padding: 12% 0 1%;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .sec8_txt {
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            padding-bottom: 7%;
+        }
+
+        .sec8_img {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            .sec8_txt {
+                font-size: 6vw;
+            }
+        }
+
+        .textPromo_wrap2 {
+            background-color: #fff;
+        }
+
+        .textPromo_wrap2 .notice_area {
+            margin: 0px !important;
+        }
+
+        .textPromo_wrap2 .notice_area button {
+            background-color: transparent !important;
+            border: none;
+        }
+
+        .textPromo_wrap2 .notice_area {
+            position: relative;
+            margin: 6% auto 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .textPromo_wrap2 .notice_area button {
+            width: 100%;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background: #fff;
+        }
+
+        .textPromo_wrap2 .notice_area button p {
+            width: auto;
+            text-align: center;
+            font-weight: 500;
+            font-size: 3.2vw !important;
+            line-height: 1.3;
+        }
+
+        .textPromo_wrap2 .notice_area button img {
+            width: 12px !important;
+            height: auto;
+            margin: 0 0 0 6px;
+            transition: 0.3s;
+        }
+
+        .textPromo_wrap2 .notice_area button img.active {
+            transform: rotate(180deg);
+        }
+
+        .textPromo_wrap2 .notice_area .hidden_menu {
+            width: 100%;
+            margin-top: 5%;
+            display: none;
+        }
+
+        .textPromo_wrap2 .notice_area .hidden_menu p {
+            text-align: left;
+            color: #909090;
+            font-size: 3.7vw;
+            line-height: 1.8;
+        }
+
+        .textPromo_wrap2 .notice_area ul li {
+            text-align: left;
+            position: relative;
+            padding-left: 2.6%;
+            font-size: 3.2vw;
+            line-height: 1.33;
+            color: #666;
+            letter-spacing: -0.3px;
+        }
+
+        .textPromo_wrap2 .notice_area ul li+li {
+            margin-top: 6px;
+        }
+
+        .textPromo_wrap2 .notice_area ul li:before {
+            display: block;
+            content: '·';
+            width: 10px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .textPromo_wrap2 {
+            padding: 5.33% 4.22% 8%;
+            box-sizing: border-box;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="sec sec1">
+                    <div class="sec1_img1 sec1_img"><img
+                            src="../../assets/images/promotion/2023/1102_outer/01-1_img.jpg">
+                    </div>
+                    <div class="sec1_img2 sec1_img ab"><img
+                            src="../../assets/images/promotion/2023/1102_outer/01-2_img.jpg">
+                    </div>
+                    <div class="sec1_img3 sec1_img ab"><img
+                            src="../../assets/images/promotion/2023/1102_outer/01-3_img.jpg">
+                    </div>
+                    <div class="sec1_rolling_wrap">
+                        <div class="sec1_rolling ab">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/01-0_snow.png"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/01-0_snow.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec1_tit ab"><img src="../../assets/images/promotion/2023/1102_outer/01-0_text.png">
+                    </div>
+                </section>
+
+                <section class="sec sec2">
+                    <div class="sec2_img"><img src="../../assets/images/promotion/2023/1102_outer/02_intro.jpg"></div>
+                </section>
+                <section class="sec sec3-1">
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/1102_outer/03-1_text.jpg"></div>
+                    <div class="sec3-1_rolling_wrap">
+                        <div class="sec3-1_rolling sec_page">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-2-1_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-2-2_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-2-3_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-2-4_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-2-5_img.jpg"></li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                            <div class="sec2_roll_txt sec3_tag ab"><img
+                                    src="../../assets/images/promotion/2023/1102_outer/03-tag.png"></div>
+                        </div>
+                        <div><img src="../../assets/images/promotion/2023/1102_outer/03-2_text.jpg"></div>
+                    </div>
+                </section>
+                <section class="sec sec3-2">
+                    <div class="sec3_img"><img src="../../assets/images/promotion/2023/1102_outer/03-0_bg.jpg"></div>
+                    <div class="sec3-2_rolling_wrap sec2_roll">
+                        <div class="sec3-2_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-3-1_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-3-2_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-3-3_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/03-3-4_img.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec4-1">
+                    <div class="sec4_img"><img src="../../assets/images/promotion/2023/1102_outer/04-1_text.jpg"></div>
+                    <div class="sec4-1_rolling_wrap">
+                        <div class="sec4-1_rolling sec_page">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-2-1_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-2-2_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-2-3_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-2-4_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-2-5_img.jpg"></li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                            <div class="sec2_roll_txt sec4_tag ab"><img
+                                    src="../../assets/images/promotion/2023/1102_outer/04-tag.png"></div>
+                        </div>
+                        <div><img src="../../assets/images/promotion/2023/1102_outer/04-2_text.jpg"></div>
+                    </div>
+                </section>
+                <section class="sec sec4-2">
+                    <div class="sec4_img"><img src="../../assets/images/promotion/2023/1102_outer/04-0_bg.jpg"></div>
+                    <div class="sec4-2_rolling_wrap sec2_roll">
+                        <div class="sec4-2_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-3-1_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-3-2_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-3-3_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/04-3-4_img.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec5-1">
+                    <div class="sec5_img"><img src="../../assets/images/promotion/2023/1102_outer/05-1_text.jpg"></div>
+                    <div class="sec5-1_rolling_wrap">
+                        <div class="sec5-1_rolling sec_page">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-2-1_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-2-2_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-2-3_img.jpg"></li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                            <div class="sec2_roll_txt sec5_tag ab"><img
+                                    src="../../assets/images/promotion/2023/1102_outer/05-tag.png"></div>
+                        </div>
+                        <div><img src="../../assets/images/promotion/2023/1102_outer/05-2_text.jpg"></div>
+                    </div>
+                </section>
+                <section class="sec sec5-2">
+                    <div class="sec5_img"><img src="../../assets/images/promotion/2023/1102_outer/05-0_bg.jpg"></div>
+                    <div class="sec5-2_rolling_wrap sec2_roll">
+                        <div class="sec5-2_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-3-1_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-3-2_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-3-3_img.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1102_outer/05-3-4_img.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec8">
+                    <div class="sec8_txt">쿠폰 왔습니다</div>
+                    <div class="sec8_img"><a href="javascript:couponLinkDown('6073304115000001787');"><img
+                                src="../../assets/images/promotion/2023/1102_outer/coupon.png"></a></div>
+                </section>
+
+                <div class="textPromo_wrap2">
+                    <div class="notice_area">
+                        <button>
+                            <p>유의사항</p>
+                        </button>
+                        <div class="hidden_menu">
+                            <ul>
+                                <li>쿠폰 사용기간 : 2023.11.02(목) 10:00 - 2023.11.13(월) 10:00</li>
+                                <li>무무즈 회원에 한해, ID당 1회 다운로드 가능합니다.</li>
+                                <li>쿠폰은 [마이페이지] > [쿠폰] 또는 결제 시 [사용 가능한 쿠폰] 에서 확인하실 수 있습니다.</li>
+                                <li>쿠폰 사용 시에는 유효기간을 꼭 확인해주세요.</li>
+                                <li>본 쿠폰은 해당 기획전 내 상품에만 적용 가능합니다.</li>
+                                <li>본 쿠폰은 다른 쿠폰과 중복 사용 불가하며, 일부상품의 경우 쿠폰 사용이 불가할 수 있습니다.</li>
+                                <li>브랜드사 재고 사정에 따라 품절 및 환불 안내를 드릴 수 있습니다.</li>
+                                <li>본 이벤트는 당사 사정에 의하여 사전 고지 없이 중단될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper = new Swiper(".sec1_rolling", {
+            direction: "vertical",
+            slidesPerView: 'auto',
+            loop: true,
+            centeredSlides: true,
+            speed: 8000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                reverseDirection: true,
+            }
+        });
+        var swiper31 = new Swiper(".sec3-1_rolling", {
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 1500
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper32 = new Swiper(".sec3-2_rolling", {
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 4500,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+        var swiper41 = new Swiper(".sec4-1_rolling", {
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 1500
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper42 = new Swiper(".sec4-2_rolling", {
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 4500,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+        var swiper51 = new Swiper(".sec5-1_rolling", {
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 1500
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper52 = new Swiper(".sec5-2_rolling", {
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 4500,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+        $(function () {
+            $(".notice_area > button").click(function () {
+                $(this).children('img').toggleClass('active');
+                $(".hidden_menu").slideToggle();
+            });
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

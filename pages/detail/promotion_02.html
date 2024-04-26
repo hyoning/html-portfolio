@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .secTop_textWrap {
+            width: 100%;
+            top: 0%;
+            z-index: 1;
+        }
+
+        .secTop_rolling {
+            width: 100%;
+        }
+
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1_rolling,
+        .sec1_rolling_wrap {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .sec1_rolling {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .sec1_rolling .swiper-pagination {
+            width: 92%;
+            display: flex;
+            gap: 5px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 2.5%;
+            z-index: 2;
+            height: 3px;
+        }
+
+        .sec1_rolling .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec1_rolling .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 100%;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5px;
+            opacity: 1;
+            margin: 0 !important;
+        }
+
+        .sec1_rolling .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .secTop1_rollingWrap {
+            width: 72%;
+            right: 0;
+            bottom: 13.3%;
+        }
+
+        .secTop1_frame {
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        .sec3_btn {
+            width: 88%;
+            display: block;
+            height: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 9.1%;
+        }
+
+        @media (max-width: 500px) {
+            .sec3_btn {
+                height: 14vw;
+            }
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <div class="secTop_img"><img src="../../assets/images/promotion/2023/1023_detamy_project/00_top.jpg">
+                </div>
+                <section class="sec secTop">
+                    <div
+                        class="secTop_rolling swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
+                        <ul class="swiper-wrapper" id="swiper-wrapper-7af101183828e749f" aria-live="off"
+                            style="transition-duration: 1000ms;">
+                            <li class="item swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
+                                data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                style="width: 320px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 1000ms;">
+                                <img src="../../assets/images/promotion/2023/1023_detamy_project/01-3_img.jpg">
+                            </li>
+                            <li class="item swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0"
+                                role="group" aria-label="1 / 3"
+                                style="width: 320px; opacity: 1; transform: translate3d(-320px, 0px, 0px); transition-duration: 1000ms;">
+                                <img src="../../assets/images/promotion/2023/1023_detamy_project/01-1_img.jpg">
+                            </li>
+                            <li class="item swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                                style="width: 320px; opacity: 1; transform: translate3d(-640px, 0px, 0px); transition-duration: 1000ms;">
+                                <img src="../../assets/images/promotion/2023/1023_detamy_project/01-2_img.jpg">
+                            </li>
+                            <li class="item swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
+                                data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                style="width: 320px; opacity: 1; transform: translate3d(-960px, 0px, 0px); transition-duration: 1000ms;">
+                                <img src="../../assets/images/promotion/2023/1023_detamy_project/01-3_img.jpg">
+                            </li>
+                            <li class="item swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active"
+                                data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                style="width: 320px; opacity: 1; transform: translate3d(-1280px, 0px, 0px); transition-duration: 1000ms;">
+                                <img src="../../assets/images/promotion/2023/1023_detamy_project/01-1_img.jpg">
+                            </li>
+                        </ul> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <div class="secTop_textWrap ab"> <img
+                            src="../../assets/images/promotion/2023/1023_detamy_project/01-0_text_ver2.png">
+                    </div>
+                </section>
+                <section class="sec secTop1">
+                    <div class="sec secTop1_img"><img
+                            src="../../assets/images/promotion/2023/1023_detamy_project/02_intro_1.jpg">
+                    </div>
+                    <div class="sec secTop1_img"><img
+                            src="../../assets/images/promotion/2023/1023_detamy_project/02_intro_1-1.jpg">
+                        <div class="secTop1_rollingWrap ab">
+                            <div
+                                class="secTop1_rolling swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
+                                <ul class="swiper-wrapper" id="swiper-wrapper-3f797c3103edadd9b" aria-live="off"
+                                    style="transition-duration: 1000ms;">
+                                    <li class="item swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
+                                        data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                        style="width: 230px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 1000ms;">
+                                        <img src="../../assets/images/promotion/2023/1023_detamy_project/02-2-3.jpg">
+                                    </li>
+                                    <li class="item swiper-slide swiper-slide-duplicate-active"
+                                        data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                        style="width: 230px; opacity: 1; transform: translate3d(-230px, 0px, 0px); transition-duration: 1000ms;">
+                                        <img src="../../assets/images/promotion/2023/1023_detamy_project/02-2-1.jpg">
+                                    </li>
+                                    <li class="item swiper-slide" data-swiper-slide-index="1" role="group"
+                                        aria-label="2 / 3"
+                                        style="width: 230px; opacity: 1; transform: translate3d(-460px, 0px, 0px); transition-duration: 1000ms;">
+                                        <img src="../../assets/images/promotion/2023/1023_detamy_project/02-2-2.jpg">
+                                    </li>
+                                    <li class="item swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
+                                        data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                        style="width: 230px; opacity: 1; transform: translate3d(-690px, 0px, 0px); transition-duration: 1000ms;">
+                                        <img src="../../assets/images/promotion/2023/1023_detamy_project/02-2-3.jpg">
+                                    </li>
+                                    <li class="item swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active"
+                                        data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                        style="width: 230px; opacity: 1; transform: translate3d(-920px, 0px, 0px); transition-duration: 1000ms;">
+                                        <img src="../../assets/images/promotion/2023/1023_detamy_project/02-2-1.jpg">
+                                    </li>
+                                </ul> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                            <div class="secTop1_frame ab"><img
+                                    src="../../assets/images/promotion/2023/1023_detamy_project/02-2.png">
+                            </div>
+                            <div class="secTop1_insta"><img
+                                    src="../../assets/images/promotion/2023/1023_detamy_project/02-insta.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec secTop1_img"><img
+                            src="../../assets/images/promotion/2023/1023_detamy_project/02_intro_2_ver2.jpg">
+                    </div>
+                </section>
+                <section class="sec sec1">
+                    <!-- swiper 1 -->
+                    <div class="sec1_rolling_wrap">
+                        <div
+                            class="sec1_rolling sec1_rolling1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-3fb6a0a26ea1099b2" aria-live="polite"
+                                style="transform: translate3d(-320px, 0px, 0px); transition-duration: 0ms;">
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/03-5_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 5" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/03-1_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                                    aria-label="2 / 5" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/03-2_img.jpg">
+                                </li>
+                                <li class="item swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 5" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/03-3_img.jpg">
+                                </li>
+                                <li class="item swiper-slide" data-swiper-slide-index="3" role="group"
+                                    aria-label="4 / 5" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/03-4_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="4"
+                                    role="group" aria-label="5 / 5" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/03-5_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/03-1_img.jpg">
+                                </li>
+                            </ul>
+                            <div
+                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                    role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                    tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                                    tabindex="0" role="button" aria-label="Go to slide 5"></span></div> <span
+                                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec1">
+                    <!-- swiper 1 -->
+                    <div class="sec1_rolling_wrap">
+                        <div
+                            class="sec1_rolling sec1_rolling2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-8471d68ffe105672" aria-live="polite"
+                                style="transform: translate3d(-320px, 0px, 0px); transition-duration: 0ms;">
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/04-4_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/04-1_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                                    aria-label="2 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/04-2_img.jpg">
+                                </li>
+                                <li class="item swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/04-3_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3"
+                                    role="group" aria-label="4 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/04-4_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/04-1_img.jpg">
+                                </li>
+                            </ul>
+                            <div
+                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                    role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                    tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 4"></span></div> <span class="swiper-notification"
+                                aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec1">
+                    <!-- swiper 1 -->
+                    <div class="sec1_rolling_wrap">
+                        <div
+                            class="sec1_rolling sec1_rolling3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-d1a281898b53957e" aria-live="polite"
+                                style="transform: translate3d(-320px, 0px, 0px); transition-duration: 0ms;">
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/05-4_img_m.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/05-1_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                                    aria-label="2 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/05-2_img.jpg">
+                                </li>
+                                <li class="item swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/05-3_img_m.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3"
+                                    role="group" aria-label="4 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/05-4_img_m.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/05-1_img.jpg">
+                                </li>
+                            </ul>
+                            <div
+                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                    role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                    tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 4"></span></div> <span class="swiper-notification"
+                                aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec1">
+                    <!-- swiper 1 -->
+                    <div class="sec1_rolling_wrap">
+                        <div
+                            class="sec1_rolling sec1_rolling4 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-35b8b875dda108688" aria-live="polite"
+                                style="transform: translate3d(-320px, 0px, 0px); transition-duration: 0ms;">
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                    data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/06-4_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                    role="group" aria-label="1 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/06-1_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                                    aria-label="2 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/06-2_img.jpg">
+                                </li>
+                                <li class="item swiper-slide" data-swiper-slide-index="2" role="group"
+                                    aria-label="3 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/06-3_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3"
+                                    role="group" aria-label="4 / 4" style="width: 320px;"><img
+                                        src="../../assets/images/promotion/2023/1023_detamy_project/06-4_img.jpg">
+                                </li>
+                                <li class="item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                    data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 320px;">
+                                    <img src="../../assets/images/promotion/2023/1023_detamy_project/06-1_img.jpg">
+                                </li>
+                            </ul>
+                            <div
+                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                    role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                    tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="Go to slide 4"></span></div> <span class="swiper-notification"
+                                aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    var swiper1 = new Swiper(".secTop_rolling", {
+                        effect: 'fade',
+                        slidesPerView: 1,
+                        loop: true,
+                        centeredSlides: true,
+                        speed: 1000,
+                        autoplay: {
+                            delay: 500,
+                            disableOnInteraction: false
+                        }
+                    });
+                    var swiper12 = new Swiper(".secTop1_rolling", {
+                        effect: 'fade',
+                        slidesPerView: 1,
+                        loop: true,
+                        centeredSlides: true,
+                        speed: 1000,
+                        autoplay: {
+                            delay: 500,
+                            disableOnInteraction: false
+                        }
+                    });
+                    var swiper2 = new Swiper(".sec_rolling2", {
+                        effect: 'fade',
+                        slidesPerView: 1,
+                        loop: true,
+                        centeredSlides: true,
+                        speed: 1000,
+                        autoplay: {
+                            delay: 500,
+                            disableOnInteraction: false
+                        }
+                    });
+                    var swiper31 = new Swiper(".sec1_rolling1", {
+                        loop: true,
+                        speed: 2000,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        slidesPerView: 1,
+                        draggable: true,
+                        autoplay: false,
+                    });
+                    var swiper32 = new Swiper(".sec1_rolling2", {
+                        loop: true,
+                        speed: 2000,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        slidesPerView: 1,
+                        draggable: true,
+                        autoplay: false,
+                    });
+                    var swiper33 = new Swiper(".sec1_rolling3", {
+                        loop: true,
+                        speed: 2000,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        slidesPerView: 1,
+                        draggable: true,
+                        autoplay: false,
+                    });
+                    var swiper34 = new Swiper(".sec1_rolling4", {
+                        loop: true,
+                        speed: 2000,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        slidesPerView: 1,
+                        draggable: true,
+                        autoplay: false,
+                    });
+                </script>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script>
+
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

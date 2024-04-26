@@ -8,9 +8,19 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.promotion_contain ul,
 .lookbook_contain ul {
     grid-column-gap: 1rem;
     grid-row-gap: 2rem;
+}
+
+.promotion_detail_contain {
+    width: 100%;
+    margin: 5% auto 0;
+    max-width: 500px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
 }
 
 .lookbook_detail_contain {
@@ -112,4 +122,9 @@
         border: 2px solid #222;
     }
 
+    .promotion_detail_contain,
+    .lookbook_detail_contain {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+    }
 }

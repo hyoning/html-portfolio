@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1_bg {
+            width: 100%;
+        }
+
+        .sec1_rolling {
+            width: 79%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 17%;
+            overflow: hidden;
+            box-sizing: border-box;
+            border-radius: 12.5px;
+        }
+
+        .sec1_rolling .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .sec1_rolling .swiper-slide {
+            padding: 0;
+            height: 100%;
+        }
+
+        .sec1_rolling .swiper-slide img {
+            overflow: hidden;
+        }
+
+        .sec1-1_textWrap1 {
+            left: 8%;
+            top: 10.8%;
+            text-align: left;
+        }
+
+        .sec1-1_tit {
+            font-weight: 700;
+            line-height: 1.4;
+            padding-bottom: 5.2%;
+        }
+
+        .sec1-1_txt {
+            line-height: 1.62;
+        }
+
+        .sec1-1_img {
+            width: 78.2%;
+            left: 8%;
+            top: 28.8%;
+        }
+
+        .sec1-1_textWrap2 {
+            right: 11.7%;
+            bottom: 6.18%;
+            text-align: left;
+        }
+
+        .sec2_rolling {
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 11.7%;
+            padding-top: 4%
+        }
+
+        .sec2_slider {
+            width: 92%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .sec2_rolling .swiper-slide {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .sec2_rolling .swiper-slide::before {
+            content: '';
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 153%;
+        }
+
+        .sec2_rolling .swiper-slide img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .sec2_rolling .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 29% !important;
+        }
+
+        .sec2_rolling .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #D9D9D9;
+            opacity: 1;
+        }
+
+        .sec2_rolling .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #222;
+            opacity: 1;
+        }
+
+        .sec2_textWrap {
+            left: 4%;
+            bottom: 0;
+            text-align: left;
+            opacity: 0;
+        }
+
+        .sec2_rolling .swiper-slide-active .sec2_textWrap {
+            animation: showexp 1s linear alternate;
+            opacity: 1;
+        }
+
+        @keyframes showexp {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .sec2_frame1 {
+            position: absolute;
+            left: 0;
+            top: 0%;
+            width: 6.5%;
+            z-index: 5;
+        }
+
+        .sec2_frame2 {
+            position: absolute;
+            right: 0;
+            top: 0%;
+            width: 6.5%;
+            z-index: 5;
+        }
+
+        .sec2_tit {
+            line-height: 1.40;
+            font-weight: 700;
+            padding-bottom: 4%;
+        }
+
+        .sec2_txt {
+            line-height: 1.62;
+        }
+
+        .sec3_textWrap {
+            left: 8%;
+            top: 9.52%;
+            text-align: left;
+        }
+
+        .sec3_tit {
+            line-height: 1.40;
+            font-weight: 700;
+            color: #fff;
+            padding-bottom: 6%;
+        }
+
+        .sec3_txt {
+            line-height: 1.62;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .sec3_rolling {
+            width: 100%;
+            left: 0;
+            top: 30.58%;
+            background: #fff;
+        }
+
+        .sec3_rolling .swiper-slide img {
+            opacity: 0;
+        }
+
+        .sec3_rolling .swiper-slide-active img {
+            animation: showimg 1s linear alternate;
+            opacity: 1;
+        }
+
+        @keyframes showimg {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sec4_textWrap {
+            left: 8%;
+            top: 8.9%;
+            text-align: left;
+        }
+
+        .sec4_tit {
+            line-height: 1.40;
+            font-weight: 700;
+            padding-bottom: 5.6%;
+        }
+
+        .sec4_txt {
+            line-height: 1.62;
+        }
+
+        .sec4_product {
+            width: 84%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 24.37%;
+        }
+
+        .sec4_product li {
+            width: 100%;
+            padding-bottom: 14%;
+            margin-bottom: 16%;
+            border-bottom: 1px solid #222;
+        }
+
+        .sec4_product li a {
+            width: 100%;
+            display: block;
+            position: relative;
+        }
+
+        .sec4_product li a::before {
+            content: '';
+            position: relative;
+            display: block;
+            width: 100%;
+            padding-bottom: 47.619%;
+        }
+
+        .sec4_product li a img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .sec4_product li:last-child {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        .sec4_product .sec4_prd_txt {
+            line-height: 1.62;
+            text-align: left;
+            padding-top: 7.5%;
+        }
+
+        .sec4_btn {
+            width: 84%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 6%;
+        }
+
+        .sec4_btn a {
+            display: block;
+            width: 100%;
+            padding: 7% 0;
+            background: #222;
+            color: #fff;
+            font-weight: 700;
+            border-radius:
+                5px;
+        }
+
+        @media (min-width: 500px) {
+
+            .sec1-1_tit,
+            .sec2_tit,
+            .sec3_tit,
+            .sec4_tit {
+                font-size: 32px
+            }
+
+            .sec1-1_txt,
+            .sec2_txt,
+            .sec3_txt,
+            .sec4_txt,
+            .sec4_prd_txt,
+            .sec4_btn a {
+                font-size: 21px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .sec1_rolling {
+                border-radius: 2.5vw;
+            }
+
+            .sec1-1_tit,
+            .sec2_tit,
+            .sec3_tit,
+            .sec4_tit {
+                font-size: 6.4vw;
+            }
+
+            .sec1-1_txt,
+            .sec2_txt,
+            .sec3_txt,
+            .sec4_txt,
+            .sec4_prd_txt,
+            .sec4_btn a {
+                font-size: 4.2vw;
+            }
+
+            .sec2_rolling .swiper-pagination-bullet {
+                width: 2.4vw;
+                height: 2.4vw;
+            }
+
+            .sec4_btn a {
+                border-radius: 1vw;
+            }
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="sec sec1">
+                    <div class="sec1_bg sec"><img src="../../assets/images/promotion/2023/0710_detamy/01_bg.jpg"></div>
+                    <div class="sec1_rolling ab">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/01_img1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/01_img2.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/01_img3.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/01_img4.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec1-1">
+                    <div class="sec1-1_bg sec"><img src="../../assets/images/promotion/2023/0710_detamy/01-1_bg.jpg">
+                    </div>
+                    <div class="sec1-1_textWrap1 ab">
+                        <div class="sec1-1_tit">엄마, 나 이 옷 입을래!</div>
+                        <div class="sec1-1_txt">우리 아이들의 매력을 더욱 빛내줄 수 있는<br>
+                            다채로운 컬러와 다양한 디자인의 편한 옷을<br>
+                            시즌별 프로젝트로 소개하는 브랜드입니다.</div>
+                    </div>
+                    <div class="sec1-1_img ab"><img src="../../assets/images/promotion/2023/0710_detamy/01-1_img1.png">
+                    </div>
+                    <div class="sec1-1_textWrap2 ab">
+                        <div class="sec1-1_tit">아이들의 옷장 속에서<br>
+                            매번 손이 가는 옷을 만들어<br>
+                            주고 싶었어요.</div>
+                        <div class="sec1-1_txt">시간이 흘러도 오래오래 입을 수 있는<br>
+                            우리 아이들의 옷을 만들고 있습니다.<br>
+                            아이들의 화사한 미소처럼 밝은 컬러감과<br>
+                            마음껏 뛰어놀아도 편안한 옷을 만드는 게<br>
+                            가장 중요해요.</div>
+                    </div>
+                </section>
+                <section class="sec sec2">
+                    <div class="sec2_bg sec"><img src="../../assets/images/promotion/2023/0710_detamy/02_bg.jpg"></div>
+                    <div class="sec2_rolling ab">
+                        <div class="sec2_frame1 ab"><img src="../../assets/images/promotion/2023/0710_detamy/f1.png">
+                        </div>
+                        <div class="sec2_frame2 ab"><img src="../../assets/images/promotion/2023/0710_detamy/f2.png">
+                        </div>
+                        <div class="sec2_slider">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0710_detamy/02_img1.jpg">
+                                    <div class="sec2_textWrap ab">
+                                        <div class="sec2_tit">인스타에서 핫한 그 브랜드</div>
+                                        <div class="sec2_txt">어머! 그 옷 예쁘다. 어디서 샀어?<br>
+                                            이런 얘기 들으면 괜히 뿌듯해지곤 하죠.<br>
+                                            나만 알고 싶은 인스타 감성 브랜드 드타미 프로젝트.</div>
+                                    </div>
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0710_detamy/02_img2.jpg">
+                                    <div class="sec2_textWrap ab">
+                                        <div class="sec2_tit">캘린더 알림 설정하고 오픈런 준비</div>
+                                        <div class="sec2_txt">드타미 프로젝트의 감각적이고 멋진 제품을<br>
+                                            구매하기 위해서라면 오픈 시간 체크와<br>
+                                            알림 설정하는 것은 필수죠.</div>
+                                    </div>
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0710_detamy/02_img3.jpg">
+                                    <div class="sec2_textWrap ab">
+                                        <div class="sec2_tit">왜 캥거루 슈트일까요?</div>
+                                        <div class="sec2_txt">쉽게 입힐 수 있고 다양한 코디가 ∂c가능하며,<br>
+                                            활동성이 점점 커지는 아이들에게는 편하답니다.<br>
+                                            아기 캥거루를 연상케 하는 포켓이 귀여움을 더해요.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="swiper-paginatdion"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec3">
+                    <div class="sec3_bg sec"><img src="../../assets/images/promotion/2023/0710_detamy/03_bg.jpg"></div>
+                    <div class="sec3_textWrap ab">
+                        <div class="sec3_tit">23 여름 시즌 한정 컬러<br>오직 무무즈에서만!</div>
+                        <div class="sec3_txt">상큼한 블루-오렌지 스트라이프와<br>
+                            비비드한 레드-핑크 스트라이프,<br>
+                            그리고 호불호 없는 블랙-화이트 스트라이프</div>
+                    </div>
+                    <div class="sec3_rolling ab">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/03_img1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/03_img2.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/0710_detamy/03_img3.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec4">
+                    <div class="sec4_bg sec"><img src="../../assets/images/promotion/2023/0710_detamy/04_bg.jpg"></div>
+                    <div class="sec4_textWrap ab">
+                        <div class="sec4_tit">드타미 프로젝트 입점 기념<br>
+                            베스트 상품 ~20% 단독특가</div>
+                        <div class="sec4_txt">07/10(월) 오전 10:00 ~ 07/17(월) 오전 10:00</div>
+                    </div>
+                    <div class="sec4_product ab">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);"><img
+                                        src="../../assets/images/promotion/2023/0710_detamy/04_img1.png"></a>
+                                <div class="sec4_prd_txt">밝은 베이지 톤으로 제작되어 어떤 컬러의<br>
+                                    수영복과도 잘 어울리며 오래오래 사용할 수 있도록<br>
+                                    견고하게 제작된 암링 자켓이에요.</div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><img
+                                        src="../../assets/images/promotion/2023/0710_detamy/04_img2.png"></a>
+                                <div class="sec4_prd_txt">땀 많이 나는 우리 아이들, 기본에 충실한 디자인과<br>
+                                    쿨링 기능성까지 갖춘 드타미 에센셜 팬츠와 함께<br>
+                                    시원한 여름 보내길 바라요.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sec4_btn ab"><a href="javascript:void(0);">드타미 프로젝트 바로가기</a></div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script>
+        var topSwiper = new Swiper(".sec1_rolling", {
+            slidesPerView: 1,
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 4500,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+        var swiper2 = new Swiper(".sec2_slider", {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper3 = new Swiper(".sec3_rolling", {
+            effect: 'fade',
+            loop: true,
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

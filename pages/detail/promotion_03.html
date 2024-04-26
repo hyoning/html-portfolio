@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        /* 요소 별 색상 설정 */
+        /*전체 배경*/
+        .prm_24h {
+            background-color: #F7F7F7;
+        }
+
+        /*제목 글자*/
+        .prm_24h_title .title {
+            color: #000;
+        }
+
+        /*제목 작글자*/
+        .prm_24h_title .sub_title {
+            color: #000;
+        }
+
+        /*제목 콜론*/
+        .prm_24h_title .sub_title em {
+            color: #859FFF;
+        }
+
+        /*시게 얼굴*/
+        .clock_face .face_face {
+            fill: #C1E3ED;
+        }
+
+        /*시계 코*/
+        .clock_face .face_nose {
+            fill: #7BC3DA;
+        }
+
+        /*시계 바늘*/
+        .face_hourHand,
+        .face_minuteHand {
+            fill: #AAD9E7;
+        }
+
+        /*할인율 배경*/
+        .flower_face {
+            fill: #FFD2DD;
+        }
+
+        /*할인율 글자*/
+        .flower_rate .price_rate {
+            color: #FF5D8A;
+        }
+
+        /*클로버 배경*/
+        .clover_face {
+            fill: #E4DBFF;
+        }
+
+        /*클로버 글자*/
+        .clover_s,
+        .clover_a,
+        .clover_l,
+        .clover_e {
+            fill: #D6C8FF;
+        }
+
+        /*타이머 타이틀*/
+        .timer_date {
+            color: #000;
+        }
+
+        /*타이머 테두리*/
+        .prm_24h_timer .timer_countdown {
+            border-color: #C6D2FF !important;
+        }
+
+        /*타이머 배경*/
+        .prm_24h_timer .timer_countdown {
+            background-color: #D9E1FF !important;
+        }
+
+        /*타이머 글자*/
+        .timer_ele {
+            color: #000 !important;
+        }
+
+        .prm_24h {
+            background-image: url("../../assets/images/bg_date_24h.jpg");
+            background-position: center;
+            background-size: 50px 50px;
+        }
+
+        .prm_24h .prm_24h_wrap {
+            width: 82%;
+            margin: 0 9%;
+            height: auto;
+            position: relative;
+        }
+
+        .prm_24h .prm_24h_wrap:before {
+            display: block;
+            content: '';
+            width: 100%;
+            padding-top: 140%;
+        }
+
+        .prm_24h_line {
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .prm_24h .prm_24h_line:before {
+            display: block;
+            content: '';
+            width: 100%;
+            padding-top: 145%;
+        }
+
+        .prm_24h_line .prm_24h_img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+
+        .prm_24h_line .prm_24h_item {
+            position: absolute;
+            top: 0;
+        }
+
+        .prm_24h_line .prm_24h_item:nth-child(1),
+        .prm_24h_line .prm_24h_item:nth-child(2) {
+            top: 0;
+        }
+
+        .prm_24h_line .prm_24h_item:nth-child(3),
+        .prm_24h_line .prm_24h_item:nth-child(4) {
+            top: 30%;
+        }
+
+        .prm_24h_line .prm_24h_item:nth-child(5),
+        .prm_24h_line .prm_24h_item:nth-child(6) {
+            top: 60%;
+        }
+
+        .prm_24h_line .prm_24h_item:nth-child(odd) {
+            left: 0;
+        }
+
+        .prm_24h_line .prm_24h_item:nth-child(even) {
+            right: 0;
+        }
+
+        .prm_24h_line:nth-child(2),
+        .prm_24h_line:nth-child(3) {
+            margin-top: -7%;
+        }
+
+        .prm_24h_img,
+        .prm_24h_obj {
+            width: 53%;
+            height: auto;
+            color: #fff;
+            position: relative;
+        }
+
+        .prm_24h .face_hourHand {
+            -webkit-animation: rotate_image 60s linear infinite;
+            animation: rotate_image 60s linear infinite;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -moz-animation: rotate_image 60s linear infinite;
+        }
+
+        .prm_24h .face_minuteHand {
+            -webkit-animation: rotate_image 10s linear infinite;
+            animation: rotate_image 10s linear infinite;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+
+        @keyframes rotate_image {
+            0% {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+            }
+        }
+
+        .prm_24h_title {
+            padding: 12% 0 9%;
+        }
+
+        .prm_24h_title .title {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 1.2%;
+        }
+
+        .prm_24h_title .sub_title {
+            font-size: 65px;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+
+        .prm_24h_title .sub_title em {
+            line-height: 1;
+            vertical-align: top;
+            padding: 0 1%;
+        }
+
+        .prm_24h_timer {
+            margin-top: 10%;
+            padding-bottom: 12%;
+        }
+
+        .prm_24h .timer_date {
+            font-size: 20px;
+            line-height: 1;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 6%;
+        }
+
+        .prm_24h_timer .timer_countdown {
+            width: 82%;
+            border: 7.5px solid transparent;
+            border-radius: 20px;
+            margin: 0 9%;
+            box-sizing: border-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding: 2.3% 0;
+            font-size: 20px;
+            line-height: 43px;
+        }
+
+        .prm_24h_timer .timer_countdown .timer_ele {
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: bold;
+            position: relative;
+            padding-left: 20px;
+            height: 43px;
+            width: 74px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .prm_24h_timer .timer_countdown .timer_ele+.timer_ele:before {
+            display: block;
+            content: ':';
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            line-height: 1;
+            width: 20px;
+        }
+
+        .prm_24h_timer .timer_countdown .timer_ele:first-child {
+            padding: 0;
+            width: 54px;
+        }
+
+        .price_rate {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            font-size: 46px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:499px) {
+            .prm_24h_title .title {
+                font-size: 6vw;
+            }
+
+            .prm_24h_title .sub_title {
+                font-size: 13vw;
+            }
+
+            .flower_rate .price_rate {
+                font-size: 9.2vw;
+            }
+
+            .prm_24h_timer .timer_countdown {
+                border-width: 1.5vw;
+                font-size: 4vw;
+            }
+
+            .prm_24h .timer_date {
+                font-size: 4vw;
+            }
+
+            .prm_24h_timer .timer_countdown .timer_ele {
+                font-size: 7.2vw;
+                height: 8.6vw;
+                width: 17%;
+                padding-left: 6%;
+            }
+
+            .prm_24h_timer .timer_countdown .timer_ele:first-child {
+                width: 11%;
+            }
+
+            .prm_24h_timer .timer_countdown .timer_ele:before {
+                width: 27%;
+            }
+        }
+
+        .sec8 {
+            width: 100%;
+            padding: 12% 0 1%;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .sec8_txt {
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            padding-bottom: 7%;
+        }
+
+        .sec8_img {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            .sec8_txt {
+                font-size: 6vw;
+            }
+        }
+
+        .textPromo_wrap2 {
+            background-color: #fff;
+        }
+
+        .textPromo_wrap2 .notice_area {
+            margin: 0px !important;
+        }
+
+        .textPromo_wrap2 .notice_area button {
+            background-color: transparent !important;
+            border: none;
+        }
+
+        .textPromo_wrap2 .notice_area {
+            position: relative;
+            margin: 6% auto 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .textPromo_wrap2 .notice_area button {
+            width: 100%;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background: #fff;
+        }
+
+        .textPromo_wrap2 .notice_area button p {
+            width: auto;
+            text-align: center;
+            font-weight: 500;
+            font-size: 3.2vw !important;
+            line-height: 1.3;
+        }
+
+        .textPromo_wrap2 .notice_area button img {
+            width: 12px !important;
+            height: auto;
+            margin: 0 0 0 6px;
+            transition: 0.3s;
+        }
+
+        .textPromo_wrap2 .notice_area button img.active {
+            transform: rotate(180deg);
+        }
+
+        .textPromo_wrap2 .notice_area .hidden_menu {
+            width: 100%;
+            margin-top: 5%;
+            display: none;
+        }
+
+        .textPromo_wrap2 .notice_area .hidden_menu p {
+            text-align: left;
+            color: #909090;
+            font-size: 3.7vw;
+            line-height: 1.8;
+        }
+
+        .textPromo_wrap2 .notice_area ul li {
+            text-align: left;
+            position: relative;
+            padding-left: 2.6%;
+            font-size: 3.2vw;
+            line-height: 1.33;
+            color: #666;
+            letter-spacing: -0.3px;
+        }
+
+        .textPromo_wrap2 .notice_area ul li+li {
+            margin-top: 6px;
+        }
+
+        .textPromo_wrap2 .notice_area ul li:before {
+            display: block;
+            content: '·';
+            width: 10px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .textPromo_wrap2 {
+            padding: 5.33% 4.22% 8%;
+            box-sizing: border-box;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="prm_24h">
+                    <div class="prm_24h_title">
+                        <div class="title">앤디애플</div>
+                        <div class="sub_title">24<em>:</em>시간<br>깜짝할인</div>
+                        <div class="timer_date">04.26 10:00 - 05.18 10:00</div>
+                    </div>
+                    <div class="prm_24h_wrap">
+                        <div class="prm_24h_line">
+                            <div class="prm_24h_item prm_24h_img">
+                                <img src="../../assets/images/promotion/2023/1130_andyapple_24h/main_img1.jpg">
+                            </div>
+                            <svg class="prm_24h_item prm_24h_obj clock_face" width="100%" height="100%"
+                                viewBox="0 0 432 432" xmlns="http://www.w3.org/2000/svg">
+                                <path class="face_face"
+                                    d="M77.4633 79.2301C76.3545 61.2835 84.8384 43.3065 101.138 33.0717C122.412 19.714 149.779 24.0771 165.962 42.2114C170.023 18.2483 190.881 0 216 0C240.228 0 260.491 16.9765 265.543 39.6831C281.682 22.9309 307.822 18.9931 328.504 31.6125C344.934 41.6372 353.648 59.5039 352.77 77.4632C370.716 76.3545 388.694 84.8383 398.928 101.138C412.286 122.412 407.923 149.779 389.789 165.962C413.752 170.023 432 190.881 432 216C432 240.228 415.024 260.491 392.317 265.543C409.069 281.682 413.007 307.822 400.387 328.504C390.363 344.934 372.496 353.648 354.537 352.77C355.646 370.716 347.162 388.694 330.862 398.928C309.589 412.286 282.221 407.923 266.038 389.788C261.977 413.752 241.119 432 216 432C191.772 432 171.509 415.023 166.457 392.317C150.318 409.069 124.178 413.007 103.496 400.387C87.0658 390.363 78.3519 372.496 79.2301 354.537C61.2835 355.646 43.3065 347.162 33.0718 330.862C19.714 309.588 24.0772 282.221 42.2115 266.038C18.2484 261.977 -1.098e-06 241.119 0 216C2.21853e-06 191.772 16.9765 171.509 39.6831 166.457C22.9309 150.318 18.9932 124.178 31.6125 103.496C41.6372 87.0657 59.5039 78.3518 77.4633 79.2301Z">
+                                </path>
+                                <rect class="face_hourHand" x="211" y="122" width="10" height="99" rx="5"
+                                    transform="rotate(-90)">
+                                </rect>
+                                <rect class="face_minuteHand" x="211" y="82" width="10" height="139.3" rx="5"></rect>
+                                <circle class="face_nose" cx="216" cy="216" r="16"></circle>
+                                <circle class="face_eye_l_w" fill="#ffffff" cx="193" cy="171" r="23"></circle>
+                                <circle class="face_eye_r_w" fill="#ffffff" cx="240" cy="171" r="23"></circle>
+                                <circle class="face_eye_l_b" fill="#222222" cx="182" cy="171" r="12"></circle>
+                                <circle class="face_eye_r_b" fill="#222222" cx="229" cy="171" r="12"></circle>
+                            </svg>
+                            <div class="prm_24h_item prm_24h_obj flower_rate">
+                                <div class="price_rate">~89%</div>
+                                <svg width="100%" height="100%" viewBox="0 0 432 432" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="flower_face"
+                                        d="M256.755 0H175.245V66.7896L141.293 9.27358L71.1009 50.7087L100.429 100.392L50.756 71.047L9.29804 141.226L66.8853 175.245H0V256.755H66.7897L9.27366 290.707L50.7087 360.899L100.392 331.571L71.0471 381.244L141.226 422.702L175.245 365.115V432H256.755V365.21L290.707 422.726L360.899 381.291L331.571 331.608L381.244 360.953L422.702 290.774L365.115 256.755H432V175.245H365.211L422.726 141.293L381.291 71.101L331.609 100.429L360.953 50.756L290.775 9.298L256.755 66.8854V0Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="prm_24h_item prm_24h_img">
+                                <img src="../../assets/images/promotion/2023/1130_andyapple_24h/main_img2.jpg">
+                            </div>
+                            <div class="prm_24h_item prm_24h_img">
+                                <img src="../../assets/images/promotion/2023/1130_andyapple_24h/main_img3.jpg">
+                            </div>
+                            <svg class="prm_24h_item prm_24h_obj clover_sale" width="100%" height="100%"
+                                viewBox="0 0 432 432" xmlns="http://www.w3.org/2000/svg">
+                                <path class="clover_face" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M304.349 304.349C316.758 337.87 309.497 377.022 282.566 403.953C245.694 440.825 185.913 440.825 149.041 403.953C122.11 377.022 114.849 337.87 127.258 304.349C93.7371 316.758 54.5849 309.497 27.654 282.566C-9.218 245.694 -9.218 185.913 27.654 149.041C54.5849 122.11 93.7371 114.849 127.258 127.258C114.849 93.737 122.11 54.5848 149.041 27.654C185.913 -9.21799 245.694 -9.21802 282.566 27.654C309.497 54.5849 316.758 93.737 304.349 127.258C337.87 114.849 377.022 122.11 403.953 149.041C440.825 185.913 440.825 245.694 403.953 282.566C377.022 309.497 337.87 316.758 304.349 304.349ZM182.962 248.645C190.791 227.498 190.791 204.11 182.962 182.962C204.11 190.791 227.498 190.791 248.645 182.962C240.817 204.11 240.817 227.498 248.645 248.645C227.498 240.817 204.11 240.817 182.962 248.645Z">
+                                </path>
+                                <path class="clover_s"
+                                    d="M225.773 81.9531H237.023C236.867 71.9531 228.625 65 216.086 65C203.703 65 194.641 71.8359 194.68 82.1094C194.68 90.3906 200.539 95.1562 210.07 97.5L216.242 98.9844C222.414 100.508 225.93 102.305 225.93 106.172C225.93 110.391 221.945 113.281 215.773 113.281C209.523 113.281 204.992 110.391 204.602 104.688H193.195C193.547 116.836 202.258 123.164 215.93 123.125C229.719 123.164 237.766 116.523 237.805 106.172C237.766 96.7578 230.539 91.8359 220.852 89.6094L215.773 88.3594C210.891 87.2656 206.672 85.4297 206.711 81.3281C206.75 77.5781 210.07 74.8438 216.008 74.8438C221.75 74.8438 225.305 77.4609 225.773 81.9531Z">
+                                </path>
+                                <path class="clover_a"
+                                    d="M81.5078 244.344L85.7656 231.297H106.234L110.492 244.344H123.07L103.539 187.781H88.4609L68.8516 244.344H81.5078ZM88.7344 222.156L95.8047 200.516H96.1953L103.266 222.156H88.7344Z">
+                                </path>
+                                <path class="clover_l"
+                                    d="M322.93 244.344H359.023V234.656H334.648V187.781H322.93V244.344Z"></path>
+                                <path class="clover_e"
+                                    d="M197.211 366.344H235.258V356.656H208.93V342.906H233.227V333.219H208.93V319.469H235.18V309.781H197.211V366.344Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="prm_24h_timer">
+                        <div class="timer_countdown" id="countdown">
+                            <div class="timer_ele days"></div>
+                            <!--남은 일자 사용하지 않을 경우 삭제-->
+                            <div class="timer_ele hours"></div>
+                            <div class="timer_ele minutes"></div>
+                            <div class="timer_ele seconds"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec7">
+                    <img src="../../assets/images/promotion/2023/1130_andyapple_24h/text.jpg">
+                </section>
+                <section class="sec sec8">
+                    <div class="sec8_txt">앤디애플 24시간 쿠폰</div>
+                    <div class="sec8_img"><a href="javascript:couponLinkDownPromotion('6073304115000001921');"><img
+                                src="../../assets/images/promotion/2023/1130_andyapple_24h/coupon.png"></a></div>
+                </section>
+                <div class="textPromo_wrap2">
+                    <div class="notice_area">
+                        <button>
+                            <p>유의사항</p>
+                        </button>
+                        <div class="hidden_menu">
+                            <ul>
+                                <li>사용기간 : 2023.11.30(목) 10:00 - 2023.12.01(금) 10:00</li>
+                                <li>쿠폰은 [마이페이지] > [쿠폰] 또는 결제 시 [사용 가능한 쿠폰] 에서 확인하실 수 있습니다.</li>
+                                <li>쿠폰 사용 시에는 유효기간을 꼭 확인해주세요.</li>
+                                <li>본 쿠폰은 해당 기획전 내 상품에 한해서만 적용 가능하며, 일부 상품의 경우 쿠폰 적용이 불가할 수 있습니다.</li>
+                                <li>브랜드사 재고 사정에 따라 품절 및 환불 안내를 드릴 수 있습니다.</li>
+                                <li>본 이벤트는 당사 사정에 의하여 사전 고지 없이 중단될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            const countDownTimer = function (id, date) {
+                var _vDate = new Date(date);
+                var _second = 1000;
+                var _minute = _second * 60;
+                var _hour = _minute * 60;
+                var _day = _hour * 24;
+                var timer;
+
+                function showRemaining() {
+                    var now = new Date();
+                    var distDt = _vDate - now;
+
+                    if (distDt < 0) {
+                        clearInterval(timer);
+                        document.getElementById(id).textContent = '이벤트가 종료 되었습니다.';
+                        return;
+                    }
+                    var days = Math.floor(distDt / _day);
+                    var hours = Math.floor((distDt % _day) / _hour);
+                    var minutes = Math.floor((distDt % _hour) / _minute);
+                    var seconds = Math.floor((distDt % _minute) / _second);
+
+                    var idEl = document.getElementById(id);
+                    idEl.getElementsByClassName('days')[0].innerHTML = days;
+                    idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+                    idEl.getElementsByClassName('minutes')[0].innerHTML = minutes;
+                    idEl.getElementsByClassName('seconds')[0].innerHTML = seconds;
+
+                    if (hours == 0 && minutes == 0 && seconds == 0) {
+                        document.location.reload();
+                    }
+                    if (days < 10) {
+                        idEl.getElementsByClassName('days')[0].innerHTML = '0' + days;
+                    }
+                    if (hours < 10) {
+                        idEl.getElementsByClassName('hours')[0].innerHTML = '0' + hours;
+                    }
+                    if (minutes < 10) {
+                        idEl.getElementsByClassName('minutes')[0].innerHTML = '0' + minutes;
+                    }
+                    if (seconds < 10) {
+                        idEl.getElementsByClassName('seconds')[0].innerHTML = '0' + seconds;
+                    }
+                }
+
+                timer = setInterval(showRemaining, 1000);
+            }
+            var dateObj = new Date();
+            dateObj.setDate(dateObj.getDate() + 1);
+
+            countDownTimer('countdown', '05/28/2024 10:00 AM'); // 이벤트 종료 시간 설정
+        });
+        $(function () {
+            $(".notice_area > button").click(function () {
+                $(this).children('img').toggleClass('active');
+                $(".hidden_menu").slideToggle();
+            });
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

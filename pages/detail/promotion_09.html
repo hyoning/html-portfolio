@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec01_txt_1 {
+            width: 100%;
+            top: 43.1%;
+            left: 0%;
+            z-index: 1;
+        }
+
+        .sec01_txt_2 {
+            width: 100%;
+            top: 42%;
+            z-index: 1;
+            animation: showIn3 4s;
+        }
+
+        .sec01_txt_1 .txt1 {
+            width: 64.2%;
+            float: left;
+            animation: showIn1 4s;
+            opacity: 0;
+            padding-left: 14.6%;
+        }
+
+        .sec01_txt_1 .txt2 {
+            width: 70.6%;
+            float: right;
+            padding-right: 14.4%;
+            animation: showIn2 4s;
+            opacity: 0;
+        }
+
+        .sec01_txt_2 .brand_logo {
+            width: 40%;
+        }
+
+        @keyframes showIn1 {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            25% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            75% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes showIn2 {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            75% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes showIn3 {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            75% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+
+
+
+        .sec_heart {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sec_heart:before {
+            display: block;
+            content: '';
+            width: 100%;
+            padding-top: 278%;
+            position: relative;
+        }
+
+        .sec_heart-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .sec_heart_model {
+            position: absolute;
+            right: 0;
+            bottom: 49.6%;
+            width: 58% !important;
+            z-index: 2;
+        }
+
+        .sec_heart-1 {
+            position: absolute;
+            left: -6%;
+            top: 0;
+            width: 19.6% !important;
+            z-index: 3;
+        }
+
+        .sec_heart-2 {
+            position: absolute;
+            left: 9%;
+            top: 4%;
+            width: 9% !important;
+            z-index: 3;
+        }
+
+        .sec_heart-3 {
+            position: absolute;
+            left: 79.8%;
+            top: 40%;
+            width: 17% !important;
+            z-index: 3;
+            animation: bounce2 1s infinite;
+        }
+
+        .sec_heart-4 {
+            position: absolute;
+            left: 13.2%;
+            top: 49.5%;
+            width: 16.4% !important;
+            z-index: 3;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 49.5%;
+            }
+
+            50% {
+                top: 49.8%;
+            }
+
+            100% {
+                top: 49.5%
+            }
+        }
+
+        @keyframes bounce2 {
+            0% {
+                transform: rotate(-10deg)
+            }
+
+            50% {
+                transform: rotate(10deg)
+            }
+
+            100% {
+                transform: rotate(-10deg)
+            }
+        }
+
+        .sec_heart_model.active {
+            opacity: 0;
+            transition: all .5s ease;
+        }
+
+        .sec_heart_model.active.show {
+            opacity: 1;
+            transition: all .5s ease;
+        }
+
+        .sec_heart-1.active {
+            opacity: 0;
+        }
+
+        .sec_heart-2.active {
+            opacity: 0;
+        }
+
+        .sec_heart-1.active.show {
+            opacity: 1;
+            animation: sldLeft1 2s;
+        }
+
+        .sec_heart-2.active.show {
+            opacity: 1;
+            animation: sldLeft2 2s;
+        }
+
+        @keyframes sldLeft1 {
+            0% {
+                left: -20%;
+            }
+
+            80% {
+                left: -20%;
+            }
+
+            100% {
+                left: -6%;
+            }
+        }
+
+        @keyframes sldLeft2 {
+            0% {
+                left: -10%;
+            }
+
+            30% {
+                left: -10%;
+            }
+
+            100% {
+                left: 9%;
+            }
+        }
+
+
+        .sec2 {
+            position: relative;
+        }
+
+        .sec2 .img02_1 {
+            width: 62%;
+            left: 0;
+            top: 31.5%;
+        }
+
+        .sec2 .img02_2 {
+            width: 54%;
+            right: 0;
+            top: 43.6%;
+        }
+
+        .sec2 .img02_3 {
+            width: 56%;
+            left: 0;
+            bottom: 5.1%;
+        }
+
+        .sec2 .img02_1.active {
+            opacity: 0;
+        }
+
+        .sec2 .img02_2.active {
+            opacity: 0;
+        }
+
+        .sec2 .img02_3.active {
+            opacity: 0;
+        }
+
+        .sec2 .img02_1.active.show {
+            animation: imgSld1 2s;
+            opacity: 1;
+        }
+
+        .sec2 .img02_2.active.show {
+            animation: imgSld2 2s;
+            opacity: 1;
+        }
+
+        .sec2 .img02_3.active.show {
+            animation: imgSld3 2s;
+            opacity: 1;
+        }
+
+        @keyframes imgSld1 {
+            0% {
+                left: -50%;
+                opacity: 0;
+            }
+
+            100% {
+                left: 0%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes imgSld2 {
+            0% {
+                right: -50%;
+                opacity: 0;
+            }
+
+            30% {
+                right: -50%;
+                opacity: 0;
+            }
+
+            100% {
+                right: 0%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes imgSld3 {
+            0% {
+                bottom: -5%;
+                opacity: 0;
+            }
+
+            30% {
+                bottom: -5%;
+                opacity: 0;
+            }
+
+            100% {
+                bottom: 5.1;
+                opacity: 1;
+            }
+        }
+
+        .sec3 {
+            position: relative;
+        }
+
+        .sec3 .img03_1 {
+            width: 62.6%;
+            top: 9.4%;
+            left: 6%;
+        }
+
+        .sec3 .img03_2 {
+            width: 66%;
+            top: 16%;
+            left: 6%;
+        }
+
+        .sec3 .img03_1.active {
+            opacity: 0;
+        }
+
+        .sec3 .img03_2.active {
+            opacity: 0;
+        }
+
+        .sec3 .img03_1.active.show {
+            animation: showIn03-1 3s;
+            opacity: 1;
+        }
+
+        .sec3 .img03_2.active.show {
+            animation: showIn03-2 3s;
+            opacity: 1;
+        }
+
+        @keyframes showIn03-1 {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes showIn03-2 {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sec4 {
+            position: relative;
+        }
+
+        .sec4 .img04_1 {
+            width: 55.2%;
+            top: 5.4%;
+            left: 6%;
+        }
+
+        .sec4 .img04_1.active {
+            opacity: 0;
+        }
+
+        .sec4 .img04_1.active.show {
+            animation: showIn04-1 2s;
+            opacity: 1;
+        }
+
+        @keyframes showIn04-1 {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sec5 {
+            position: relative;
+            width: 100%;
+            background-color: #F8EDC8;
+        }
+
+        .sec5_sld {
+            width: 100%;
+            padding: 12% 6% 0 30%;
+            box-sizing: border-box;
+        }
+
+        /*heigth:572*/
+        .sec5_img {
+            width: 100%;
+            padding: 3% 12% 0 30%;
+            box-sizing: border-box;
+        }
+
+        .sec5_img img {
+            width: 100%;
+        }
+
+        .sec5_rolling {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sec5 .swiper-pagination {
+            bottom: 3% !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sec5 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec5 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 3px !important;
+            background-color: #222;
+            opacity: 0.3 !important;
+        }
+
+        .sec5 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #222 !important;
+            opacity: 1 !important;
+        }
+
+        @media (max-width: 500px) {
+
+            .sec5 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .sec5 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 2vw;
+                height: 2vw;
+                margin: 0 0.6vw !important;
+            }
+        }
+
+        .sec6 {
+            position: relative;
+            width: 100%;
+            background-color: #F8EDC8;
+        }
+
+        .sec6_sld {
+            width: 100%;
+            padding: 12.7% 16% 0 6%;
+            box-sizing: border-box;
+        }
+
+        /*heigth:548*/
+        .sec6_img {
+            width: 100%;
+            padding: 3% 17% 16% 6%;
+            box-sizing: border-box;
+        }
+
+        .sec6_img img {
+            width: 100%;
+        }
+
+        .sec6_rolling {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sec6 .swiper-pagination {
+            bottom: 3% !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sec6 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec6 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 3px !important;
+            background-color: #222;
+            opacity: 0.3 !important;
+        }
+
+        .sec6 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #222 !important;
+            opacity: 1 !important;
+        }
+
+        @media (max-width: 500px) {
+
+            .sec6 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .sec6 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 2vw;
+                height: 2vw;
+                margin: 0 0.6vw !important;
+            }
+        }
+
+        .sec7 {
+            position: relative;
+        }
+
+        .sec7 .img07_1 {
+            width: 61%;
+            top: 9.2%;
+            left: 6%;
+        }
+
+        .sec7 .img07_2 {
+            width: 64.4%;
+            top: 16%;
+            left: 6%;
+        }
+
+        .sec7 .img07_1.active {
+            opacity: 0;
+        }
+
+        .sec7 .img07_2.active {
+            opacity: 0;
+        }
+
+        .sec7 .img07_1.active.show {
+            animation: showIn07-1 3s;
+            opacity: 1;
+        }
+
+        .sec7 .img07_2.active.show {
+            animation: showIn07-2 3s;
+            opacity: 1;
+        }
+
+        @keyframes showIn07-1 {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes showIn07-2 {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <div class="sec sec_top">
+                    <div class="sec01_txt_1 ab">
+                        <img src="../../assets/images/promotion/2023/0906_oioiooi/01_img1_ver2.png" class="txt1">
+                        <img src="../../assets/images/promotion/2023/0906_oioiooi/01_img2_ver2.png " class="txt2">
+                    </div>
+                    <div class="sec01_txt_2 ab">
+                        <img src="../../assets/images/promotion/2023/0906_oioiooi/oioiooi_logo.png" class="brand_logo">
+                    </div>
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/01_bg.jpg ">
+                </div>
+
+                <div class="sec sec2">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/02_img1.png" class="img02_1 ab active">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/02_img2.png" class="img02_2 ab active">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/02_img3.png" class="img02_3 ab active">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/02.jpg">
+                </div>
+
+                <div class="sec sec3">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/03_img1.png" class="img03_1 active ab">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/03_img2.png" class="img03_2 active ab">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/03.jpg">
+                </div>
+
+                <div class="sec sec4">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/04_img1.png" class="img04_1 active ab">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/04.jpg ">
+                </div>
+
+                <section class="sec sec5">
+                    <div class="sec5_sld">
+                        <div class="sec5_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0906_oioiooi/05_img1.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0906_oioiooi/05_img2.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0906_oioiooi/05_img3.jpg"></li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                    <div class="sec5_img">
+                        <img src="../../assets/images/promotion/2023/0906_oioiooi/05_txt.png">
+                    </div>
+                </section>
+
+                <section class="sec sec6">
+                    <div class="sec6_sld">
+                        <div class="sec6_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0906_oioiooi/05_img4.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/0906_oioiooi/05_img5.jpg"></li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                    <div class="sec6_img">
+                        <img src="../../assets/images/promotion/2023/0906_oioiooi/06_txt.png">
+                    </div>
+                </section>
+
+                <div class="sec sec7">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/06_img2.png" class="img07_1 active ab">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/06_img1.png" class="img07_2 active ab">
+                    <img src="../../assets/images/promotion/2023/0906_oioiooi/06.jpg">
+                </div>
+            </section>
+        </section>
+    </section>
+    <script>
+        //나타나기
+        const saTriggerMargin = 300;
+        const saElementList = document.querySelectorAll('.active');
+
+        const saFunc = function () {
+            for (const element of saElementList) {
+                if (!element.classList.contains('show')) {
+                    if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+                        element.classList.add('show');
+                    }
+                }
+            }
+        }
+        window.addEventListener('load', saFunc);
+        window.addEventListener('scroll', saFunc);
+
+        var swiper1 = new Swiper(".sec5_rolling", {
+            // effect : 'fade', // 페이드 효과 여부 선택
+            slidesPerView: 1,
+            loop: true,
+            speed: 1500,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
+        });
+
+        var swiper2 = new Swiper(".sec6_rolling", {
+            // effect : 'fade', // 페이드 효과 여부 선택
+            slidesPerView: 1,
+            loop: true,
+            speed: 1500,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

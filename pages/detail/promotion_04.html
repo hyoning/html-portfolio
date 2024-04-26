@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec_wrap {
+            position: relative;
+            width: 100%;
+        }
+
+        .sec_wrap .img_bg {
+            position: relative;
+        }
+
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .secTop {
+            width: 100%;
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        .secTop div {
+            width: 100%;
+            position: relative;
+        }
+
+        .secTop div::before {
+            position: relative;
+            width: 100%;
+            padding-top: 186.4%;
+            content: '';
+            display: block;
+            min-width: 100%;
+        }
+
+        .secTop div img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            display: block;
+        }
+
+        .sec1_rolling {
+            width: 84%;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+
+        .sec1_tit {
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .sec1 .swiper-pagination {
+            bottom: 3% !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sec1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 3px !important;
+            background-color: #fff;
+            opacity: 0.3 !important;
+        }
+
+        .sec1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #77C98D !important;
+            opacity: 1 !important;
+        }
+
+        @media (max-width: 500px) {
+            .secTop {
+                width: 100%;
+                padding-bottom: 8vw;
+            }
+
+            .sec1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .sec1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 2vw;
+                height: 2vw;
+                margin: 0 0.6vw !important;
+            }
+        }
+
+
+
+        #tabList {
+            position: relative;
+            width: 100%;
+            margin-top: 8.4vw;
+        }
+
+        .birthMenu {
+            width: 100%;
+            height: 18vw;
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            z-index: 10;
+        }
+
+        .birthMenu .birth_nav {
+            clear: both;
+            width: 100%;
+            height: 18vw;
+            overflow: auto;
+            scroll-behavior: smooth;
+            overflow-y: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .birthMenu .birth_nav.on {
+            position: fixed;
+            max-width: 500px;
+            left: auto;
+            right: auto;
+            top: 56px;
+        }
+
+        .theme__Tab::-webkit-scrollbar,
+        .birthMenu .birth_nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .birthMenu .birth-ul {
+            display: flex;
+            padding: 2vw 0;
+            box-sizing: border-box;
+        }
+
+        .birthMenu .birth-ul li {
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 0px;
+            position: static;
+            white-space: nowrap;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            background-size: 100% auto;
+            padding-right: 2vw;
+        }
+
+        .birthMenu .birth-ul li:first-child {
+            padding-left: 5vw;
+        }
+
+        .birthMenu .birth-ul li:last-child {
+            padding-right: 5vw;
+        }
+
+        .birthMenu .birth-ul li a {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding: 2vw 4vw;
+            background: #fff;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 7vw;
+        }
+
+        .birthMenu .birth-ul li a span {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            white-space: nowrap;
+            text-align: center;
+            color: #222;
+            font-size: 3.6vw;
+            font-weight: 600;
+        }
+
+        .birthMenu .birth-ul li a span em {
+            margin-right: 1.2vw;
+            font-style: normal;
+            display: block !important;
+        }
+
+        /* .birthMenu .birth-ul li a span em, */
+        .birthMenu .birth-ul li a img {
+            width: 6.4vw;
+            height: 9.6vw;
+        }
+
+        .birthMenu .birth-ul li.on a {
+            border: 1px solid #77C98D;
+            background: #77C98D;
+            color: #fff;
+        }
+
+        .birthMenu .birth-ul li.on a span {
+            color: #fff;
+        }
+
+        .birthMenu .birth_nav.fixed.on .birth-ul li.on a {
+            border: 1px solid #ddd;
+            background: #fff;
+        }
+
+        .birthMenu .birth_nav.fixed.on .birth-ul li.on a span {
+            color: #222;
+        }
+
+        .sec5_btn {
+            width: 80vw;
+            height: 14.8vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 11.4%;
+        }
+
+        .sec5_btn a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (min-width: 500px) {
+            #tabList {
+                margin-top: 42px;
+            }
+
+            .birthMenu,
+            .birthMenu .birth_nav {
+                height: 88px;
+            }
+
+            .birthMenu .birth-ul {
+                padding: 10px 0;
+            }
+
+            .birthMenu .birth-ul li {
+                padding-right: 10px;
+            }
+
+            .birthMenu .birth-ul li:first-child {
+                padding-left: 25px;
+            }
+
+            .birthMenu .birth-ul li:last-child {
+                padding-right: 25px;
+            }
+
+            .birthMenu .birth-ul li a {
+                padding: 10px 20px;
+                border-radius: 35px;
+            }
+
+            .birthMenu .birth-ul li a span {
+                font-size: 18px;
+            }
+
+            .birthMenu .birth-ul li a span em {
+                margin-right: 6px;
+            }
+
+            .birthMenu .birth-ul li a img {
+                width: 32px;
+                height: 46px;
+            }
+
+            .sec5_btn {
+                width: 400px;
+                height: 74px;
+            }
+        }
+
+        /* 각 상품 진열 섹션 */
+        .sec_wrap {
+            position: relative;
+            /* display: none; */
+        }
+
+        /* .sec_cont:before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-top: 290%;
+    } */
+        .sec_wrap .sec_cont_wrap {
+            /* position: absolute;
+        top:0;
+        left:0;  */
+            width: 100%;
+            padding: 12% 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <div class="sec secTop">
+                    <div><img src="../../assets/images/promotion/2023/1124_birthday/01_top.jpg" class="bottomPoint">
+                    </div>
+                </div>
+
+                <div class="birthMenu">
+                    <nav class="birth_nav">
+                        <ul class="birth-ul">
+                            <li>
+                                <a href="#section01" class="section01" data-scroll="section01">
+                                    <span><img
+                                            src="../../assets/images/promotion/2023/1124_birthday/tab_icon_1.png">파티웨어
+                                        - 여아</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section02" class="section02" data-scroll="section02">
+                                    <span><em><img
+                                                src="../../assets/images/promotion/2023/1124_birthday/tab_icon_2.png"></em>파티웨어
+                                        - 남아</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section03" class="section03" data-scroll="section03">
+                                    <span><em><img
+                                                src="../../assets/images/promotion/2023/1124_birthday/tab_icon_3.png"></em>파티용품</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="sec_wrap sec_cont" id="section01">
+                    <div class="sec sec1">
+                        <div class="sec1_rolling ab">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/3_img1_1.jpg">
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/3_img1_2.jpg">
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/3_img1_3.jpg">
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="sec1_tit"><img
+                                src="../../assets/images/promotion/2023/1124_birthday/03_partywear_girls_1.jpg">
+                        </div>
+                    </div>
+                    <img src="../../assets/images/promotion/2023/1124_birthday/03_partywear_girls_2.jpg">
+                </div>
+
+
+                <div class="sec_wrap sec_cont" id="section02">
+                    <div class="sec sec1">
+                        <div class="sec1_rolling ab">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/4_img1_1.jpg">
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/4_img1_2.jpg">
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/4_img1_3.jpg">
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="sec1_tit"><img
+                                src="../../assets/images/promotion/2023/1124_birthday/04_partywear_boys_1.jpg">
+                        </div>
+                    </div>
+                    <img src="../../assets/images/promotion/2023/1124_birthday/04_partywear_boys_2.jpg">
+                </div>
+
+
+                <div class="sec_wrap sec_cont" id="section03">
+                    <div class="sec sec1">
+                        <div class="sec1_rolling ab">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/5_img1_1.jpg">
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1124_birthday/5_img1_2.jpg">
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="sec1_tit"><img
+                                src="../../assets/images/promotion/2023/1124_birthday/05_party_1.jpg">
+                        </div>
+                    </div>
+                    <img src="../../assets/images/promotion/2023/1124_birthday/05_party_2.jpg">
+                </div>
+
+                <div class="sec_wrap sec_cont" id="section04">
+                    <img src="../../assets/images/promotion/2023/1124_birthday/05_coupon.jpg">
+                    <div class="sec5_btn"><a href="/shopinfo/benefitguide"></a></div>
+                </div>
+                <img src="../../assets/images/promotion/2023/1124_birthday/06_banner.jpg">
+
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper = new Swiper(".sec1_rolling", {
+            slidesPerView: 1,
+            loop: true,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            speed: 500,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            }
+        });
+
+        let headerH = $('#header').outerHeight(true);
+        let nav_tab = $('.birth-ul');
+
+        let nav_tab_height = nav_tab.outerHeight(true);
+
+        //상단 - 분류
+        function proTabScroll() {
+            const proTabSlider = document.querySelector('.birthMenu .birth_nav');
+            let proTabIsDown = false;
+            let proTabStartX;
+            let proTabScrollLeft;
+
+            try {
+                proTabSlider.addEventListener('mousedown', e => {
+                    proTabIsDown = true;
+                    proTabSlider.classList.add('scroll');
+                    proTabStartX = e.pageX - proTabSlider.offsetLeft;
+                    proTabScrollLeft = proTabSlider.scrollLeft;
+                });
+
+                proTabSlider.addEventListener('mouseleave', () => {
+                    proTabIsDown = false;
+                    proTabSlider.classList.remove('scroll');
+                });
+
+                proTabSlider.addEventListener('mouseup', () => {
+                    proTabIsDown = false;
+                    proTabSlider.classList.remove('scroll');
+                });
+
+                proTabSlider.addEventListener('mousemove', e => {
+                    if (!proTabIsDown) return;
+                    e.preventDefault();
+                    const proTabX = e.pageX - proTabSlider.offsetLeft;
+                    const proTabWalk = proTabX - proTabStartX;
+                    proTabSlider.scrollLeft = proTabScrollLeft - proTabWalk;
+                });
+            } catch (e) {}
+        }
+
+        proTabScroll();
+
+
+        var topHeader2 = $('.headerLoginArea').outerHeight();
+        var saleTabH2 = $('.birth-ul').outerHeight();
+        var $scrollSpy2 = $('.birth_nav');
+        var buttonLink2 = $('.birth_nav .birth-ul li a');
+        var link2 = $('.sec_cont_btn-g a');
+
+        $('.birth_nav .birth-ul li:first-child').addClass('on');
+
+        $(window).on('scroll', function () {
+            var section04 = $("#section04").offset().top;
+            var docScrollY = $(document).scrollTop()
+            if (section04 - 150 > docScrollY) {
+                navPosition();
+            }
+        });
+
+        function navPosition() {
+            $('.sec_cont').each(function () {
+                if (($(this).offset().top - topHeader2 - saleTabH2 - $(window).scrollTop()) < 20) {
+                    buttonLink2.parent('li').removeClass('on');
+                    $('.birth-ul').find('[data-scroll ="' + $(this).attr('id') + '"]').parent('li').addClass(
+                        'on');
+                    var scrollStyleOn = $('.birth_nav .birth-ul').find('li.on').width() / 2;
+
+                    var soffsetLeft = $('.birth-ul').find('[data-scroll ="' + $(this).attr('id') + '"]').parent(
+                        'li.on').position().left;
+                    $scrollSpy2[0].scrollBy(soffsetLeft, 0);
+                }
+            });
+        }
+
+        $(".birth-ul a").click(function () {
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top + 2 - headerH - nav_tab_height
+            }, 500);
+            return false;
+        });
+
+        link2.on('click', function (e) {
+            var target = $($(this).attr('href'));
+            $('html, body').animate({
+                scrollTop: target.offset().top - topHeader2 - 50
+            }, 600);
+            e.preventDefault();
+        });
+
+        function fixTopTab() {
+            var topBar = $(".birthMenu").offset();
+            var bottomBar = $(".saleGroup_wrap").offset();
+            $(window).scroll(function () {
+                var docScrollY = $(document).scrollTop()
+                var barThis = $(".birth_nav")
+                if (docScrollY > topBar.top && docScrollY < $('#section03').offset().top + $('#section03')
+                    .innerHeight() - $(".birthMenu").innerHeight()) {
+                    barThis.addClass('on');
+                } else {
+                    barThis.removeClass('on');
+                }
+            });
+        }
+        fixTopTab()
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

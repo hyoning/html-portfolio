@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1 {
+            overflow: hidden;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .sec3_rolling {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec3_rolling .swiper-pagination {
+            bottom: 5.8% !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sec3_rolling .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec3_rolling .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            margin: 0 6px !important;
+            background-color: #FFC92B;
+            opacity: 0.15 !important;
+        }
+
+        .sec3_rolling .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #FFC92B !important;
+            opacity: 1 !important;
+        }
+
+        .sec5 {
+            width: 100%;
+            position: relative;
+            height: 0;
+            padding-bottom: 128.6%;
+            background: #71421B;
+        }
+
+        .sec5_top {
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .sec5_img1.show {
+            animation: showIn01-2 4s;
+            animation-fill-mode: forwards;
+            left: -5%;
+            width: 100%;
+            opacity: 0
+        }
+
+        .sec5_img2.show {
+            animation: showIn01-3 4s;
+            animation-fill-mode: forwards;
+            right: -5%;
+            width: 100%;
+            opacity: 0;
+        }
+
+        @keyframes showIn01-2 {
+            0% {
+                left: -5%;
+                width: 100%;
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            80% {
+                left: 0%;
+            }
+
+            100% {
+                left: 0%;
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes showIn01-3 {
+            0% {
+                right: -5%;
+                width: 100%;
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            80% {
+                right: 0;
+            }
+
+            100% {
+                right: 0;
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        .sec6_rolling {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sec6_rolling .swiper-slide img {
+            transform: scale(1.05);
+        }
+
+        .sec6_rolling .swiper-slide-active img {
+            animation: showIn06 4s;
+            animation-fill-mode: forwards;
+            transform: scale(1.05);
+        }
+
+        @keyframes showIn06 {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .sec3_rolling .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .sec3_rolling .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 2.4vw;
+                height: 2.4vw;
+                margin: 0 1.2vw !important;
+            }
+        }
+
+        .sec8_rollingWrap1 {
+            right: 0;
+            top: 8.5%;
+            width: 76%;
+            z-index: 3;
+        }
+
+        .sec8_rollingWrap2 {
+            left: 0;
+            bottom: 10.2%;
+            width: 80%;
+            z-index: 2;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="sec sec1">
+                    <div class="sec1_img"><img src="../../assets/images/promotion/2023/1113_matildany/01_top.jpg"></div>
+                    <div class="sec1_img"><img src="../../assets/images/promotion/2023/1113_matildany/02-text.jpg">
+                    </div>
+                </section>
+                <section class="sec sec3">
+                    <div class="sec3_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1113_matildany/03_img_1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1113_matildany/03_img_2.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1113_matildany/03_img_3.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1113_matildany/03_img_4.jpg"></li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <section class="sec sec4">
+                    <div class="sec4_img"><img src="../../assets/images/promotion/2023/1113_matildany/04_text_img.jpg">
+                    </div>
+                </section>
+                <section class="sec sec5">
+                    <div class="sec5_img1 sec5_img ab"><img
+                            src="../../assets/images/promotion/2023/1113_matildany/05_img_1.png"></div>
+                    <div class="sec5_img2 sec5_img ab"><img
+                            src="../../assets/images/promotion/2023/1113_matildany/05_img_2.png"></div>
+                    <div class="sec5_top ab"><img
+                            src="../../assets/images/promotion/2023/1113_matildany/05_img_top.png"></div>
+                </section>
+                <section class="sec sec6">
+                    <div class="sec6_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1113_matildany/06_img_1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1113_matildany/06_img_2.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec7">
+                    <div class="sec7_img"><img src="../../assets/images/promotion/2023/1113_matildany/07.jpg"></div>
+                </section>
+                <section class="sec sec8">
+                    <div class="sec8_img"><img src="../../assets/images/promotion/2023/1113_matildany/10.jpg"></div>
+                    <div class="sec8_rollingWrap1 ab">
+                        <div class="sec8_rolling1">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1113_matildany/08_img_1.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1113_matildany/08_img_1-1.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec8_rollingWrap2 ab">
+                        <div class="sec8_rolling2">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1113_matildany/08_img_2.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1113_matildany/08_img_2-1.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec sec9">
+                    <div class="sec9_img"><img src="../../assets/images/promotion/2023/1113_matildany/09.jpg"></div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper3 = new Swiper(".sec3_rolling", {
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 1500
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        $(window).scroll(function () {
+            let pageHeight = $(this).height();
+            let scrollTop = $(this).scrollTop() + pageHeight;
+            let op100 = $(".sec5").offset().top;
+            if (op100 <= scrollTop) {
+                $('.sec5_img').addClass('show');
+            }
+        });
+
+        var swiper6 = new Swiper(".sec6_rolling", {
+            effect: 'fade',
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 1500
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+
+        var swiper81 = new Swiper(".sec8_rolling1", {
+            effect: 'fade',
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 2000
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+
+        var swiper82 = new Swiper(".sec8_rolling2", {
+            effect: 'fade',
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 2000
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec2_rolling {
+            width: 100%;
+        }
+
+        .sec4_video {
+            width: 100%;
+            padding-top: 12%;
+            box-sizing: border-box;
+            background: #F3C0BF;
+        }
+
+        .video_full {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .video_full:before {
+            content: '';
+            position: relative;
+            top: 0;
+            left: 0;
+            padding-top: 56.25%;
+            width: 100%;
+            display: block;
+        }
+
+        .video_full iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .sec7 {
+            width: 100%;
+            background: #00954E;
+            box-sizing: border-box;
+        }
+
+        .sec7_rollingWrap {
+            width: 100%;
+            ;
+            left: 0;
+            top: 24.8%;
+            margin: 0 auto;
+            padding-bottom: 25%;
+        }
+
+        .sec7_rolling {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .sec7_rolling .swiper-slide {
+            padding: 0 10px;
+        }
+
+        .sec7 .swiper-pagination {
+            bottom: -11% !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sec7 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .sec7 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px !important;
+            background-color: #222;
+            opacity: 0.15 !important;
+        }
+
+        .sec7 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #222 !important;
+            opacity: 1 !important;
+        }
+
+
+        @media (max-width: 500px) {
+            .sec7_rolling .swiper-slide {
+                padding: 0 2vw;
+            }
+
+            .sec7 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .sec7 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 2vw;
+                height: 2vw;
+                margin: 0 1vw !important;
+            }
+        }
+
+        .sec8_ani {
+            width: 42.8%;
+            opacity: 0;
+        }
+
+        .sec8_ani1 {
+            left: 6%;
+            top: 20.5%;
+        }
+
+        .sec8_ani2 {
+            right: 6%;
+            top: 20.5%;
+        }
+
+        .sec8_ani3 {
+            left: 6%;
+            bottom: 18.5%;
+        }
+
+        .sec8_ani4 {
+            right: 6%;
+            bottom: 18.5%;
+        }
+
+        .sec8.show .sec8_ani1 {
+            animation: sec8fadeIn 2s alternate;
+            -webkit-animation: sec8fadeIn 2s alternate;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+        }
+
+        .sec8.show .sec8_ani2 {
+            animation: sec8fadeIn 2s alternate;
+            -webkit-animation: sec8fadeIn 2s alternate;
+            animation-delay: 6s;
+            animation-fill-mode: forwards;
+        }
+
+        .sec8.show .sec8_ani3 {
+            animation: sec8fadeIn 2s alternate;
+            -webkit-animation: sec8fadeIn 2s alternate;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+        }
+
+        .sec8.show .sec8_ani4 {
+            animation: sec8fadeIn 2s alternate;
+            -webkit-animation: sec8fadeIn 2s alternate;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes sec8fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+
+                <section class="sec sec1">
+                    <div class="sec1_img"><img src="../../assets/images/promotion/2023/1027_bebedepino/01.jpg"
+                            alt="bebe de pino"></div>
+                    <div class="sec1_img"><img src="../../assets/images/promotion/2023/1027_bebedepino/02.jpg"
+                            alt="bebe de pino"></div>
+                </section>
+
+                <section class="sec sec2">
+                    <div class="sec2_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1027_bebedepino/03-1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1027_bebedepino/03-2.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1027_bebedepino/03-3.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1027_bebedepino/03-4.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1027_bebedepino/03-5.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec3_1">
+                    <img src="../../assets/images/promotion/2023/1027_bebedepino/03.jpg">
+                </section>
+
+                <section class="sec sec4">
+                    <img src="../../assets/images/promotion/2023/1027_bebedepino/04.jpg">
+                    <img src="../../assets/images/promotion/2023/1027_bebedepino/05.jpg">
+                    <img src="../../assets/images/promotion/2023/1027_bebedepino/06.jpg">
+                </section>
+
+
+                <section class="sec sec7">
+                    <div class="sec7_img"><img src="../../assets/images/promotion/2023/1027_bebedepino/07.jpg"></div>
+                    <div class="sec7_rollingWrap ab">
+                        <div class="sec7_rolling sec">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1027_bebedepino/05-1.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1027_bebedepino/05-2.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1027_bebedepino/05-3.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1027_bebedepino/05-4.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1027_bebedepino/05-5.jpg"></li>
+                                <li class="item swiper-slide"><img
+                                        src="../../assets/images/promotion/2023/1027_bebedepino/05-6.jpg"></li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="sec sec8 active">
+                    <div class="sec8_img"><img src="../../assets/images/promotion/2023/1027_bebedepino/08.jpg"></div>
+                    <div class="sec8_ani ab sec8_ani1"><img
+                            src="../../assets/images/promotion/2023/1027_bebedepino/08-1.jpg">
+                    </div>
+                    <div class="sec8_ani ab sec8_ani2"><img
+                            src="../../assets/images/promotion/2023/1027_bebedepino/08-2.jpg">
+                    </div>
+                    <div class="sec8_ani ab sec8_ani3"><img
+                            src="../../assets/images/promotion/2023/1027_bebedepino/08-3.jpg">
+                    </div>
+                    <div class="sec8_ani ab sec8_ani4"><img
+                            src="../../assets/images/promotion/2023/1027_bebedepino/08-4.jpg">
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+    <script>
+        $(window).scroll(function () {
+            let pageHeight = $(this).height();
+            let scrollTop = $(this).scrollTop() + pageHeight;
+            let op100 = $(".sec8.active").offset().top;
+            if (op100 <= scrollTop) {
+                $('.sec8.active').addClass('show');
+            }
+        });
+
+
+        var swiper2 = new Swiper(".sec2_rolling", {
+            freeMode: true,
+            slidesPerView: 'auto',
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 1500
+            },
+        });
+        var swiper7 = new Swiper(".sec7_rolling", {
+            slidesPerView: 1.2,
+            loop: true,
+            centeredSlides: true,
+            speed: 1500,
+            autoplay: {
+                delay: 1500
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

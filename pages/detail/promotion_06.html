@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .sec {
+            width: 100%;
+            position: relative;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1 {
+            overflow: hidden;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .sec1_img1-1 {
+            width: 26.2%;
+            left: 0;
+            top: 32%;
+            z-index: 2;
+            animation: showIn01-1 4s infinite;
+            animation-fill-mode: none;
+        }
+
+        .sec1_img1-2 {
+            width: 49.8%;
+            right: 0;
+            top: 19%;
+            z-index: 2;
+            animation: showIn01-2 4s infinite;
+            animation-fill-mode: none;
+        }
+
+        .sec1_img1-3 {
+            width: 39.6%;
+            right: 0;
+            bottom: 15%;
+            z-index: 2;
+            animation: showIn01-3 4s infinite;
+            animation-fill-mode: none;
+        }
+
+        @keyframes showIn01-1 {
+            0% {
+                top: 30%;
+            }
+
+            25% {
+                top: 34%;
+            }
+
+            50% {
+                top: 30%;
+            }
+
+            75% {
+                top: 34%;
+            }
+
+            100% {
+                top: 30%;
+            }
+        }
+
+        @keyframes showIn01-2 {
+            0% {
+                top: 19%;
+            }
+
+            25% {
+                top: 17%;
+            }
+
+            50% {
+                top: 19%;
+            }
+
+            75% {
+                top: 17%;
+            }
+
+            100% {
+                top: 19%;
+            }
+        }
+
+        @keyframes showIn01-3 {
+            0% {
+                bottom: 17%;
+            }
+
+            25% {
+                bottom: 13%;
+            }
+
+            50% {
+                bottom: 17%;
+            }
+
+            75% {
+                bottom: 13%;
+            }
+
+            100% {
+                bottom: 17%;
+            }
+        }
+
+        .sec1_img2-1 {
+            width: 55.6%;
+            left: 0%;
+            top: 35%;
+            z-index: 3;
+            animation: showIn02-1 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .sec1_img2-2 {
+            width: 42.6%;
+            right: -2%;
+            top: 0%;
+            z-index: 3;
+            animation: showIn02-2 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .sec1_img2-3 {
+            width: 60.2%;
+            right: 0%;
+            bottom: 0%;
+            z-index: 3;
+            animation: showIn02-3 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .sec3_rolling,
+        .sec4_rolling,
+        .sec5_rolling {
+            width: 84.4%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 25.5%;
+        }
+
+        @keyframes showIn02-1 {
+            0% {
+                left: -56%;
+            }
+
+            30% {
+                left: 0%;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+        @keyframes showIn02-2 {
+            0% {
+                right: -43%;
+            }
+
+            30% {
+                right: -43%;
+            }
+
+            60% {
+                right: -2%;
+            }
+
+            100% {
+                right: -2%;
+            }
+        }
+
+        @keyframes showIn02-3 {
+            0% {
+                bottom: -45%;
+            }
+
+            60% {
+                bottom: -45%;
+            }
+
+            90% {
+                bottom: 0%;
+            }
+
+            100% {
+                bottom: 0%;
+            }
+        }
+
+        .sec6_rolling {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec6_rolling .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .sec6_rolling .swiper-slide {
+            width: auto !important;
+            padding: 0;
+            height: 100%;
+        }
+
+        .sec6_rolling .swiper-slide img {
+            width: auto !important;
+            overflow: hidden;
+            height: 673px;
+        }
+
+        @media (max-width: 500px) {
+            .sec6_rolling .swiper-slide img {
+                width: auto !important;
+                overflow: hidden;
+                height: 134.6vw;
+            }
+        }
+
+        .sec6_top1 {
+            width: 10.7%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5.3%;
+            z-index: 3;
+        }
+
+        .sec6_top2 {
+            width: 15.2%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 4.6%;
+            z-index: 3;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="promotion_detail_contain">
+                <section class="sec sec1">
+                    <div class="sec1_img"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_bg_ver2.jpg"></div>
+                    <div class="sec1_img1 ab sec1_img1-1"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_01.png"></div>
+                    <div class="sec1_img1 ab sec1_img1-2"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_02.png"></div>
+                    <div class="sec1_img1 ab sec1_img1-3"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_03.png"></div>
+                    <div class="sec1_img2 ab sec1_img2-1"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_pd01.png"></div>
+                    <div class="sec1_img2 ab sec1_img2-2"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_pd02.png"></div>
+                    <div class="sec1_img2 ab sec1_img2-3"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/01_top_pd03.png"></div>
+                </section>
+                <section class="sec sec2">
+                    <div class="sec2_img"><img src="../../assets/images/promotion/2023/1108_grosmimi/02_text.jpg"></div>
+                </section>
+
+                <section class="sec sec3">
+                    <div class="sec3 sec3_img"><img src="../../assets/images/promotion/2023/1108_grosmimi/03_img.jpg">
+                    </div>
+                    <div class="sec3_rolling ab">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/03_img_1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/03_img_2.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec4">
+                    <div class="sec4 sec4_img"><img src="../../assets/images/promotion/2023/1108_grosmimi/04_img.jpg">
+                    </div>
+                    <div class="sec4_rolling ab">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/04_img_1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/04_img_2.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec5">
+                    <div class="sec5 sec5_img"><img src="../../assets/images/promotion/2023/1108_grosmimi/05_img.jpg">
+                    </div>
+                    <div class="sec5_rolling ab">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/05_img_1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/05_img_02.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec sec6">
+                    <div class="sec6_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/06_img_1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/06_img_2.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="../../assets/images/promotion/2023/1108_grosmimi/06_img_3.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="sec6_top1 ab"><img
+                            src="../../assets/images/promotion/2023/1108_grosmimi/grosmimi_kr.png">
+                    </div>
+                    <div class="sec6_top2 ab"><img src="../../assets/images/promotion/2023/1108_grosmimi/grosmimi.png">
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper3 = new Swiper(".sec3_rolling", {
+            effect: 'fade',
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 1500
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper4 = new Swiper(".sec4_rolling", {
+            effect: 'fade',
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 1500
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper5 = new Swiper(".sec5_rolling", {
+            effect: 'fade',
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 1500
+            },
+            slidesPerView: 1,
+            draggable: true,
+            autoplay: true,
+        });
+        var swiper6 = new Swiper(".sec6_rolling", {
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 4500,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>
