@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="../../assets/style/owl.carousel.css">
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+</head>
+
+<body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        .pc_ess.sep_essential3_wrap2021 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.sep_essential3_wrap2021 img {
+            width: 100%;
+        }
+
+        .pc_ess.sep_essential3_wrap2021 .et_sep3_top {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.sep_essential3_wrap2021 .et_sep3_top .sep3_topimg02 {
+            position: absolute;
+            width: 50%;
+            left: 0px;
+            top: 0px;
+            animation: sep_et3ani101 2s;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .pc_ess .sep3_toptitle {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+        .pc_ess .sep3_topop {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            animation: sep_et3ani101 1s;
+            animation-delay: 2.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .pc_ess .sep3_tocircle {
+            position: absolute;
+            width: 30%;
+            left: 35%;
+            top: 25%;
+            animation: sep_et3ani101 1s;
+            animation-delay: 4s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .pc_ess .sep3_tocircle div {
+            animation: sep_et3ani102 3s infinite;
+            animation-delay: 4s;
+        }
+
+        .m_ess.sep_essential3_wrap2021 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.sep_essential3_wrap2021 img {
+            width: 100%;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_top {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_top .sep3_topimg02 {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            animation: sep_et3ani101 2s;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .sep3_toptitle {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .sep3_topop {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            animation: sep_et3ani101 1s;
+            animation-delay: 2.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .sep3_tocircle {
+            position: absolute;
+            width: 60%;
+            left: 20%;
+            top: 32%;
+            animation: sep_et3ani101 1s;
+            animation-delay: 4s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .sep3_tocircle div {
+            animation: sep_et3ani102 3s infinite;
+            animation-delay: 4s;
+        }
+
+
+        .m_ess .sep3_middle {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess .sep3_middleimg {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            animation: sep_et3ani103 4s infinite;
+            opacity: 0;
+        }
+
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_bottom {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_bottom .sep3_bottomimg02 {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            animation: sep_et3ani103 4s infinite;
+            opacity: 0;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .sep3_bottomtitle {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .sep3_bottomop {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+
+        @keyframes sep_et3ani101 {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes sep_et3ani102 {
+            0% {
+                transform: rotate(2deg);
+            }
+
+            25% {
+                transform: rotate(-2deg);
+            }
+
+            50% {
+                transform: rotate(2deg);
+            }
+
+            75% {
+                transform: rotate(-2deg);
+            }
+
+            100% {
+                transform: rotate(2deg);
+            }
+        }
+
+        @keyframes sep_et3ani103 {
+            0% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_video {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_video .es_movie {
+            position: absolute;
+            width: 88%;
+            left: 6%;
+            top: 22%;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_video .es_movie .video_full1 {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+        }
+
+        .m_ess.sep_essential3_wrap2021 .et_sep3_video .es_movie .video_full1 iframe {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
+    <header id="header"></header>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess sep_essential3_wrap2021">
+                    <div class="et_sep3_top">
+                        <img src="../../assets/images/lookbook/2021/9-3p/pc_01.png" alt="" border="0" />
+                        <div class="sep3_topimg02"><img src="../../assets/images/lookbook/2021/9-3p/pc_img2.png" alt=""
+                                border="0" /></div>
+                        <div class="sep3_toptitle"><img src="../../assets/images/lookbook/2021/9-3p/pc_title.png" alt=""
+                                border="0" /></div>
+                        <div class="sep3_topop"><img src="../../assets/images/lookbook/2021/9-3p/pc_op_01.png" alt=""
+                                border="0" /></div>
+                        <div class="sep3_tocircle">
+                            <div><img src="../../assets/images/lookbook/2021/9-3p/pc_img_circle.png" alt=""
+                                    border="0" /></div>
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_02.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_03.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_04.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_05.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_06.png" alt="" border="0" /></div>
+
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_08.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_09.png" alt="" border="0" /></div>
+                    <div class="sep_es_slide">
+                        <div class="sep_es_bg">
+                            <div class="sep_es_carousel_wrap">
+                                <div class="owl-carousel sep_es_carousel owl-theme">
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_1.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_2.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_3.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_4.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_5.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_6.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_7.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_8.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_9.jpg"
+                                                alt="" border="0" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/pc_11.png" alt="" border="0" /></div>
+                </div>
+                <div class="m_ess sep_essential3_wrap2021">
+                    <div class="et_sep3_top">
+                        <img src="../../assets/images/lookbook/2021/9-3p/m_01.jpg" alt="" border="0" />
+                        <div class="sep3_topimg02"><img src="../../assets/images/lookbook/2021/9-3p/m_01img.jpg" alt=""
+                                border="0" /></div>
+                        <div class="sep3_toptitle"><img src="../../assets/images/lookbook/2021/9-3p/m_title_01.png"
+                                alt="" border="0" /></div>
+                        <div class="sep3_topop"><img src="../../assets/images/lookbook/2021/9-3p/m_op.png" alt=""
+                                border="0" />
+                        </div>
+                        <div class="sep3_tocircle">
+                            <div><img src="../../assets/images/lookbook/2021/9-3p/m_img_circle.png" alt="" border="0" />
+                            </div>
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_02.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_03.jpg" alt="" border="0" /></div>
+                    <div class="sep3_middle">
+                        <img src="../../assets/images/lookbook/2021/9-3p/m_0401.jpg" alt="" border="0" />
+                        <div class="sep3_middleimg"><img src="../../assets/images/lookbook/2021/9-3p/m_0402.jpg" alt=""
+                                border="0" /></div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_05.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_06.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_07.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_08.jpg" alt="" border="0" /></div>
+
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_10.jpg" alt="" border="0" /></div>
+                    <div class="sep3_middle">
+                        <img src="../../assets/images/lookbook/2021/9-3p/m_1101.jpg" alt="" border="0" />
+                        <div class="sep3_middleimg"><img src="../../assets/images/lookbook/2021/9-3p/m_1102.jpg" alt=""
+                                border="0" /></div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/9-3p/m_12.jpg" alt="" border="0" /></div>
+                    <div class="sep_es_slide">
+                        <div class="sep_es_bg">
+                            <div class="sep_es_carousel_wrap">
+                                <div class="owl-carousel sep_es_carousel owl-theme">
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_1.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_2.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_3.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_4.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_5.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_6.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_7.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_8.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/9-3p/sli_9.jpg"
+                                                alt="" border="0" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="et_sep3_bottom">
+                        <img src="../../assets/images/lookbook/2021/9-3p/m_13img01.jpg" alt="" border="0" />
+                        <div class="sep3_bottomimg02"><img src="../../assets/images/lookbook/2021/9-3p/m_13img02.jpg"
+                                alt="" border="0" /></div>
+                        <div class="sep3_bottomtitle"><img src="../../assets/images/lookbook/2021/9-3p/m_title.png"
+                                alt="" border="0" /></div>
+                    </div>
+
+
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="../../assets/js/owl.carousel.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.pc_ess .sep_es_carousel').owlCarousel({
+                loop: true,
+                items: 3,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.pc_ess .sep_es_carousel').trigger('play.owl.autoplay', [2000]);
+
+            function setSpeed() {
+                jQuery('.pc_ess .sep_es_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed, 1000);
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.m_ess .sep_es_carousel').owlCarousel({
+                loop: true,
+                items: 1,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.m_ess .sep_es_carousel').trigger('play.owl.autoplay', [2000]);
+
+            function setSpeed2() {
+                jQuery('.m_ess .sep_es_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed2, 1000);
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

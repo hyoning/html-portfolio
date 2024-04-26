@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="../../assets/style/owl.carousel.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        /* 기획전 2106 에센셜*/
+        .pc_ess.jun_essential_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .pc_ess.jun_essential_wrap img {
+            width: 100%;
+        }
+
+        .pc_ess .jun_es_container {
+            max-width: 1600px;
+            width: 100%;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_imgback {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_imgback>img {
+            width: 100%;
+        }
+
+        .pc_ess .js_es_swiper {
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess .jun_es_imglist {
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_imglist1 {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .pc_ess .jun_es_imglist2 {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 3;
+        }
+
+        .pc_ess .jun_es_title {
+            position: relative;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .pc_ess .jun_es_carousel_wrap {
+            width: 100%;
+            padding-top: 45%;
+        }
+
+        .pc_ess .jun_es_slide .owl-carousel .owl-stage-outer {
+            margin-top: -45%;
+        }
+
+        .pc_ess .js_top_inner {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .pc_ess .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .pc_ess .swiper-slide-active .js_top_inner {
+            animation-name: mmzrFadeInOut;
+            animation-duration: 2s;
+        }
+
+        .pc_ess .mmzrFadeInOut {
+            -webkit-animation-name: mmzrFadeInOut;
+            animation-name: mmzrFadeInOut;
+        }
+
+        .pc_ess .mmzrFadeInOut2 {
+            -webkit-animation-name: mmzrFadeInOut2;
+            animation-name: mmzrFadeInOut2;
+        }
+
+        .pc_ess .jun_es_5 {
+            position: relative;
+            width: 100%;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_5 .jun_es_5t {
+            position: absolute;
+            right: 9%;
+            bottom: 9%;
+            width: 37.5%;
+            max-width: 600px;
+        }
+
+        .pc_ess .jun_es_5 .jun_es_5_1 {
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            width: 40%;
+            max-width: 640px;
+        }
+
+        .pc_ess .jun_es_5 .jun_es_5_2 {
+            position: absolute;
+            right: 5%;
+            top: 10%;
+            width: 21.25%;
+            max-width: 340px;
+        }
+
+
+        .pc_ess .jun_es_6 {
+            position: relative;
+            width: 100%;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_6 .jun_es_6_1 {
+            position: absolute;
+            right: 10%;
+            top: 5%;
+            width: 40%;
+            max-width: 640px;
+        }
+
+        .pc_ess .jun_es_7 {
+            position: relative;
+            width: 100%;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_7 .jun_es_7t {
+            position: absolute;
+            left: 10%;
+            top: 12%;
+            width: 37.5%;
+            max-width: 600px;
+        }
+
+        .pc_ess .jun_es_7 .jun_es_7_1 {
+            position: absolute;
+            right: 5%;
+            top: 8%;
+            width: 42.5%;
+            max-width: 680px;
+        }
+
+        .pc_ess .jun_es_7 .jun_es_7_2 {
+            position: absolute;
+            left: 0px;
+            bottom: 8%;
+            width: 35.9%;
+            max-width: 575px;
+        }
+
+        .pc_ess .jun_es_8 {
+            position: relative;
+            width: 100%;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .pc_ess .jun_es_8 .jun_es_8t {
+            position: absolute;
+            right: 0px;
+            bottom: 17.5%;
+            width: 37.5%;
+            max-width: 600px;
+        }
+
+        .pc_ess .jun_es_8 .jun_es_8_1 {
+            position: absolute;
+            left: 5%;
+            top: 14%;
+            width: 30%;
+            max-width: 480px;
+        }
+
+        .pc_ess .jun_es_8 .jun_es_8_2 {
+            position: absolute;
+            right: 5%;
+            top: 6%;
+            width: 40%;
+            max-width: 640px;
+        }
+
+        .m_ess .jun_es_container .swiper-container {
+            width: 100%;
+            height: 100%;
+            overflow: hideen;
+            box-sizing: border-box;
+        }
+
+        .m_ess.jun_essential_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .m_ess.jun_essential_wrap img {
+            width: 100%;
+        }
+
+        .m_ess .jun_es_container {
+            width: 100%;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .m_ess .jun_es_imgback {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .m_ess .jun_es_imgback>img {
+            width: 100%;
+        }
+
+        .m_ess .js_es_swiper {
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess .jun_es_imglist {
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .m_ess .jun_es_imglist1 {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .m_ess .jun_es_imglist2 {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 3;
+        }
+
+        .m_ess .jun_es_title {
+            position: relative;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .m_ess .jun_es_carousel_wrap {
+            width: 100%;
+            padding-top: 135%;
+        }
+
+        .m_ess .jun_es_slide .owl-carousel .owl-stage-outer {
+            margin-top: -135%;
+        }
+
+        .m_ess .jun_es_slide .owl-carousel .owl-dots {
+            display: none;
+        }
+
+        .m_ess .js_top_inner {
+            width: 100%;
+            height: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .m_ess .swiper-slide-active .js_top_inner {
+            animation-name: mmzrFadeInOut;
+            animation-duration: 2s;
+        }
+
+
+        @-webkit-keyframes mmzrFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.5);
+                filter: blur(5px);
+                -webkit-filter: blur(5px);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+                filter: blur(0px);
+                -webkit-filter: blur(0px);
+            }
+        }
+
+        @keyframes mmzrFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.5);
+                filter: blur(5px);
+                -webkit-filter: blur(5px);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+                filter: blur(0px);
+                -webkit-filter: blur(0px);
+            }
+        }
+
+        .m_ess .mmzrFadeInOut {
+            -webkit-animation-name: mmzrFadeInOut;
+            animation-name: mmzrFadeInOut;
+        }
+
+        @-webkit-keyframes mmzrFadeInOut2 {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.1);
+                filter: blur(5px);
+                -webkit-filter: blur(5px);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+                filter: blur(0px);
+                -webkit-filter: blur(0px);
+            }
+        }
+
+        @keyframes mmzrFadeInOut2 {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.1);
+                filter: blur(5px);
+                -webkit-filter: blur(5px);
+            }
+
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+                filter: blur(0px);
+                -webkit-filter: blur(0px);
+            }
+        }
+
+        .m_ess .mmzrFadeInOut2 {
+            -webkit-animation-name: mmzrFadeInOut2;
+            animation-name: mmzrFadeInOut2;
+        }
+
+        .m_ess .js_es_6 {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .m_ess .js_es_6img {
+            position: absolute;
+            right: 0px;
+            top: 15%;
+            width: 42.5%;
+        }
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
+    <header id="header"></header>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess jun_essential_wrap">
+                    <div class="jun_es_container">
+                        <div class="jun_es_imgback">
+                            <img src="../../assets/images/lookbook/2021/6p/pc_main_top.png">
+                            <div class="jun_es_imglist jun_es_imglist1">
+                                <div class="jun_es_title">
+                                    <!-- 타이틀 슬라이드 -->
+                                    <div class="swiper-container js_es_swiper js_es_wrap">
+                                        <ul class="swiper-wrapper js_es_swiper_01">
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/pc_main_1.jpg" alt=""
+                                                        border="0" />
+                                                </div>
+                                            </li>
+
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/pc_main_2.jpg" alt=""
+                                                        border="0" />
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/pc_main_3.jpg" alt=""
+                                                        border="0" />
+                                                </div>
+                                            </li>
+
+                                        </ul><!-- .swiper-wrapper -->
+                                        <!-- Add Scrollbar
+                                                              <div class="swiper-scrollbar"></div> -->
+                                    </div><!-- .swiper-container -->
+                                    <!-- 타이틀 슬라이드 -->
+                                </div>
+                            </div>
+                            <div class="jun_es_imglist jun_es_imglist2 mmzrFadeInOut animated"
+                                style="animation-duration:1.3s;"><img
+                                    src="../../assets/images/lookbook/2021/6p/pc_main_text.png">
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/6p/pc_02.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/6p/pc_03.jpg" alt="" border="0" /></div>
+
+                    <div class="jun_es_5">
+                        <img src="../../assets/images/lookbook/2021/6p/pc_05_bg.jpg" alt="" border="0" />
+                        <div class="jun_es_5t"> <a href="javascript:void(0);" target="_blank"><img
+                                    src="../../assets/images/lookbook/2021/6p/pc_05_t.png" alt="" border="0" /></a>
+                        </div>
+                        <div class="jun_es_5_1"> <a href="javascript:void(0);" target="_blank"><img
+                                    src="../../assets/images/lookbook/2021/6p/pc_05_1.png" alt="" border="0" /></a>
+                        </div>
+                        <div class="jun_es_5_2"> <a href="javascript:void(0);" target="_blank"><img
+                                    src="../../assets/images/lookbook/2021/6p/pc_05_2.png" alt="" border="0" /></a>
+                        </div>
+                    </div>
+
+
+                    <div class="jun_es_slide">
+                        <div class="jun_es_bg">
+                            <div class="jun_es_carousel_wrap">
+                                <div class="owl-carousel jun_es_carousel owl-theme">
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_1.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_2.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_3.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_4.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_5.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_6.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_7.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_8.jpg"
+                                                alt="" border="0" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jun_es_container">
+                        <div class="jun_es_imgback">
+                            <img src="../../assets/images/lookbook/2021/6p/pc_main_top.png">
+                            <div class="jun_es_imglist jun_es_imglist1">
+                                <div class="jun_es_title">
+                                    <!-- 타이틀 슬라이드 -->
+                                    <div class="swiper-container js_es_swiper js_es_wrap">
+                                        <ul class="swiper-wrapper js_es_swiper_01">
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/pc_last_img_1.jpg"
+                                                        alt="" border="0" />
+                                                </div>
+                                            </li>
+
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/pc_last_img_2.jpg"
+                                                        alt="" border="0" />
+                                                </div>
+                                            </li>
+
+                                        </ul><!-- .swiper-wrapper -->
+                                        <!-- Add Scrollbar
+                                                              <div class="swiper-scrollbar"></div> -->
+                                    </div><!-- .swiper-container -->
+                                    <!-- 타이틀 슬라이드 -->
+                                </div>
+                            </div>
+                            <div class="jun_es_imglist jun_es_imglist2 mmzrFadeInOut animated"
+                                style="animation-duration:1.3s;"><img
+                                    src="../../assets/images/lookbook/2021/6p/pc_last_text.png">
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m_ess jun_essential_wrap">
+                    <div class="jun_es_container">
+                        <div class="jun_es_imgback">
+                            <img src="../../assets/images/lookbook/2021/6p/m_main_top.png">
+                            <div class="jun_es_imglist jun_es_imglist1">
+                                <div class="jun_es_title">
+                                    <!-- 타이틀 슬라이드 -->
+                                    <div class="swiper-container js_es_swiper js_es_wrap">
+                                        <ul class="swiper-wrapper js_es_swiper_01">
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/m_main_1.jpg" alt=""
+                                                        border="0" />
+                                                </div>
+                                            </li>
+
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/m_main_2.jpg" alt=""
+                                                        border="0" />
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/m_main_3.jpg" alt=""
+                                                        border="0" />
+                                                </div>
+                                            </li>
+
+                                        </ul><!-- .swiper-wrapper -->
+                                        <!-- Add Scrollbar
+                                                              <div class="swiper-scrollbar"></div> -->
+                                    </div><!-- .swiper-container -->
+                                    <!-- 타이틀 슬라이드 -->
+                                </div>
+                            </div>
+                            <div class="jun_es_imglist jun_es_imglist2 mmzrFadeInOut animated"
+                                style="animation-duration:1.3s;"><img
+                                    src="../../assets/images/lookbook/2021/6p/m_main_text.png">
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/6p/m_02.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/6p/m_03.jpg" alt="" border="0" /></div>
+
+                    <div><a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_005.jpg" alt="" border="0" /></a></div>
+                    <div class="js_es_6">
+                        <a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_06_bg.jpg" alt="" border="0" /></a>
+                        <div class="js_es_6img"><a href="/product/detail.html?product_no=33939" target="_blank"><img
+                                    src="../../assets/images/lookbook/2021/6p/m_06_1.png" alt="" border="0" /></div>
+                    </div>
+
+                    <div><a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_008.jpg" alt="" border="0" /></a></div>
+
+                    <div><a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_10.jpg" alt="" border="0" /></a></div>
+                    <div><a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_011.jpg" alt="" border="0" /></a></div>
+
+                    <div><a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_013.jpg" alt="" border="0" /></a></div>
+                    <div> <a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_14.jpg" alt="" border="0" /></a></div>
+                    <div><a href="javascript:void(0);" target="_blank"><img
+                                src="../../assets/images/lookbook/2021/6p/m_015.jpg" alt="" border="0" /></a></div>
+
+                    <div class="jun_es_slide">
+                        <div class="jun_es_bg">
+                            <div class="jun_es_carousel_wrap">
+                                <div class="owl-carousel jun_es_carousel owl-theme">
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_1.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_2.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_3.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_4.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_5.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_6.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_7.jpg"
+                                                alt="" border="0" /></a></div>
+                                    <div class="item"><a><img src="../../assets/images/lookbook/2021/6p/slide_img_8.jpg"
+                                                alt="" border="0" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jun_es_container">
+                        <div class="jun_es_imgback">
+                            <img src="../../assets/images/lookbook/2021/6p/m_main_top2.png">
+                            <div class="jun_es_imglist jun_es_imglist1">
+                                <div class="jun_es_title">
+                                    <!-- 타이틀 슬라이드 -->
+                                    <div class="swiper-container js_es_swiper js_es_wrap">
+                                        <ul class="swiper-wrapper js_es_swiper_01">
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/m_last_img_1.jpg"
+                                                        alt="" border="0" />
+                                                </div>
+                                            </li>
+
+                                            <li class="swiper-slide">
+                                                <div class="js_top_inner animated">
+                                                    <img src="../../assets/images/lookbook/2021/6p/m_last_img_2.jpg"
+                                                        alt="" border="0" />
+                                                </div>
+                                            </li>
+                                        </ul><!-- .swiper-wrapper -->
+                                        <!-- Add Scrollbar
+                                                              <div class="swiper-scrollbar"></div> -->
+                                    </div><!-- .swiper-container -->
+                                    <!-- 타이틀 슬라이드 -->
+                                </div>
+                            </div>
+                            <div class="jun_es_imglist jun_es_imglist2 mmzrFadeInOut animated"
+                                style="animation-duration:1.3s;"><img
+                                    src="../../assets/images/lookbook/2021/6p/m_last_text.png">
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="../../assets/js/owl.carousel.js"></script>
+    <script>
+        //swiper slider
+        var js_slide = new Swiper('.pc_ess .swiper-container.js_es_swiper', {
+
+            slidesPerView: 1,
+
+            navigation: {
+                nextEl: '.sw1_next',
+                prevEl: '.sw1_prev',
+            },
+
+            //루프 기능 활성화 하려면 아래 주석을 해제하세요
+            loop: true,
+            speed: 1500,
+
+            //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+            autoplay: {
+                delay: 3500
+            },
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.pc_ess .jun_es_carousel').owlCarousel({
+                loop: true,
+                items: 3,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.pc_ess .jun_es_carousel').trigger('play.owl.autoplay', [2000]);
+
+            function setSpeed() {
+                jQuery('.pc_ess .jun_es_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed, 1000);
+        });
+    </script>
+    <script>
+        //swiper slider
+        var js_slide = new Swiper('.m_ess .swiper-container.js_es_swiper', {
+
+            slidesPerView: 1,
+
+            navigation: {
+                nextEl: '.sw1_next',
+                prevEl: '.sw1_prev',
+            },
+
+            //루프 기능 활성화 하려면 아래 주석을 해제하세요
+            loop: true,
+            speed: 1500,
+
+            //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+            autoplay: {
+                delay: 3500
+            },
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.m_ess .jun_es_carousel').owlCarousel({
+                loop: true,
+                items: 1,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.m_ess .jun_es_carousel').trigger('play.owl.autoplay', [2000]);
+
+            function setSpeed2() {
+                jQuery('.m_ess .jun_es_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed2, 1000);
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

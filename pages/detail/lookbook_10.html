@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="../../assets/style/owl.carousel.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+</head>
+
+<body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        .pc_ess.oct_essential_wrap2021 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.oct_essential_wrap2021 img {
+            width: 100%;
+        }
+
+        .pc_ess.oct_essential_wrap2021 .et_oct_video {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.oct_essential_wrap2021 .et_oct_video .es_movie {
+            position: absolute;
+            width: 75%;
+            left: 12.5%;
+            top: 13.5%;
+        }
+
+        .pc_ess.oct_essential_wrap2021 .et_oct_video .es_movie .video_full1 {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+        }
+
+        .pc_ess.oct_essential_wrap2021 .et_oct_video .es_movie .video_full1 iframe {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pc_ess .oct_es_carousel_wrap {
+            width: 100%;
+            padding-top: 46%;
+        }
+
+        .pc_ess .oct_es_slide .owl-carousel .owl-stage-outer {
+            margin-top: -46%;
+        }
+
+        .pc_ess .swiper-slide-active .oct_top_inner {
+            animation-name: mmzrFadeInOut;
+            animation-duration: 2s;
+        }
+
+        .m_ess.oct_essential_wrap2021 .oct_topimg_title {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+        }
+
+        .m_ess.oct_essential_wrap2021 .oct_baby_sub {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.oct_essential_wrap2021 .oct_baby_sub .octbb_subimg01 {
+            position: absolute;
+            width: 46%;
+            left: 4%;
+            top: 12%;
+        }
+
+        .m_ess.oct_essential_wrap2021 .oct_baby_sub .octbb_subimg02 {
+            position: absolute;
+            width: 46%;
+            left: 4%;
+            top: 12%;
+            animation: octbb_subimg 4s infinite;
+        }
+
+        .m_ess.oct_essential_wrap2021 .oct_baby_sub .octbb_subimg03 {
+            position: absolute;
+            width: 46%;
+            right: 4%;
+            top: 23%;
+        }
+
+        .m_ess.oct_essential_wrap2021 .oct_baby_sub .octbb_subimg04 {
+            position: absolute;
+            width: 46%;
+            right: 4%;
+            top: 23%;
+            animation: octbb_subimg 4s infinite;
+            animation-delay: 1s;
+        }
+
+        /* 기획전 21010 에센셜*/
+        .m_ess.oct_essential_wrap2021 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.oct_essential_wrap2021 img {
+            width: 100%;
+        }
+
+        .m_ess.oct_essential_wrap2021 .et_oct_top {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.oct_essential_wrap2021 .et_oct_top .oct_topimg02 {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            animation: oct_topimg 4s infinite;
+        }
+
+        .m_ess.oct_essential_wrap2021 .et_oct_video {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.oct_essential_wrap2021 .et_oct_video .es_movie {
+            position: absolute;
+            width: 100%;
+            left: 0%;
+            top: 0%;
+        }
+
+        .m_ess.oct_essential_wrap2021 .et_oct_video .es_movie .video_full1 {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+        }
+
+        .m_ess.oct_essential_wrap2021 .et_oct_video .es_movie .video_full1 iframe {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .m_ess .oct_es_carousel_wrap {
+            width: 100%;
+            padding-top: 93%;
+        }
+
+        .m_ess .oct_es_slide .owl-carousel .owl-stage-outer {
+            margin-top: -93%;
+        }
+
+        .m_ess .oct_es_slide .owl-carousel .owl-dots {
+            display: none;
+        }
+
+        .m_ess .swiper-slide-active .oct_top_inner {
+            animation-name: mmzrFadeInOut;
+            animation-duration: 2s;
+        }
+
+        @keyframes octbb_subimg {
+            0% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes oct_topimg {
+            0% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
+    <header id="header"></header>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess oct_essential_wrap2021">
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_01.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_02.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_03.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_04.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_05.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_06.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_07.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_08.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_09.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_10.png" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/pc_11.png" alt="" border="0" /></div>
+                </div>
+                <div class="m_ess oct_essential_wrap2021">
+                    <div class="et_oct_top">
+                        <img src="../../assets/images/lookbook/2021/10p_baby/m_01-1.jpg" alt="" border="0" />
+                        <div class="oct_topimg02"><img src="../../assets/images/lookbook/2021/10p_baby/m_01-2.jpg"
+                                alt="" border="0" /></div>
+                        <div class="oct_topimg_title"><img src="../../assets/images/lookbook/2021/10p_baby/m_top.png"
+                                alt="" border="0" /></div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_02.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_03.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_04.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_05.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_06.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_07.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_008.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_09.jpg" alt="" border="0" /></div>
+                    <div class="oct_baby_sub">
+                        <img src="../../assets/images/lookbook/2021/10p_baby/m_10.jpg" alt="" border="0" />
+                        <div class="octbb_subimg01"><img src="../../assets/images/lookbook/2021/10p_baby/m_sub_2_1.jpg"
+                                alt="" border="0" /></div>
+                        <div class="octbb_subimg02"><img src="../../assets/images/lookbook/2021/10p_baby/m_sub_2_2.jpg"
+                                alt="" border="0" /></div>
+                        <div class="octbb_subimg03"><img src="../../assets/images/lookbook/2021/10p_baby/m_sub_3_1.jpg"
+                                alt="" border="0" /></div>
+                        <div class="octbb_subimg04"><img src="../../assets/images/lookbook/2021/10p_baby/m_sub_3_2.jpg"
+                                alt="" border="0" /></div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_11.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_12.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_13.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_14.jpg" alt="" border="0" /></div>
+                    <div><img src="../../assets/images/lookbook/2021/10p_baby/m_15.jpg" alt="" border="0" /></div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/owl.carousel.js"></script>
+    <script>
+        //swiper slider
+        var js_slide = new Swiper('.m_ess .swiper-container.oct_es_swiper', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.sw1_next',
+                prevEl: '.sw1_prev',
+            },
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                delay: 3500
+            },
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.m_ess .oct_es_carousel').owlCarousel({
+                loop: true,
+                items: 2.5,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 3000,
+                smartSpeed: 3000,
+                center: true,
+            });
+            jQuery('.m_ess .oct_es_carousel').trigger('play.owl.autoplay', [3000]);
+
+            function setSpeed() {
+                jQuery('.m_ess .oct_es_carousel').trigger('play.owl.autoplay', [3000]);
+            }
+            setTimeout(setSpeed, 3000);
+        });
+    </script>
+
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

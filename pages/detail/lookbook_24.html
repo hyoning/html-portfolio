@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="../../assets/style/animate.css">
+    <link rel="stylesheet" href="../../assets/style/owl.carousel.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        .pc_ess.sep_moozpick_wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .pc_ess.sep_moozpick_wrap div img {
+            width: 100%;
+        }
+
+        .pc_ess .sepmz_title_ani {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: auto;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess .smt_ani03 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation: smt_ani103 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
+
+        .pc_ess .smt_ani04 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation: smt_ani103 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .pc_ess .smt_ani08 {
+            position: absolute;
+            left: -10px;
+            top: 0px;
+            animation: smt_ani108 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+            opacity: 0;
+        }
+
+        .pc_ess .smt_ani05 {
+            position: absolute;
+            left: 9%;
+            top: 33%;
+            animation: smt_ani105 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            opacity: 0;
+            width: 33%;
+        }
+
+        .pc_ess .smt_ani06 {
+            position: absolute;
+            left: 9%;
+            top: 46%;
+            animation: smt_ani106 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2.2s;
+            opacity: 0;
+            width: 33%;
+        }
+
+        .pc_ess .smt_ani07 {
+            position: absolute;
+            left: 9%;
+            top: 59%;
+            animation: smt_ani107 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2.5s;
+            opacity: 0;
+            width: 33%;
+        }
+
+
+        @keyframes smt_ani103 {
+            from {
+                width: 110%;
+                height: 110%;
+                left: -5%;
+                top: -5%;
+                opacity: 0;
+            }
+
+            to {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes smt_ani104 {
+            from {
+                opacity: 0;
+                width: 105%;
+                height: 105%;
+                left: -2.5%;
+                top: -2.5%;
+            }
+
+            to {
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+        }
+
+        @keyframes smt_ani108 {
+            from {
+                opacity: 0;
+                width: 105%;
+                height: 105%;
+                right: -2.5%;
+                top: -2.5%;
+            }
+
+            to {
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+                right: 15%;
+                top: 0%;
+            }
+        }
+
+
+        @keyframes smt_ani105 {
+            from {
+                opacity: 0;
+                width: 36%;
+                left: 4%;
+                top: 30%;
+            }
+
+            to {
+                opacity: 1;
+                width: 33%;
+                left: 9%;
+                top: 33%;
+            }
+        }
+
+        @keyframes smt_ani106 {
+            from {
+                opacity: 0;
+                width: 36%;
+                left: 4%;
+                top: 44%;
+            }
+
+            to {
+                opacity: 1;
+                width: 33%;
+                left: 9%;
+                top: 46%;
+            }
+        }
+
+        @keyframes smt_ani107 {
+            from {
+                opacity: 0;
+                width: 36%;
+                left: 4%;
+                top: 56%;
+            }
+
+            to {
+                opacity: 1;
+                width: 33%;
+                left: 9%;
+                top: 59%;
+            }
+        }
+
+        .pc_ess .sep_moozpick_wrap_2 {
+            position: relative;
+            overflow: hidden;
+            background: #262626;
+            padding-bottom: 100px;
+        }
+
+        .pc_ess .sep_moozpick_wrap_2 .smt_ani201 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .pc_ess .sep_moozpick_wrap_2 .smt_ani202 {
+            position: absolute;
+            left: 15%;
+            bottom: 47%;
+            width: 27%;
+        }
+
+        .pc_ess .sep_moozpick_wrap_2 .smt_ani203 {
+            position: absolute;
+            right: 15%;
+            bottom: 25%;
+            width: 354px;
+        }
+
+        .pc_ess .sep_moozpick_wrap_2 .smt_ani204 {
+            position: absolute;
+            left: 0px;
+            bottom: 5%;
+        }
+
+
+        .pc_ess .sep_moozpick_wrap_3 {
+            width: 100%;
+            background: url(../../assets/images/lookbook/2020/9_sep_1p/movie.png) no-repeat;
+            padding: 40px 0px;
+        }
+
+        .pc_ess .sep_moozpick_wrap_4 {
+            position: relative;
+            overflow: hidden;
+            background: #262626;
+            padding-bottom: 100px;
+            height: auto;
+        }
+
+        .pc_ess .smt_ani401 {
+            position: absolute;
+            left: 6%;
+            top: 9%;
+            width: 52%;
+        }
+
+        .pc_ess .smt_ani402 {
+            position: absolute;
+            right: 3%;
+            top: 19%;
+            width: 30%;
+            animation: smt_ani402 3s infinite;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .pc_ess .smt_ani403 {
+            position: absolute;
+            right: 3%;
+            top: 19%;
+            width: 30%;
+            animation: smt_ani403 3s infinite;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .pc_ess .smt_ani404 {
+            position: absolute;
+            width: 30%;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+        }
+
+        @keyframes smt_ani402 {
+            0% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            85% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes smt_ani403 {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 1;
+            }
+
+            85% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .pc_ess .sep_moozpick_slide {
+            position: relative;
+            bottom: 65px;
+        }
+
+        .pc_ess .smt_carousel_wrap {
+            width: 100%;
+        }
+
+        .pc_ess .smt_carousel_wrap .owl-carousel .owl-item img {
+            width: 90%;
+        }
+
+        .pc_ess .sep_moozpick_wrap_5 {
+            position: relative;
+            overflow: hidden;
+            background: #f7f4ec;
+            padding-bottom: 100px;
+            height: auto;
+        }
+
+        .pc_ess .smt_ani501 {
+            position: absolute;
+            right: 7%;
+            top: 5%;
+            width: 55%;
+        }
+
+        .pc_ess .smt_ani502 {
+            position: absolute;
+            left: 7%;
+            top: 20%;
+            width: 24%;
+        }
+
+        .pc_ess .smt_ani503 {
+            position: absolute;
+            left: 7%;
+            top: 20%;
+            width: 24%;
+            animation: smt_ani503 3s infinite;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .pc_ess .smt_ani504 {
+            position: absolute;
+            left: 3%;
+            top: 46%;
+            width: 212px;
+        }
+
+
+        @keyframes smt_ani503 {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 1;
+            }
+
+            85% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+        .pc_ess .sep_moozpick_slide_2 {
+            position: relative;
+            bottom: 65px;
+        }
+
+        .pc_ess .smt_carousel_wrap_2 {
+            width: 100%;
+        }
+
+        .pc_ess .smt_carousel_wrap_2 .owl-carousel .owl-item img {
+            width: 90%;
+        }
+
+
+        .pc_ess .sep_moozpick_slide_3 {
+            position: relative;
+            bottom: 65px;
+        }
+
+        .pc_ess .smt_carousel_wrap_3 {
+            width: 100%;
+        }
+
+        .pc_ess .smt_carousel_wrap_3 .owl-carousel .owl-item img {
+            width: 90%;
+            height: auto;
+        }
+
+        .pc_ess .sep_moozpick_slide_4 {
+            position: relative;
+            bottom: 65px;
+        }
+
+        .pc_ess .smt_carousel_wrap_4 {
+            width: 100%;
+        }
+
+        .pc_ess .smt_carousel_wrap_4 .owl-carousel .owl-item img {
+            width: 90%;
+            height: auto;
+        }
+
+        .pc_ess .sep_moozpick_wrap_insert {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess .sep_moozpick_wrap_insert img {
+            width: 100%;
+        }
+
+        .pc_ess .sep_moozpick_wrap_6 {
+            position: relative;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .pc_ess .sep_moozpick_wrap_6 .smt_ani6 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .m_ess.sep_moozpick_wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .m_ess.sep_moozpick_wrap div img {
+            width: 100%;
+        }
+
+        .m_ess .sepmz_title_ani {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: auto;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess .smt_ani03 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation: m_smt_ani103 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
+
+        .m_ess .smt_ani04 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation: m_smt_ani103 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .m_ess .smt_ani09 {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            animation: m_smt_ani109 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+            opacity: 0;
+        }
+
+        .m_ess .smt_ani05 {
+            position: absolute;
+            left: 9%;
+            top: 33%;
+            animation: m_smt_ani105 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            opacity: 0;
+            width: 70%;
+        }
+
+        .m_ess .smt_ani06 {
+            position: absolute;
+            left: 31.5%;
+            top: 44%;
+            animation: m_smt_ani106 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2.2s;
+            opacity: 0;
+            width: 70%;
+        }
+
+        .m_ess .smt_ani07 {
+            position: absolute;
+            left: 15%;
+            top: 52.5%;
+            animation: m_smt_ani107 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2.5s;
+            opacity: 0;
+            width: 70%;
+        }
+
+        .m_ess .smt_ani08 {
+            position: absolute;
+            left: 7%;
+            top: 64%;
+            animation: m_smt_ani108 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 2.8s;
+            opacity: 0;
+            width: 70%;
+        }
+
+
+        @keyframes m_smt_ani103 {
+            from {
+                width: 110%;
+                height: 110%;
+                left: -5%;
+                top: -5%;
+                opacity: 0;
+            }
+
+            to {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes m_smt_ani104 {
+            from {
+                opacity: 0;
+                width: 105%;
+                height: 105%;
+                left: -2.5%;
+                top: -2.5%;
+            }
+
+            to {
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+        }
+
+        @keyframes m_smt_ani109 {
+            from {
+                opacity: 0;
+                width: 105%;
+                height: 105%;
+                right: -2.5%;
+                top: -2.5%;
+            }
+
+            to {
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+                right: 0%;
+                top: 0%;
+            }
+        }
+
+
+        @keyframes m_smt_ani105 {
+            from {
+                opacity: 0;
+                width: 74%;
+                left: 9%;
+                top: 31%;
+            }
+
+            to {
+                opacity: 1;
+                width: 70%;
+                left: 9%;
+                top: 33%;
+            }
+        }
+
+        @keyframes m_smt_ani106 {
+            from {
+                opacity: 0;
+                width: 74%;
+                left: 4%;
+                top: 42%;
+            }
+
+            to {
+                opacity: 1;
+                width: 70%;
+                left: 31.5%;
+                top: 44%;
+            }
+        }
+
+        @keyframes m_smt_ani107 {
+            from {
+                opacity: 0;
+                width: 74%;
+                left: 4%;
+                top: 50.5%;
+            }
+
+            to {
+                opacity: 1;
+                width: 70%;
+                left: 15%;
+                top: 52.5%;
+            }
+        }
+
+
+
+        @keyframes m_smt_ani108 {
+            from {
+                opacity: 0;
+                width: 74%;
+                left: 4%;
+                top: 62%;
+            }
+
+            to {
+                opacity: 1;
+                width: 70%;
+                left: 7%;
+                top: 64%;
+            }
+        }
+
+
+        .m_ess .sep_moozpick_wrap_2 {
+            position: relative;
+            overflow: hidden;
+            background: #262626;
+        }
+
+        .m_ess .sep_moozpick_wrap_2 .smt_ani201 {
+            position: absolute;
+            left: 8%;
+            top: 3.5%;
+            width: 60%;
+        }
+
+        .m_ess .sep_moozpick_wrap_2 .smt_ani202 {
+            position: absolute;
+            right: 8%;
+            top: 26%;
+            width: 60%;
+        }
+
+        .m_ess .sep_moozpick_wrap_2 .smt_ani203 {
+            position: absolute;
+            left: 10%;
+            top: 43%;
+            width: 75%;
+        }
+
+        .m_ess .sep_moozpick_wrap_2 .smt_ani204 {
+            position: absolute;
+            left: 20%;
+            bottom: 28%;
+            width: 60%;
+        }
+
+        .m_ess .sep_moozpick_wrap_2 .smt_ani205 {
+            position: absolute;
+            left: 10%;
+            bottom: 6%;
+            width: 80%;
+        }
+
+
+
+        .m_ess .sep_moozpick_wrap_3 {
+            width: 100%;
+            background: #f7f4ec;
+        }
+
+        .m_ess .sep_moozpick_wrap_4 {
+            position: relative;
+            overflow: hidden;
+            background: #262626;
+        }
+
+        .m_ess .smt_ani401 {
+            position: absolute;
+            left: 20%;
+            top: 5%;
+            width: 60%;
+            animation: m_smt_ani401 3s infinite;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .m_ess .smt_ani402 {
+            position: absolute;
+            left: 20%;
+            top: 5%;
+            width: 60%;
+            animation: m_smt_ani402 3s infinite;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        @keyframes m_smt_ani401 {
+            0% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            85% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes m_smt_ani402 {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 1;
+            }
+
+            85% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .m_ess .smt_ani403 {
+            position: absolute;
+            width: 95%;
+            right: 0%;
+            top: 27%;
+        }
+
+        .m_ess .smt_ani404 {
+            position: absolute;
+            width: 60%;
+            right: 5%;
+            top: 65.5%;
+        }
+
+        .m_ess .sep_moozpick_slide {
+            position: absolute;
+            left: 0px;
+            bottom: 4%;
+        }
+
+        .m_ess .smt_carousel_wrap {
+            width: 100%;
+        }
+
+        .m_ess .smt_carousel_wrap .owl-carousel .owl-item img {
+            width: 90%;
+        }
+
+
+        .m_ess .sep_moozpick_wrap_5 {
+            position: relative;
+            overflow: hidden;
+            background: #f7f4ec;
+        }
+
+        .m_ess .smt_ani501 {
+            position: absolute;
+            left: 15%;
+            top: 5%;
+            width: 70%;
+        }
+
+
+        .m_ess .smt_ani502 {
+            position: absolute;
+            left: 0%;
+            top: 37%;
+            width: 100%;
+        }
+
+        .m_ess .smt_ani503 {
+            position: absolute;
+            right: 3%;
+            top: 37%;
+            width: 50%;
+            animation: m_smt_ani503 3s infinite;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .m_ess .smt_ani504 {
+            position: absolute;
+            right: 3%;
+            top: 37%;
+            width: 50%;
+            animation: m_smt_ani504 3s infinite;
+            animation-delay: 1s;
+            opacity: 0
+        }
+
+        .m_ess .smt_ani505 {
+            width: 20%;
+            position: absolute;
+            left: 0%;
+            top: 65%;
+            z-index: 999;
+        }
+
+
+
+        @keyframes m_smt_ani503 {
+            0% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            45% {
+                opacity: 0;
+            }
+
+            85% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes m_smt_ani504 {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 1;
+            }
+
+            85% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .m_ess .sep_moozpick_slide_2 {
+            position: absolute;
+            left: 0px;
+            bottom: 4%;
+        }
+
+        .m_ess .smt_carousel_wrap_2 {
+            width: 100%;
+        }
+
+        .m_ess .smt_carousel_wrap_2 .owl-carousel .owl-item img {
+            width: 90%;
+        }
+
+        .m_ess .sep_moozpick_wrap_insert {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess .sep_moozpick_wrap_insert img {
+            width: 100%;
+        }
+
+
+        .m_ess .sep_moozpick_wrap_6 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .m_ess .sep_moozpick_wrap_6 .smt_ani6 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .m_ess .sep_moozpick_wrap_6 .smt_ani6_1 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
+    <header id="header"></header>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess sep_moozpick_wrap">
+                    <div class="sepmz_title_ani">
+                        <div class="smt_ani01"><img src="../../assets/images/lookbook/2020/9_sep_1p/title_img.jpg" />
+                        </div>
+                        <div class="smt_ani03"><img src="../../assets/images/lookbook/2020/9_sep_1p/title_circle.png" />
+                        </div>
+                        <div class="smt_ani04"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/title_s_text_001.png" /></div>
+                        <div class="smt_ani08"><img src="../../assets/images/lookbook/2020/9_sep_1p/title_m_text.png" />
+                        </div>
+                        <div class="smt_ani05"><img src="../../assets/images/lookbook/2020/9_sep_1p/title_b_text.png" />
+                        </div>
+                        <div class="smt_ani06"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/title_b_text_2.png" /></div>
+                        <div class="smt_ani07"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/title_b_text_3.png" /></div>
+
+                    </div>
+                    <div class="sep_moozpick_wrap_2">
+                        <div class="sep_img_2"><img src="../../assets/images/lookbook/2020/9_sep_1p/concept.png" />
+                        </div>
+                        <div class="smt_ani201 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/concept_01.png" /></div>
+                        <div class="smt_ani202 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/concept_02.png" /></div>
+                        <div class="smt_ani203 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/concept_03.png" /></div>
+                        <div class="smt_ani204 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/concept_04.png" /></div>
+                    </div>
+
+                    <div class="sep_moozpick_wrap_4">
+                        <div class="sep_img_4"><img src="../../assets/images/lookbook/2020/9_sep_1p/4-0.jpg" /></div>
+                        <div class="smt_ani401 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/4-1_001.png" /></div>
+                        <div class="smt_ani402"><img src="../../assets/images/lookbook/2020/9_sep_1p/4-1_002.png" />
+                        </div>
+                        <div class="smt_ani403"><img src="../../assets/images/lookbook/2020/9_sep_1p/4-1_003.png" />
+                        </div>
+                        <div class="smt_ani404 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/4-1_04.png" /></div>
+                        <div class="sep_moozpick_slide">
+                            <div class="smt_bg">
+                                <div class="smt_carousel_wrap">
+                                    <div class="owl-carousel smt_carousel owl-theme">
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_1.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_2.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_3.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_4.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_5.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_6.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_7.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_8.jpg" alt=""
+                                                border="0" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sep_moozpick_wrap_5">
+                        <div class="sep_img_5"><img src="../../assets/images/lookbook/2020/9_sep_1p/5.jpg" /></div>
+                        <div class="smt_ani501 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/5-1_02.png" /></div>
+                        <div class="smt_ani502 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/5-1_03.png" /></div>
+                        <div class="smt_ani503"><img src="../../assets/images/lookbook/2020/9_sep_1p/5-1_04.png" />
+                        </div>
+                        <div class="smt_ani504 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/5-1_01.png" /></div>
+
+
+                        <div class="sep_moozpick_slide_2">
+                            <div class="smt_bg_2">
+                                <div class="smt_carousel_wrap_2">
+                                    <div class="owl-carousel smt_carousel_2 owl-theme">
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_1.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_2.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_3.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_4.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_5.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_6.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_7.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_8.jpg" alt=""
+                                                border="0" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sep_moozpick_wrap_insert">
+                        <img src="../../assets/images/lookbook/2020/9_sep_1p/pc_insert.jpg" alt="" border="0" />
+                    </div>
+                    <div class="sep_moozpick_wrap_6">
+                        <div class="sep_img_6"><img src="../../assets/images/lookbook/2020/9_sep_1p/6.jpg" /></div>
+                        <div class="smt_ani6 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/6_01.png" /></div>
+                    </div>
+                </div>
+                <div class="m_ess sep_moozpick_wrap">
+                    <div class="sepmz_title_ani">
+                        <div class="smt_ani01"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_title_img.jpg" />
+                        </div>
+                        <div class="smt_ani03"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_circle.png" /></div>
+                        <div class="smt_ani04"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_s_text.png" /></div>
+                        <div class="smt_ani09"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_m_text.png" /></div>
+                        <div class="smt_ani05"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_b_text.png" /></div>
+                        <div class="smt_ani06"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_b_text_2.png" /></div>
+                        <div class="smt_ani07"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_b_text_3.png" /></div>
+                        <div class="smt_ani08"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_title_b_text_4.png" /></div>
+                    </div>
+                    <div class="sep_moozpick_wrap_2">
+                        <div class="sep_img_2"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_concept.png" />
+                        </div>
+                        <div class="smt_ani201 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_concept_01.png" /></div>
+                        <div class="smt_ani202 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_concept_02.png" /></div>
+                        <div class="smt_ani203 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_concept_04.png" /></div>
+                        <div class="smt_ani204 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_concept_03.png" /></div>
+                        <div class="smt_ani205 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_concept_05.png" /></div>
+                    </div>
+                    <div class="sep_moozpick_wrap_4">
+                        <div class="sep_img_4"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_4.png" /></div>
+                        <div class="smt_ani401"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_4-1_0002.png" />
+                        </div>
+                        <div class="smt_ani402"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_4-1_0003.png" />
+                        </div>
+                        <div class="smt_ani403 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_4-1_04.png" /></div>
+                        <div class="smt_ani404 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_4-1_05.png" /></div>
+                        <div class="sep_moozpick_slide">
+                            <div class="smt_bg">
+                                <div class="smt_carousel_wrap">
+                                    <div class="owl-carousel smt_carousel owl-theme">
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_1.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_2.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_3.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_4.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_5.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_6.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_7.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/p_sil02_8.jpg" alt=""
+                                                border="0" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sep_moozpick_wrap_5">
+                        <div class="sep_img_5"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_5.png" /></div>
+                        <div class="smt_ani501 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_5_01.png" /></div>
+                        <div class="smt_ani502 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_5_002.png" /></div>
+                        <div class="smt_ani503"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_5_03.png" />
+                        </div>
+                        <div class="smt_ani504"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_5_04.png" />
+                        </div>
+                        <div class="smt_ani505 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_5_05.png" /></div>
+
+                        <div class="sep_moozpick_slide_2">
+                            <div class="smt_bg_2">
+                                <div class="smt_carousel_wrap_2">
+                                    <div class="owl-carousel smt_carousel_2 owl-theme">
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_1.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_2.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_3.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_4.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_5.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_6.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_7.jpg" alt=""
+                                                border="0" /></div>
+                                        <div class="item"><img
+                                                src="../../assets/images/lookbook/2020/9_sep_1p/g_sil02_8.jpg" alt=""
+                                                border="0" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sep_moozpick_wrap_insert">
+                        <img src="../../assets/images/lookbook/2020/9_sep_1p/m_insert.jpg" alt="" border="0" />
+                    </div>
+
+                    <div class="sep_moozpick_wrap_6">
+                        <div class="sep_img_6"><img src="../../assets/images/lookbook/2020/9_sep_1p/m_6.png" /></div>
+                        <div class="smt_ani6 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 1s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_6_01.png" /></div>
+                        <div class="smt_ani6_1 animate__slideInUp_mmz fade_division  animated "
+                            style="animation: slideInUp_mmz 2s 1;  animation-fill-mode:forwards;"><img
+                                src="../../assets/images/lookbook/2020/9_sep_1p/m_6_02.png" /></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="../../assets/js/wow.min.js"></script>
+    <script src="../../assets/js/owl.carousel.js"></script>
+    <script>
+        //스크롤반응, 에니메이트
+        wow = new WOW({
+            boxClass: 'fade_division',
+            animateClass: 'animated',
+            offset: 100,
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.pc_ess .smt_carousel').owlCarousel({
+                loop: true,
+                items: 4,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.pc_ess .smt_carousel').trigger('play.owl.autoplay', [2000]);
+
+            function setSpeed() {
+                jQuery('.pc_ess .smt_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed, 1000);
+        });
+
+        jQuery(document).ready(function () {
+            jQuery('.pc_ess .smt_carousel_2').owlCarousel({
+                loop: true,
+                items: 4,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.pc_ess  .smt_carousel_2').trigger('play.owl.autoplay', [2000]);
+
+            function setSpeed_2() {
+                jQuery('.pc_ess .smt_carousel_2').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed_2, 1000);
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.m_ess .smt_carousel').owlCarousel({
+                loop: true,
+                items: 2,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.m_ess .smt_carousel').trigger('play.owl.autoplay', [3000]);
+
+            function setSpeed3() {
+                jQuery('.m_ess .smt_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed3, 2000);
+        });
+
+        jQuery(document).ready(function () {
+            jQuery('.m_ess .smt_carousel_2').owlCarousel({
+                loop: true,
+                items: 2,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.m_ess .smt_carousel_2').trigger('play.owl.autoplay', [3000]);
+
+            function setSpeed_4() {
+                jQuery('.m_ess .smt_carousel_2').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed_4, 2000);
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

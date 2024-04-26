@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" as="style"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-
+    <link rel="stylesheet" href="../../assets/style/owl.carousel.css">
     <link rel="stylesheet" href="../../assets/style/common.css">
     <link rel="stylesheet" href="../../assets/style/layout.css">
     <link rel="stylesheet" href="../../assets/style/list.css">
@@ -22,15 +22,333 @@
 </head>
 
 <body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        .pc_ess.essential_mesh2204_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_mesh2204_wrap img {
+            width: 100%;
+        }
+
+        .pc_ess.essential_mesh2204_wrap .es_ms2204_pdlist {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul {
+            width: 80%;
+            margin: 0px auto;
+            display: inline-block;
+            position: absolute;
+            left: 10%;
+            bottom: 27%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul li {
+            width: 25%;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .pc_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul li img {
+            max-width: 260px;
+        }
+
+        .pc_ess .es2204_mesh_ro {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess .es2204_mesh_slide {
+            position: absolute;
+            left: 0%;
+            bottom: 6%;
+            width: 100%;
+        }
+
+        .pc_ess .es2204_mesh_carousel_wrap {
+            width: 100%;
+            padding-top: 38.4375%;
+        }
+
+        .pc_ess .es2204_mesh_slide .owl-carousel .owl-stage-outer {
+            margin-top: -38.4375%;
+        }
+
+        .m_ess.essential_mesh2204_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_mesh2204_wrap img {
+            width: 100%;
+        }
+
+
+        .m_ess.essential_mesh2204_wrap .es_ms2204_pdlist {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul {
+            width: 86%;
+            margin: 0px auto;
+            display: inline-block;
+            position: absolute;
+            left: 7%;
+            bottom: 5%;
+            font-size: 0px;
+            line-height: 0px;
+            text-align: center;
+        }
+
+        .m_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul li {
+            width: 48%;
+            text-align: center;
+            display: inline-block;
+            margin-right: 4%;
+            margin-bottom: 8%;
+            text-align: center;
+        }
+
+        .m_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul li:nth-child(2n) {
+            margin-right: 0px;
+        }
+
+        .m_ess.essential_mesh2204_wrap .es_ms2204_pdlist ul li img {
+            width: 80%;
+        }
+
+
+
+        .m_ess .es2204_mesh_ro {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess .es220_mesh_slide {
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            width: 100%;
+        }
+
+        .m_ess .es2204_mesh_carousel_wrap {
+            width: 100%;
+            padding-top: 87.85%;
+        }
+
+        .m_ess .ees220_mesh_slide .owl-carousel .owl-stage-outer {
+            margin-top: -87.85%;
+        }
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
     <header id="header"></header>
     <section class="container">
         <section class="contain">
-            <a href="">Go To List</a>
-            <section class="lookbook_contain cate_contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess essential_mesh2204_wrap">
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/pc_1.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/pc_2.png" border="0"></div>
+                    <div class="es_ms2204_pdlist"><img src="../../assets/images/lookbook/2022/4p_mesh/pc_3.png"
+                            border="0">
+                        <ul>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/pd_1.png" alt="코튼 메쉬 런닝 2개 세트 "
+                                        border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/pd_2.png"
+                                        alt="코튼 메쉬 삼각 여아팬티 2개 세트" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/pd_3.png"
+                                        alt="코튼 메쉬 삼각 남아팬티 2개 세트" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/pd_4.png" alt="코튼 메쉬 바디수트 2개 세트"
+                                        border="0" /></a></li>
+                        </ul>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/pc_4.png" border="0"></div>
+                    <div class="es2204_mesh_ro"><img src="../../assets/images/lookbook/2022/4p_mesh/pc_5.png"
+                            border="0">
+                        <div class="es2204_mesh_slide">
+                            <div class="es2204_mesh_bg">
+                                <div class="es2204_mesh_carousel_wrap">
+                                    <div class="owl-carousel es2204_mesh_carousel owl-theme">
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_1.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_2.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_3.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_4.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_5.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_6.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_7.jpg" alt=""
+                                                    border="0" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><a href=""><img src="../../assets/images/lookbook/2022/4p_mesh/pc_6.png" border="0"></a></div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/pc_7.png" border="0"></div>
 
+                </div>
+                <div class="m_ess essential_mesh2204_wrap">
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/m_1.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/m_2.jpg" border="0"></div>
+                    <div class="es_ms2204_pdlist"><img src="../../assets/images/lookbook/2022/4p_mesh/m_3.jpg"
+                            border="0">
+                        <ul>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/m_pd_1.png" alt="코튼 메쉬 런닝 2개 세트 "
+                                        border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/m_pd_2.png"
+                                        alt="코튼 메쉬 삼각 여아팬티 2개 세트" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/m_pd_3.png"
+                                        alt="코튼 메쉬 삼각 남아팬티 2개 세트" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/4p_mesh/m_pd_4.png"
+                                        alt="코튼 메쉬 바디수트 2개 세트" border="0" /></a></li>
+                        </ul>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/m_4.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/m_5.jpg" border="0"></div>
+                    <div class="es2204_mesh_ro"><img src="../../assets/images/lookbook/2022/4p_mesh/m_6.jpg" border="0">
+                        <div class="es220_mesh_slide">
+                            <div class="es220_mesh_bg">
+                                <div class="es2204_mesh_carousel_wrap">
+                                    <div class="owl-carousel es2204_mesh_carousel owl-theme">
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_1.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_2.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_3.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_4.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_5.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_6.jpg" alt=""
+                                                    border="0" /></a></div>
+                                        <div class="item"><a><img
+                                                    src="../../assets/images/lookbook/2022/4p_mesh/pd_m_7.jpg" alt=""
+                                                    border="0" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/m_7.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/4p_mesh/m_8.jpg" border="0"></div>
+                </div>
             </section>
         </section>
     </section>
+
+    <script src="../../assets/js/owl.carousel.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.pc_ess .es2204_mesh_carousel').owlCarousel({
+                loop: true,
+                items: 3.2,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+            jQuery('.pc_ess .es2204_mesh_carousel').trigger('play.owl.autoplay', [6000]);
+
+            function setSpeed() {
+                jQuery('.pc_ess .es2204_mesh_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+            setTimeout(setSpeed, 1000);
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.m_ess .es2204_mesh_carousel').owlCarousel({
+                loop: true,
+                items: 1.7,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
+                center: true,
+            });
+
+
+            jQuery('.m_ess .es2204_mesh_carousel').trigger('play.owl.autoplay', [6000]);
+
+            function setSpeed2() {
+                jQuery('.m_ess .es2204_mesh_carousel').trigger('play.owl.autoplay', [6000]);
+            }
+
+            setTimeout(setSpeed2, 1000);
+        });
+    </script>
     <footer id="footer"></footer>
     <script src="../../assets/js/detail_layout.js"></script>
     <script src="../../assets/js/common.js"></script>

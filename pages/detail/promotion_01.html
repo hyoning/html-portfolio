@@ -1,218 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="https://moomooz.co.kr/data/skin/front/mplshop//js/jquery/jquery.min.js?ts=1676220053"></script>
+
 </head>
+
 <body>
-
-<style>
-    .sec {width: 100%; position: relative; overflow: hidden; font-size:0; line-height: 0;}
-    .ab {position: absolute;}
-    .sec1{overflow: hidden;}
-    .sec img{width: 100%;}
-
-    .zoomSld_wrap{position:relative;width:100%;}
-    .zoomSld_textWrap {width: 100%; position:absolute; bottom:0; left:0; z-index: 2; }
-    .zoomSld_textWrap *{text-align:left;}
-
-    .zoomSld_rolling {width: 100%; z-index: 1; overflow:hidden;}
-    .zoomSld_rolling .swiper-slide{padding:0;}
-    .zoomSld_rolling .swiper-slide img{   transform: scale(1.1);
-            -webkit-transform: scale(1.1);}
-
-    .zoomSld_rolling .swiper-slide.swiper-slide-active img {
-        animation: zoomimg 3.2s linear alternate;
-        -webkit-animation: zoomimg 3.2s linear alternate;
-    }
-    @keyframes zoomimg {
-        from {
-            transform: scale(1.0);
-            -webkit-transform: scale(1.0);
+    <header id="header"></header>
+    <style>
+        .promotion_contain {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
         }
-        to {
+
+        @media (max-width:500px) {
+            .promotion_contain {
+                width: calc(100% + 32px);
+                max-width: 500px;
+                margin-left: -16px;
+            }
+        }
+
+        .sec {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .ab {
+            position: absolute;
+        }
+
+        .sec1 {
+            overflow: hidden;
+        }
+
+        .sec img {
+            width: 100%;
+        }
+
+        .zoomSld_wrap {
+            position: relative;
+            width: 100%;
+        }
+
+        .zoomSld_textWrap {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .zoomSld_textWrap * {
+            text-align: left;
+        }
+
+        .zoomSld_rolling {
+            width: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .zoomSld_rolling .swiper-slide {
+            padding: 0;
+        }
+
+        .zoomSld_rolling .swiper-slide img {
             transform: scale(1.1);
             -webkit-transform: scale(1.1);
         }
-    }
-    .sec1_top{left:0; top:0; z-index: 2;}
 
-    .sec5_rollingWrap{width:100%; position: absolute; left:0; top:0; z-index: 2;} 
-    .sec5_rolling {width: 100%; position: relative;}
-    .sec5_rolling .swiper-wrapper {transition-timing-function: linear;}
-    .sec5_rolling .swiper-slide {width: auto !important; padding: 0;height: 100%;}
-    .sec5_rolling .swiper-slide img {width: auto;overflow: hidden; height: 120vw;}
-    .sec5_txt{left:0; bottom:0; z-index:3; width:100%; }
-    @media (min-width: 500px) {
-        .sec5_rolling .swiper-slide img{height:600px;}
-    }
-
-    .sec6 .img06_1.active{opacity: 0; width:40.8%; left:6.4%; bottom:22%;}
-    .sec6 .img06_1.active.show{animation:showIn06-1 3s;  animation-fill-mode : forwards; opacity: 1;}
-
-    @keyframes showIn06-1 {0%{opacity:0} 100%{opacity:1;}}
-
-    .sec7_rolling {width: 100%; z-index: 1; overflow:hidden;}
-    .sec7_rolling .swiper-slide{padding:0;}
-    .sec7_rolling .swiper-slide img{ opacity: 0;}
-
-    .sec7_rolling .swiper-slide.swiper-slide-active img {
-        animation: starimg 3s linear alternate;
-        -webkit-animation: starimg 3s linear alternate;
-    }
-    @keyframes starimg {
-       0% {opacity: 0;}
-       1% {opacity: 1;}
-       100%{opacity: 1;}
-    }
-
-    .sec8 .img08_1.active{opacity: 0; width:26.2%;  left:36.8%; top:0;}
-    .sec8 .img08_1.active.show{animation:showIn08-1 3s;  animation-fill-mode : forwards; opacity: 1;}
-    .sec8 .img08_2.active{opacity: 0; width:40.3%;left:1.2%; top:11%;}
-    .sec8 .img08_2.active.show{animation:showIn08-2 3s;  animation-fill-mode : forwards; opacity: 1;}
-    .sec8 .img08_3.active{opacity: 1; width:28.9%; right: 6%; top:17%; animation:showIn08-3 2s infinite; animation-fill-mode : none; }
-    .sec8 .img08_4.active{opacity: 0; width:53.6%; right:0%; bottom:0%;}
-    .sec8 .img08_4.active.show{animation:showIn08-4 3s;  animation-fill-mode : forwards; opacity: 1;}
-
-    @keyframes showIn08-1 {0%{opacity:0; transform: translateY(-50%);} 30%{opacity:1;transform: translateY(0%);} 60%{opacity:1} 100%{opacity:1;}}
-    @keyframes showIn08-2 {0%{opacity:0; transform: translateX(-50%);} 30%{opacity:1;transform: translateY(0%);} 60%{opacity:1} 100%{opacity:1;}}
-    @keyframes showIn08-3 {0%{transform: rotate(-5deg)} 50%{transform: rotate(5deg)} 100%{transform: rotate(-5deg)}}
-    @keyframes showIn08-4 {0%{opacity:0; transform: translateY(50%);} 30%{opacity:1;transform: translateY(0%);} 60%{opacity:1} 100%{opacity:1;}}
-
-
-    .sec9 .img09_1.active{opacity: 0; width:34.6%; left:32.7%; bottom:11%;}
-    .sec9 .img09_1.active.show{animation:showIn09-1 3s;  animation-fill-mode : forwards; opacity: 1;}
-
-    @keyframes showIn09-1 {0%{opacity:0; transform: translateY(50%);} 30%{opacity:1;transform: translateY(0%);} 60%{opacity:1} 100%{opacity:1;}}
-</style>
-<section class="sec sec1">
-    <div class="zoomSld_rolling">
-        <ul class="swiper-wrapper">
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-1_img.jpg"></li>
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-2_img.jpg"></li>
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-3_img.jpg"></li>
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-4_img.jpg"></li>
-        </ul>
-    </div>    
-    <div class="sec1_top ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-0_text.png"></div>
-</section>
-<section class="sec sec2">
-    <img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/02_intro.jpg">
-</section>
-<section class="sec sec3">
-    <div class="sec3_rolling">
-        <ul class="swiper-wrapper">
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/03_img1.jpg"></li>
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/03_img2.jpg"></li>
-        </ul>
-    </div>
-</section>
-
-<section class="sec sec5">
-    <div class="sec5_bg"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_bg.jpg"></div>
-    <div class="sec5_rollingWrap ab">
-        <div class="sec5_rolling">
-            <ul class="swiper-wrapper">
-                <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_mo1.png"></li>
-                <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_mo2.png"></li>
-            </ul>
-        </div>
-    </div>
-    <div class="sec5_txt ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_text.jpg"></div>
-</section>
-<section class="sec sec6">
-    <div class="sec6_bg"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/06_bg.jpg"></div>
-    <div class="img06_1 active ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/06_mo.png"></div>
-</section>
-
-<section class="sec sec7">
-    <div class="sec7_rolling">
-        <ul class="swiper-wrapper">
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/07_img1.jpg"></li>
-            <li class="item swiper-slide"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/07_img2.jpg"></li>
-        </ul>
-    </div>
-</section>
-
-<section class="sec sec8">
-    <div class="sec8_bg"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_bg.jpg"></div>
-    <div class="img08_1 active ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo1.png"></div>
-    <div class="img08_2 active ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo2.png"></div>
-    <div class="img08_3 active ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo3.png"></div>
-    <div class="img08_4 active ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo4.png"></div>
-
-</section>
-<section class="sec sec9">
-    <div class="sec9_bg"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/09.jpg"></div>
-    <div class="img09_1 active ab"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/logo.png"></div>
-</section>
-
-<script>
-var swiper1 = new Swiper(".zoomSld_rolling", {
-    effect : 'fade',
-    slidesPerView: 1,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-    speed : 1,
-    delay: 3000,
-    disableOnInteraction: false
-    }
-});
-var swiper3 = new Swiper(".sec3_rolling", {
-        effect : 'fade',
-        loop: true,
-        speed: 2000,
-        autoplay: {
-            delay: 2000
-     }
-});
-var swiper5 = new Swiper(".sec5_rolling", {
-        slidesPerView: 'auto',
-        freeMode: true,
-        loop: true,
-        centeredSlides: true,
-        speed: 3600,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false
+        .zoomSld_rolling .swiper-slide.swiper-slide-active img {
+            animation: zoomimg 3.2s linear alternate;
+            -webkit-animation: zoomimg 3.2s linear alternate;
         }
-});
 
-$(window).scroll(function() {
-    let saTriggerMargin = 300;
-    let saTriggerMargin2 = 100;
-    let pageHeight = $(this).height();
-    let pageScrollTop = $(this).scrollTop() + pageHeight;
-    
-    let scorllImg1 = [".img06_1", ".img08_1", ".img08_2", ".img08_3", ".img08_4"];
-    let scorllImg2 = $(".img09_1").offset().top;
-    
-    scorllImg1.forEach(function(element) {
-        let pageOffsetTop = $(element).offset().top;
-        if (pageScrollTop > pageOffsetTop + saTriggerMargin) {
-            $(element).addClass('show');
+        @keyframes zoomimg {
+            from {
+                transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+            }
+
+            to {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
         }
-    });
-    if(pageScrollTop > scorllImg2 + saTriggerMargin2){
-        $(".img09_1").addClass('show');
-    }
 
-});
- var swiper7 = new Swiper(".sec7_rolling", {
-        effect : 'fade',
-        loop: true,
-        speed: 100,
-        autoplay: {
-            delay: 1000
-     }
-});
+        .sec1_top {
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
 
-</script>
+        .sec5_rollingWrap {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        .sec5_rolling {
+            width: 100%;
+            position: relative;
+        }
+
+        .sec5_rolling .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .sec5_rolling .swiper-slide {
+            width: auto !important;
+            padding: 0;
+            height: 100%;
+        }
+
+        .sec5_rolling .swiper-slide img {
+            width: auto;
+            overflow: hidden;
+            height: 120vw;
+        }
+
+        .sec5_txt {
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            width: 100%;
+        }
+
+        @media (min-width: 500px) {
+            .sec5_rolling .swiper-slide img {
+                height: 600px;
+            }
+        }
+
+        .sec6 .img06_1.active {
+            opacity: 0;
+            width: 40.8%;
+            left: 6.4%;
+            bottom: 22%;
+        }
+
+        .sec6 .img06_1.active.show {
+            animation: showIn06-1 3s;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+
+        @keyframes showIn06-1 {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sec7_rolling {
+            width: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .sec7_rolling .swiper-slide {
+            padding: 0;
+        }
+
+        .sec7_rolling .swiper-slide img {
+            opacity: 0;
+        }
+
+        .sec7_rolling .swiper-slide.swiper-slide-active img {
+            animation: starimg 3s linear alternate;
+            -webkit-animation: starimg 3s linear alternate;
+        }
+
+        @keyframes starimg {
+            0% {
+                opacity: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sec8 .img08_1.active {
+            opacity: 0;
+            width: 26.2%;
+            left: 36.8%;
+            top: 0;
+        }
+
+        .sec8 .img08_1.active.show {
+            animation: showIn08-1 3s;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+
+        .sec8 .img08_2.active {
+            opacity: 0;
+            width: 40.3%;
+            left: 1.2%;
+            top: 11%;
+        }
+
+        .sec8 .img08_2.active.show {
+            animation: showIn08-2 3s;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+
+        .sec8 .img08_3.active {
+            opacity: 1;
+            width: 28.9%;
+            right: 6%;
+            top: 17%;
+            animation: showIn08-3 2s infinite;
+            animation-fill-mode: none;
+        }
+
+        .sec8 .img08_4.active {
+            opacity: 0;
+            width: 53.6%;
+            right: 0%;
+            bottom: 0%;
+        }
+
+        .sec8 .img08_4.active.show {
+            animation: showIn08-4 3s;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+
+        @keyframes showIn08-1 {
+            0% {
+                opacity: 0;
+                transform: translateY(-50%);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes showIn08-2 {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes showIn08-3 {
+            0% {
+                transform: rotate(-5deg)
+            }
+
+            50% {
+                transform: rotate(5deg)
+            }
+
+            100% {
+                transform: rotate(-5deg)
+            }
+        }
+
+        @keyframes showIn08-4 {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        .sec9 .img09_1.active {
+            opacity: 0;
+            width: 34.6%;
+            left: 32.7%;
+            bottom: 11%;
+        }
+
+        .sec9 .img09_1.active.show {
+            animation: showIn09-1 3s;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+
+        @keyframes showIn09-1 {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            60% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <a href="../../pages/list/promotion.html">Go To List</a>
+            <section class="promotion_contain">
+                <section class="sec sec1">
+                    <div class="zoomSld_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-1_img.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-2_img.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-3_img.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-4_img.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="sec1_top ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/01-0_text.png">
+                    </div>
+                </section>
+                <section class="sec sec2">
+                    <img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/02_intro.jpg">
+                </section>
+                <section class="sec sec3">
+                    <div class="sec3_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/03_img1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/03_img2.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="sec sec5">
+                    <div class="sec5_bg"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_bg.jpg">
+                    </div>
+                    <div class="sec5_rollingWrap ab">
+                        <div class="sec5_rolling">
+                            <ul class="swiper-wrapper">
+                                <li class="item swiper-slide"><img
+                                        src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_mo1.png">
+                                </li>
+                                <li class="item swiper-slide"><img
+                                        src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_mo2.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec5_txt ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/04_text.jpg">
+                    </div>
+                </section>
+                <section class="sec sec6">
+                    <div class="sec6_bg"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/06_bg.jpg">
+                    </div>
+                    <div class="img06_1 active ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/06_mo.png">
+                    </div>
+                </section>
+
+                <section class="sec sec7">
+                    <div class="sec7_rolling">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/07_img1.jpg"></li>
+                            <li class="item swiper-slide"><img
+                                    src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/07_img2.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="sec sec8">
+                    <div class="sec8_bg"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_bg.jpg">
+                    </div>
+                    <div class="img08_1 active ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo1.png"></div>
+                    <div class="img08_2 active ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo2.png"></div>
+                    <div class="img08_3 active ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo3.png"></div>
+                    <div class="img08_4 active ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/08_mo4.png"></div>
+
+                </section>
+                <section class="sec sec9">
+                    <div class="sec9_bg"><img src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/09.jpg">
+                    </div>
+                    <div class="img09_1 active ab"><img
+                            src="https://moomooz.co.kr/data/editor/promotion/2023/1128_frise/logo.png">
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script>
+        var swiper1 = new Swiper(".zoomSld_rolling", {
+            effect: 'fade',
+            slidesPerView: 1,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                speed: 1,
+                delay: 3000,
+                disableOnInteraction: false
+            }
+        });
+        var swiper3 = new Swiper(".sec3_rolling", {
+            effect: 'fade',
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 2000
+            }
+        });
+        var swiper5 = new Swiper(".sec5_rolling", {
+            slidesPerView: 'auto',
+            freeMode: true,
+            loop: true,
+            centeredSlides: true,
+            speed: 3600,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            }
+        });
+
+        $(window).scroll(function () {
+            let saTriggerMargin = 300;
+            let saTriggerMargin2 = 100;
+            let pageHeight = $(this).height();
+            let pageScrollTop = $(this).scrollTop() + pageHeight;
+
+            let scorllImg1 = [".img06_1", ".img08_1", ".img08_2", ".img08_3", ".img08_4"];
+            let scorllImg2 = $(".img09_1").offset().top;
+
+            scorllImg1.forEach(function (element) {
+                let pageOffsetTop = $(element).offset().top;
+                if (pageScrollTop > pageOffsetTop + saTriggerMargin) {
+                    $(element).addClass('show');
+                }
+            });
+            if (pageScrollTop > scorllImg2 + saTriggerMargin2) {
+                $(".img09_1").addClass('show');
+            }
+
+        });
+        var swiper7 = new Swiper(".sec7_rolling", {
+            effect: 'fade',
+            loop: true,
+            speed: 100,
+            autoplay: {
+                delay: 1000
+            }
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </body>
+
 </html>

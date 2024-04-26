@@ -115,6 +115,7 @@ footer {
     max-width: 1000px;
     padding: 0 16px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .category_wrap {

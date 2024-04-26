@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        .pc_ess.essential_2203_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_2203_wrap img {
+            width: 100%;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_top {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_top .es2203_bn {
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            width: 100%;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_top .es2203_t {
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            width: 35.75%;
+            z-index: 99;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_movie_wrap {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_movie_wrap .es2203_movie {
+            position: absolute;
+            width: 75%;
+            left: 12.5%;
+            top: 16%;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_movie_wrap .es2203_movie .video_full {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+        }
+
+        .pc_ess.essential_2203_wrap .es2203_movie_wrap .es2203_movie .video_full iframe {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .m_ess.essential_2203_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_2203_wrap img {
+            width: 100%;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_top {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_top .es2203_bn {
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            width: 100%;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_top .es2203_t {
+            position: absolute;
+            left: 5%;
+            top: 8%;
+            width: 71.5%;
+            z-index: 99;
+        }
+
+
+        .m_ess.essential_2203_wrap .swiper-container {
+            width: 100%;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_movie_wrap {
+            position: relative;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_movie_wrap .es2203_movie {
+            width: 100%;
+            left: 0%;
+            top: 0%;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_movie_wrap .es2203_movie .video_full {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+        }
+
+        .m_ess.essential_2203_wrap .es2203_movie_wrap .es2203_movie .video_full iframe {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
+    <header id="header"></header>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess essential_2203_wrap">
+                    <div class="es2203_top"><img src="../../assets/images/lookbook/2022/2p/pc_01.png" border="0">
+                        <div class="es2203_bn">
+                            <div class="swiper-container swipefade swiper1">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img src="../../assets/images/lookbook/2022/2p/bn_1.png">
+                                    </li>
+                                    <li class="swiper-slide"><img src="../../assets/images/lookbook/2022/2p/bn_2.png">
+                                    </li>
+                                    <li class="swiper-slide"><img src="../../assets/images/lookbook/2022/2p/bn_3.png">
+                                    </li>
+                                </ul>
+                                <!-- .swiper-wrapper -->
+                            </div>
+                            <!-- .swiper-container -->
+                        </div>
+                        <div class="es2203_t"><img src="../../assets/images/lookbook/2022/2p/title.png" border="0">
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_02.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_3.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_004.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_05.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_06.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_09.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_10.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_11.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_12.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_13.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/pc_14.png" border="0"></div>
+                </div>
+                <div class="m_ess essential_2203_wrap">
+                    <div class="es2203_top"><img src="../../assets/images/lookbook/2022/2p/m_01.jpg" border="0">
+                        <div class="es2203_bn">
+                            <div class="swiper-container swipefade swiper1">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img src="../../assets/images/lookbook/2022/2p/m_bn_1.jpg">
+                                    </li>
+                                    <li class="swiper-slide"><img src="../../assets/images/lookbook/2022/2p/m_bn_2.jpg">
+                                    </li>
+                                    <li class="swiper-slide"><img src="../../assets/images/lookbook/2022/2p/m_bn_3.jpg">
+                                    </li>
+                                </ul>
+                                <!-- .swiper-wrapper -->
+                            </div>
+                            <!-- .swiper-container -->
+                        </div>
+                        <div class="es2203_t"><img src="../../assets/images/lookbook/2022/2p/m_title.png" border="0">
+                        </div>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_2.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_03.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_004.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_005.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_006.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_07.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_08.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_09.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_10.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_11.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_12.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_13.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_14.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_15.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_16.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p/m_17.jpg" border="0"></div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script>
+        //swiper slider
+        var swiper1 = new Swiper('.pc_ess .swiper-container.swipefade', {
+
+            slidesPerView: 1,
+            effect: 'fade',
+
+            navigation: {
+                nextEl: '.sw6_next',
+                prevEl: '.sw6_prev',
+            },
+
+            loop: true,
+            speed: 700, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+            autoplay: {
+                delay: 700 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+            },
+        });
+        var swiper2 = new Swiper('.m_ess .swiper-container.swipefade', {
+
+            slidesPerView: 1,
+            effect: 'fade',
+
+            navigation: {
+                nextEl: '.sw6_next',
+                prevEl: '.sw6_prev',
+            },
+
+            loop: true,
+            speed: 700, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+            autoplay: {
+                delay: 700 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+            },
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

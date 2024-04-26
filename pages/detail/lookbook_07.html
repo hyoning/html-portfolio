@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/list.css">
+    <title>김효은 포토폴리오</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .pc_ess {
+            display: block;
+        }
+
+        .m_ess {
+            display: none;
+        }
+
+        /* 2p inner */
+        .pc_ess.essential_inner2203_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_inner2203_wrap img {
+            width: 100%;
+        }
+
+
+        .pc_ess.essential_inner2203_wrap .es_in2203_pdlist {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_inner2203_wrap .es_in2203_pdlist ul {
+            width: 90%;
+            margin: 0px auto;
+            display: inline-block;
+            position: absolute;
+            left: 5%;
+            bottom: 18%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_inner2203_wrap .es_in2203_pdlist ul li {
+            width: 20%;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .pc_ess.essential_inner2203_wrap .es_in2203_pdlist ul li img {
+            max-width: 260px;
+        }
+
+        .pc_ess.essential_inner2203_wrap .es_in2203_detail {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .pc_ess.essential_inner2203_wrap .es_in2203_detail .es_in2203_bn {
+            position: absolute;
+            left: 9.375%;
+            top: 10%;
+            width: 81.25%;
+        }
+
+
+        .pc_ess.essential_inner2203_wrap .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            background-image: url('../../assets/images/lookbook/2022/2p_innderwear/pc_back.png');
+            left: -70px;
+            right: auto;
+        }
+
+        .pc_ess.essential_inner2203_wrap .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            background-image: url('../../assets/images/lookbook/2022/2p_innderwear/pc_next.png');
+            right: -75px;
+            left: auto;
+        }
+
+        .pc_ess.essential_inner2203_wrap .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            width: 24px;
+            height: 45px;
+            margin-top: -22px;
+            z-index: 10;
+            cursor: pointer;
+            background-size: 24px 45px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .pc_ess.essential_inner2203_wrap .swiper-pagination {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .pc_ess.essential_inner2203_wrap .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #28282d !important;
+        }
+
+        .pc_ess.essential_inner2203_wrap .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #aea393;
+            opacity: 1;
+            margin: 0px 3px;
+        }
+
+        /* 2p inner */
+        .m_ess.essential_inner2203_wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_inner2203_wrap img {
+            width: 100%;
+        }
+
+        .m_ess.essential_inner2203_wrap .es_in2203_pdlist {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_inner2203_wrap .es_in2203_pdlist ul {
+            width: 90%;
+            margin: 0px auto;
+            display: inline-block;
+            position: absolute;
+            left: 5%;
+            bottom: 3%;
+            font-size: 0px;
+            line-height: 0px;
+            text-align: center;
+        }
+
+        .m_ess.essential_inner2203_wrap .es_in2203_pdlist ul li {
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 10%;
+        }
+
+        .m_ess.essential_inner2203_wrap .es_in2203_pdlist ul li img {
+            width: 75%;
+        }
+
+        .m_ess.essential_inner2203_wrap .es_in2203_detail {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-size: 0px;
+            line-height: 0px;
+        }
+
+        .m_ess.essential_inner2203_wrap .es_in2203_detail .es_in2203_bn {
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            width: 80%;
+        }
+
+        .m_ess.essential_inner2203_wrap .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            background-image: url('../../assets/images/lookbook/2022/2p_innderwear/pc_back.png');
+            left: -7.6%;
+            right: auto;
+        }
+
+        .m_ess.essential_inner2203_wrap .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            background-image: url('../../assets/images/lookbook/2022/2p_innderwear/pc_next.png');
+            right: -8%;
+            left: auto;
+        }
+
+        .m_ess.essential_inner2203_wrap .swiper-button-prev,
+        .essential_inner2203_wrap .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 38px;
+            margin-top: -19px;
+            z-index: 10;
+            cursor: pointer;
+            background-size: 20px 38px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .m_ess.essential_inner2203_wrap .swiper-pagination {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .m_ess.essential_inner2203_wrap .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #28282d !important;
+        }
+
+        .m_ess.essential_inner2203_wrap .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #aea393;
+            opacity: 1;
+            margin: 0px 3px;
+        }
+
+
+        @media (max-width:500px) {
+            .pc_ess {
+                display: none;
+            }
+
+            .lookbook_detail_contain {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+            }
+
+            .m_ess {
+                display: block;
+            }
+        }
+    </style>
+    <header id="header"></header>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="lookbook_detail_contain">
+                <div class="pc_ess essential_inner2203_wrap">
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/pc_01.png" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/pc_02.png" border="0"></div>
+                    <div class="es_in2203_pdlist"><img src="../../assets/images/lookbook/2022/2p_innderwear/pc_03.png"
+                            border="0">
+                        <ul>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/pd_1.png"
+                                        alt="여아 삼각팬티 4개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/pd_2.png"
+                                        alt="남아 삼각팬티 4개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/pd_3.png"
+                                        alt="여아 드로즈 3개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/pd_4.png"
+                                        alt="남아 드로즈 3개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/pd_5.png"
+                                        alt="공용 런닝 3개 set" border="0" /></a></li>
+                        </ul>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/pc_04_2.png" border="0"></div>
+
+
+                    <!--------------------------swiper----------------------------------->
+                    <div class="es_in2203_detail"><img src="../../assets/images/lookbook/2022/2p_innderwear/pc_05.png"
+                            border="0">
+                        <div class="es_in2203_bn">
+                            <div class="swiper-container swiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/de_1.png">
+                                    </li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/de_2.png">
+                                    </li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/de_3.png">
+                                    </li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/de_4.png">
+                                    </li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/de_5.png">
+                                    </li>
+                                </ul>
+                                <!-- .swiper-wrapper -->
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <!-- .swiper-container -->
+                        </div>
+                    </div>
+                    <!--------------------------swiper----------------------------------->
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/pc_06.png" border="0"></div>
+
+
+                </div>
+                <div class="m_ess essential_inner2203_wrap">
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/m_01.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/m_02.jpg" border="0"></div>
+                    <div class="es_in2203_pdlist"><img src="../../assets/images/lookbook/2022/2p_innderwear/m_03.jpg"
+                            border="0">
+                        <ul>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/m_pd_1.png"
+                                        alt="여아 삼각팬티 4개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/m_pd_2.png"
+                                        alt="남아 삼각팬티 4개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/m_pd_3.png"
+                                        alt="여아 드로즈 3개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/m_pd_4.png"
+                                        alt="남아 드로즈 3개 set" border="0" /></a></li>
+                            <li><a href="javascript:void(0);"><img
+                                        src="../../assets/images/lookbook/2022/2p_innderwear/m_pd_5.png"
+                                        alt="공용 런닝 3개 set" border="0" /></a></li>
+                        </ul>
+                    </div>
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/m_04.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/m_05.jpg" border="0"></div>
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/m_06_2.jpg" border="0"></div>
+                    <!--------------------------swiper----------------------------------->
+                    <div class="es_in2203_detail"><img src="../../assets/images/lookbook/2022/2p_innderwear/m_07.jpg"
+                            border="0">
+                        <div class="es_in2203_bn">
+                            <div class="swiper-container swiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/m_de_01.jpg"></li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/m_de_02.jpg"></li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/m_de_03.jpg"></li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/m_de_04.jpg"></li>
+                                    <li class="swiper-slide"><img
+                                            src="../../assets/images/lookbook/2022/2p_innderwear/m_de_05.jpg"></li>
+                                </ul>
+                                <!-- .swiper-wrapper -->
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <!-- .swiper-container -->
+                        </div>
+                    </div>
+                    <!--------------------------swiper----------------------------------->
+                    <div><img src="../../assets/images/lookbook/2022/2p_innderwear/m_08.jpg" border="0"></div>
+
+
+                </div>
+            </section>
+        </section>
+    </section>
+    <script>
+        //swiper slider
+        var swiper2 = new Swiper('.pc_ess .swiper-container', {
+
+            slidesPerView: 1,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            loop: true,
+            speed: 1500, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+            autoplay: {
+                delay: 2000 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+            },
+        });
+        //swiper slider
+        var swiper3 = new Swiper('.m_ess .swiper-container', {
+
+            slidesPerView: 1,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            loop: true,
+            speed: 1500, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+            autoplay: {
+                delay: 2000 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+            },
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>
