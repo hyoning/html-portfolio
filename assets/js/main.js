@@ -1,12 +1,9 @@
  
  window.onscroll = function() {
     var scroll = window.scrollY;
-    //console.log(scroll);
     if (scroll >= 52.5) {
-      //console.log('a');
       document.querySelector(".main_header").classList.add("change");
     } else {
-      //console.log('a');
       document.querySelector(".main_header").classList.remove("change");
     }
   };
