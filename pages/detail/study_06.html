@@ -23,7 +23,9 @@
 <body>
     <header id="header"></header>
     <style>
-
+        .study_content {
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
     </style>
     <section class="container">
         <section class="contain">
@@ -31,20 +33,25 @@
             <section class="study_detail_contain">
                 <section class="study_detail_top">
                     <div class="study_img">
-                        <a href="https://fanciful-croquembouche-2f4d12.netlify.app/" target="_blank"><img
-                                src="../../assets/images/study/01.jpg" alt="to do list" /></a>
+                        <a href="https://main--playful-druid-d92dc6.netlify.app/" target="_blank"><img
+                                src="../../assets/images/study/06.jpg" alt="H&M" /></a>
                         <p>이미지를 클릭하면, 해당 페이지로 이동됩니다.</p>
                     </div>
                     <div class="study_title_wrap">
-                        <div class="study_title">To Do List (할일앱)</div>
+                        <div class="study_title">H&M 쇼핑몰</div>
                         <div class="study_sub_title">
-                            바닐라 자바스크립트를 통해 To Do List를 만들었습니다.<br>
-                            To Do List는 자바스크립트의 기본기에 대해 이해하기 쉬운 프로젝트입니다.
+                            리액트를 통해 H&M 쇼핑몰을 만들었습니다.<br>
+                            Redux, react router dom을 사용하여 검색 기능 및 상품 상세페이지 작업을 진행하셔으며,
+                            redux toolkit으로 저장소를 설정하여 유지보수 하기 쉽게 작업했습니다.
+                            전체적인 디자인은 bootstrap과 css를 사용하여 반응형으로 작업했습니다.
                         </div>
                         <ul class="study_skills">
-                            <li>javascript</li>
-                            <li>html</li>
-                            <li>css</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>React Router Dom</li>
+                            <li>Redux Toolkit</li>
+                            <li>Json Server</li>
+                            <li>Bootstrap</li>
                         </ul>
                     </div>
                 </section>
@@ -52,21 +59,10 @@
                     <div class="study_detail study_explanation">
                         <div>설명</div>
                         <ul>
-                            <li>할 일을 입력하면, 목록에 할 일이 추가된다.</li>
-                            <li>체크박스를 통해 할 일 항목을 비활성화/활성화를 한다.</li>
-                            <li>할 일을 삭제 할 수 있다.</li>
-                            <li>할 일을 수정이 할 수 있다.</li>
-                            <li>전체 탭을 통해 전체 할 일을 볼 수 있다.</li>
-                            <li>진행 중 탭을 통해 아직 완료되지 않은 할 일을 볼 수 있다.</li>
-                            <li>완료 탭을 통해 완료된 할 일을 볼 수 있다.</li>
-                            <li>프로그래스바를 통해 완료된 할 일이 몇 프로 남아있는지 확인 할 수 있다.</li>
-                        </ul>
-                    </div>
-                    <div class="study_detail study_add">
-                        <div>추가 개선사항</div>
-                        <ul>
-                            <li>할 일 입력 완료 시 Enter Key를 통해 추가 가능하도록 변경 필요</li>
-                            <li>마우스 더블 클릭시, 할 일 내용 수정이 가능하도록 기능 추가 필요</li>
+                            <li>상품 리스트를 볼 수 있다.</li>
+                            <li>원하는 상품을 검색할 수 있다.</li>
+                            <li>상품 클릭시 해당 상품 상세 페이지로 이동된다.</li>
+                            <li>상품 상세페이지에서 해당 상품에 옵션을 선택할 수 있다.</li>
                         </ul>
                     </div>
                 </section>

@@ -23,7 +23,11 @@
 <body>
     <header id="header"></header>
     <style>
-
+        @media (max-width : 757px) {
+            .study_content {
+                gap: 0.5rem !important;
+            }
+        }
     </style>
     <section class="container">
         <section class="contain">
@@ -31,15 +35,17 @@
             <section class="study_detail_contain">
                 <section class="study_detail_top">
                     <div class="study_img">
-                        <a href="https://fanciful-croquembouche-2f4d12.netlify.app/" target="_blank"><img
-                                src="../../assets/images/study/01.jpg" alt="to do list" /></a>
+                        <a href="https://musical-puppy-68f92c.netlify.app/"><img src="../../assets/images/study/03.jpg"
+                                alt="Onulun" target="_blank" /></a>
                         <p>이미지를 클릭하면, 해당 페이지로 이동됩니다.</p>
                     </div>
                     <div class="study_title_wrap">
-                        <div class="study_title">To Do List (할일앱)</div>
+                        <div class="study_title">Onulun</div>
                         <div class="study_sub_title">
-                            바닐라 자바스크립트를 통해 To Do List를 만들었습니다.<br>
-                            To Do List는 자바스크립트의 기본기에 대해 이해하기 쉬운 프로젝트입니다.
+                            바닐라 자바스크립트 및 날씨 API를 사용하여 만든 날씨 & 다이어리 앱으로 총 4명이 작업한 팀 프로젝트입니다.<br>
+                            현재 날씨 및 주간날씨를 한 눈에 확인 할 수 있으며, 현재 온도에 따른 스타일도 추천합니다.<br>
+                            오늘의 날씨 카테고리를 클릭하면, 오늘의 날씨를 디테일하게 확인할 수 있습니다.<br>
+                            또한 일기 카테고리를 클릭하면, 일기 작성이 가능합니다.
                         </div>
                         <ul class="study_skills">
                             <li>javascript</li>
@@ -49,24 +55,22 @@
                     </div>
                 </section>
                 <section class="study_content">
+                    <div class="study_detail study_add">
+                        <div>작업 내용</div>
+                        <ul>
+                            <li>작업 기여도 : 50%<br>(메인 전체, 일기 감정 이모티콘 추가 기능, 일기 삭제 기능)</li>
+                            <li>UX/UI 디자인 : 80%</li>
+                        </ul>
+                    </div>
                     <div class="study_detail study_explanation">
                         <div>설명</div>
                         <ul>
-                            <li>할 일을 입력하면, 목록에 할 일이 추가된다.</li>
-                            <li>체크박스를 통해 할 일 항목을 비활성화/활성화를 한다.</li>
-                            <li>할 일을 삭제 할 수 있다.</li>
-                            <li>할 일을 수정이 할 수 있다.</li>
-                            <li>전체 탭을 통해 전체 할 일을 볼 수 있다.</li>
-                            <li>진행 중 탭을 통해 아직 완료되지 않은 할 일을 볼 수 있다.</li>
-                            <li>완료 탭을 통해 완료된 할 일을 볼 수 있다.</li>
-                            <li>프로그래스바를 통해 완료된 할 일이 몇 프로 남아있는지 확인 할 수 있다.</li>
-                        </ul>
-                    </div>
-                    <div class="study_detail study_add">
-                        <div>추가 개선사항</div>
-                        <ul>
-                            <li>할 일 입력 완료 시 Enter Key를 통해 추가 가능하도록 변경 필요</li>
-                            <li>마우스 더블 클릭시, 할 일 내용 수정이 가능하도록 기능 추가 필요</li>
+                            <li>현재 위치한 곳에 날씨를 확인 할 수 있습니다.</li>
+                            <li>현재 온도에 맞는 스타일을 추천 받을 수 있습니다.</li>
+                            <li>주간 날씨를 확인 할 수 있습니다.</li>
+                            <li>오늘의 시간대별 날씨, 하이라이트 날씨를 확인할 수 있습니다.</li>
+                            <li>캘린더를 통해 현재 및 다른 날짜의 일기를 작성 할 수 있습니다.</li>
+                            <li>감정 이모티콘과 함께 일기를 작성 할 수 있습니다.</li>
                         </ul>
                     </div>
                 </section>

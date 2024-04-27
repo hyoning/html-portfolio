@@ -71,10 +71,17 @@
     word-break: keep-all;
 }
 
+.study_sub_title span {
+    display: inline-block;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
 .study_skills {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 .study_skills li {

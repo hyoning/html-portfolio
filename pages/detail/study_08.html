@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" as="style"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/layout.css">
+    <link rel="stylesheet" href="../../assets/style/detail.css">
+    <title>김효은 포토폴리오</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <style>
+        .study_content {
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+    </style>
+    <section class="container">
+        <section class="contain">
+            <button class="detail_back_btn" type="button" onclick="window.history.back()">Go To List</button>
+            <section class="study_detail_contain">
+                <section class="study_detail_top">
+                    <div class="study_img">
+                        <a href="https://github.com/hyoning/react-news" target="_blank">
+                            <img src="../../assets/images/study/08.jpg" alt="news" />
+                        </a>
+                        <p>이미지를 클릭하면, 작업 소스를 확인 할 수 있는 깃 페이지로 이동됩니다.</p>
+                    </div>
+                    <div class="study_title_wrap">
+                        <div class="study_title">뉴스</div>
+                        <div class="study_sub_title">
+                            리액트를 통해 뉴스 사이트를 만들었습니다. 총 5명의 팀원이 약 1주일간 진행한 프로젝트 입니다.<br>
+                            유료 뉴스 API, 무료 유투브 API, 무료 날씨 API를 사용하여 제작하였으며, reactQuery를 사용하여 데이터 및 캐싱, 동기화 작업을 하였습니다.
+                            Firebase를 통해 아이디, 비번 및 북마크한 데이터를 저장하였습니다.<br>
+                            <span>*유료 API 로 작업되어 해당 페이지는 확인 불가합니다.</span>
+                        </div>
+                        <ul class="study_skills">
+                            <li>React</li>
+                            <li>React Router Dom</li>
+                            <li>Redux Toolkit</li>
+                            <li>React Query</li>
+                            <li>Firebase</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="study_content">
+                    <div class="study_detail study_explanation">
+                        <div>설명</div>
+                        <ul>
+                            <li>뉴스 메인 페이지에서 나라별, 언론사별 뉴스와 현재 날씨, 유투브 뉴스 영상을 확인 할 수 있다.</li>
+                            <li>카테고리 클릭시 해당 카테고리의 맞는 뉴스를 확인 할 수 있다.</li>
+                            <li>카테고리 내 뉴스는 20개씩 보여주고, 더보기 클릭 시 더 많은 뉴스를 확인 할 수 있다.</li>
+                            <li>뉴스 검색시 해당 키워드를 포함하고 있는 뉴스를 확인 할 수 있다. </li>
+                            <li>로그인/로그아웃을 할 수 있다.</li>
+                            <li>로그인 후 마이페이지에서 좋아하는 카테고리를 북마크할 수 있다.</li>
+                            <li>북마크한 카테고리의 뉴스를 메인 상단에서 확인 할 수 있다.</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <footer id="footer"></footer>
+    <script src="../../assets/js/detail_layout.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>

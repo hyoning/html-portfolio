@@ -66,38 +66,43 @@
     transform: translateX(-50%);
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .thumb_icon span {
     font-size: 0.8rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
     color: #222;
     border-radius: 20px;
     font-weight: 600;
 }
 
-.icon_d {
+.thumb_icon span.icon_d {
     background-color: var(--dark-point-color);
 }
 
-.icon_p {
+.thumb_icon span.icon_p {
     background-color: var(--secondary-color);
 }
 
-.icon_j {
+.thumb_icon span.icon_j {
     background-color: var(--point-color);
 }
 
-.icon_h {
+.thumb_icon span.icon_h {
     background-color: var(--dark-point-color);
 }
 
-.icon_c {
+.thumb_icon span.icon_c {
     background-color: var(--secondary-color);
 }
 
-.icon_r {
-    background-color: var(--gray-secondary-colo);
+.thumb_icon span.icon_r {
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .more_btn {
