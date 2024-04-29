@@ -16,7 +16,7 @@
 .list_cont {
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem 0;
+    padding: 1.2rem 5px 0 0;
     align-items: center;
 }
 
@@ -143,24 +143,16 @@
 }
 
 .more_btn {
-    width: 100%;
     text-align: center;
-    padding-top: 0.5rem;
-}
-
-.more_btn a {
-    display: inline-block;
-    text-align: center;
+    padding-top: 1rem;
     font-size: 1rem;
-    line-height: 1.2;
-    padding: 2px 0;
-    border-bottom: 1px solid #222;
+    line-height: 1.4;
     font-weight: 600;
+    text-decoration: underline;
 }
 
-.more_btn a:hover {
+.more_btn:hover {
     color: #555;
-    border-bottom: 1px solid #555;
 }
 
 .detail_back_btn {

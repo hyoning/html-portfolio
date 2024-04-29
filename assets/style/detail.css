@@ -50,7 +50,7 @@
     display: flex;
     border-bottom: 1px solid #eee;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 1rem;
 }
 
@@ -62,14 +62,14 @@
 }
 
 .site_title {
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 300;
     line-height: 1.4;
 }
 
 .site_title span {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 .site_date {
