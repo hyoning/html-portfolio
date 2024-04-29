@@ -156,6 +156,9 @@ footer {
 }
 
 @media (max-width : 500px) {
+    .header_wrap {
+        padding: 0 10px 0 0;
+    }
 
     .header_wrap .menu_btn {
         display: block;
