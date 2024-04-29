@@ -50,8 +50,15 @@
     display: flex;
     border-bottom: 1px solid #eee;
     gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.site_detail_top {
     align-items: flex-start;
-    padding-bottom: 1rem;
+}
+
+.study_detail_top {
+    align-items: center;
 }
 
 .site_title_wrap,
@@ -99,6 +106,12 @@
     font-size: 0.9rem;
     line-height: 1.6;
     font-weight: 300;
+    text-align: left;
+}
+
+.site_detail_cont.detail_gray {
+    background-color: var(--gray-secondary-color);
+    padding: 1rem;
 }
 
 .site_detail_cont h3 {
@@ -129,7 +142,6 @@
 .study_skills {
     display: flex;
     gap: 0.5rem;
-    padding-bottom: 1rem;
     flex-wrap: wrap;
 }
 

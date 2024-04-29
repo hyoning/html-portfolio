@@ -37,7 +37,7 @@
 .eyes_icon {
     position: absolute;
     width: 10%;
-    max-width: 50px;
+    max-width: 60px;
     left: 8%;
     top: 10%;
     transform: translateY(-50%);
@@ -59,7 +59,7 @@
 .arrow_icon {
     position: absolute;
     width: 15%;
-    max-width: 70px;
+    max-width: 80px;
     left: 50%;
     bottom: 2%;
     transform: translateX(-50%);
