@@ -175,6 +175,10 @@ img {
     pointer-events: none;
 }
 
+.mobile .cursor_inner {
+    background-color: rgba(10, 27, 16, 0) !important;
+}
+
 .cursor_inner {
     position: absolute;
     display: inline-block;

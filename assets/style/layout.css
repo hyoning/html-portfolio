@@ -40,6 +40,11 @@ header {
     font-size: 12px;
     line-height: 1.5;
     font-weight: 600;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header_wrap .nav_list li a:hover {
+    text-decoration: line-through;
 }
 
 .header_wrap .menu_btn {
